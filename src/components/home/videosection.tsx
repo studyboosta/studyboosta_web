@@ -68,13 +68,15 @@ const VideoSection = () => {
             Our students reviews
           </h2>
         </div>
+        <div className="flex flex-col">
+
         <Swiper
           slidesPerView={1.2}
           spaceBetween={20}
           centeredSlides={true}
           pagination={{ clickable: true }}
           modules={[Pagination]}
-          className="mySwiper"
+          className=" mySwiper"
         >
           {reviews.map((review, index) => (
             <SwiperSlide key={index}>
@@ -111,9 +113,11 @@ const VideoSection = () => {
                 </div>
                 <p className="text-[14px] text-black">{review.review}</p>
               </div>
+
             </SwiperSlide>
           ))}
         </Swiper>
+        </div>
       </div>
     </section>
   );

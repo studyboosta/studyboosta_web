@@ -25,7 +25,7 @@ const NavBar = ({ activeRoute }: { activeRoute: string }) => {
         <ul className="hidden sm:flex gap-6">
           {[
             { name: "Home", href: "/" },
-            { name: "Courses", href: "/src/app/courses/page.tsx" },
+            { name: "Courses", href: "/courses" },
             { name: "Chatbot", href: "/chatbot" },
             { name: "Opportunities", href: "/opportunities" },
             { name: "Security", href: "/security" },
