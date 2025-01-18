@@ -1,12 +1,13 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
-// import { useSession } from "next-auth/react";
+const NavBar = () => {
+  const pathname = usePathname();
 
-const NavBar = ({ activeRoute }: { activeRoute: string }) => {
-    const isActive = (path: string) => activeRoute === path;
-    
+  const isActive = (path: string) => pathname === path;
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -33,15 +34,17 @@ const NavBar = ({ activeRoute }: { activeRoute: string }) => {
             { name: "Marketplace", href: "/marketplace" },
           ].map((item) => (
             <li key={item.name}>
-            <Link
-              href={item.href}
-              className={`${
-                isActive(item.href) ? "border-b-4 rounded border-[#050C9C] mt-2 font-semibold" : "text-black"
-              }`}
-            >
-              {item.name}
-            </Link>
-          </li>
+              <Link
+                href={item.href}
+                className={`${
+                  isActive(item.href)
+                    ? "border-b-4 rounded border-[#050C9C] mt-2 font-semibold"
+                    : "text-black"
+                }`}
+              >
+                {item.name}
+              </Link>
+            </li>
           ))}
         </ul>
 
@@ -87,20 +90,24 @@ const NavBar = ({ activeRoute }: { activeRoute: string }) => {
         <div className="sm:hidden bg-[#F1F5FF] py-2">
           <ul className="flex flex-col gap-4">
             {[
-              "Home",
-              "Courses",
-              "Chatbot",
-              "Opportunities",
-              "Security",
-              "Digital Skills",
-              "Marketplace",
+              { name: "Home", href: "/" },
+              { name: "Courses", href: "/courses" },
+              { name: "Chatbot", href: "/chatbot" },
+              { name: "Opportunities", href: "/opportunities" },
+              { name: "Security", href: "/security" },
+              { name: "Digital Skills", href: "/digital-skills" },
+              { name: "Marketplace", href: "/marketplace" },
             ].map((item) => (
-              <li key={item}>
+              <li key={item.name}>
                 <Link
-                  href="/"
-                  className="text-black text-[14px] hover:text-blue-700"
+                  href={item.href}
+                  className={`${
+                    isActive(item.href)
+                      ? "font-semibold text-blue-700"
+                      : "text-black"
+                  }`}
                 >
-                  {item}
+                  {item.name}
                 </Link>
               </li>
             ))}
