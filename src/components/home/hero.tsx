@@ -25,10 +25,12 @@ const HeroSection = () => {
           Start Learning
         </button>
         <div>
-          <img
+          <Image
             src="/assests/images/Frame 1597880755.png"
             alt="Excited student"
             className=""
+            width={100}
+            height={60}
           />
           <div className="mt-6 text-black font-medium text-[14px]">
             Join 1000+ students from 20+ higher institutions all over the

@@ -1,17 +1,17 @@
 "use client";
 import dynamic from "next/dynamic";
-
-const Swiper = dynamic(() => import("swiper/react").then((mod) => mod.Swiper), {
-  ssr: false,
-});
-const SwiperSlide = dynamic(
-  () => import("swiper/react").then((mod) => mod.SwiperSlide),
-  { ssr: false }
-);
-
-import { Pagination } from "swiper/modules";
+// import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+// const Swiper = dynamic(() => import("swiper/react").then((mod) => mod.Swiper), {
+//   ssr: false,
+// });
+// const SwiperSlide = dynamic(
+//   () => import("swiper/react").then((mod) => mod.SwiperSlide),
+//   { ssr: false }
+// );
+
+
 
 const VideoSection = () => {
   const reviews = [

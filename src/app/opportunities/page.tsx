@@ -1,7 +1,8 @@
-'use client';
+"use client";
 import React, { useState } from "react";
-import { FaSearch } from "react-icons/fa"; 
+import { FaSearch } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
+import Image from "next/image";
 
 const scholarships = [
   {
@@ -80,7 +81,6 @@ const ScholarshipsPage = () => {
           </div>
         </div>
 
-
         {/* Filter Section */}
         <div className="relative mb-6">
           <button
@@ -113,11 +113,15 @@ const ScholarshipsPage = () => {
               key={scholarship.id}
               className="bg-white shadow rounded-lg overflow-hidden"
             >
-              <img
-                src={scholarship.logo}
-                alt={scholarship.title}
-                className="w-full h-40 object-fill bg-gray-100"
-              />
+              <div className="w-full h-40 bg-gray-100 relative">
+                <Image
+                  src={scholarship.logo}
+                  alt={scholarship.title}
+                  layout="fill" 
+                  objectFit="cover" 
+                  className="rounded-lg" 
+                />
+              </div>
               <div className="p-4">
                 <h3 className="text-lg font-bold text-gray-800">
                   {scholarship.title}
