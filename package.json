@@ -17,10 +17,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
-<<<<<<< HEAD
-=======
     "react-redux": "^9.2.0",
->>>>>>> 5636ac3bb4ffe4a4d506b3b838b800bba9bae40b
     "swiper": "^11.2.1"
   },
   "devDependencies": {
