@@ -5,13 +5,13 @@ const HeroSection = () => {
       {/* Left Content */}
       <div className="lg:w-1/2 order-1 lg:order-none py-8 ">
       
-        <p className="text-[40px] font-bold mt-[50px] text-black  mb-[20px] leading-normal">
+        <p className="text-[28px] sm:text-[28px] md:text-[32px] lg:text-[40px] font-bold mt-[30px] sm:mt-[20px] lg:mt-[50px] text-black mb-[20px] leading-normal">
         Crush Your Academic, Career & Financial Goals with StudyBoosta
         </p>
         <div className="lg:hidden rounded-lg overflow-hidden mb-6">
           {/* Image on smaller screens */}
           <Image
-            src="/assests/images/heroImage.png"
+            src="/assests/images/heroSmall.png"
             alt="Excited student"
             width={360}
             height={360}
@@ -25,10 +25,12 @@ const HeroSection = () => {
           Start Learning
         </button>
         <div>
-          <img
+          <Image
             src="/assests/images/Frame 1597880755.png"
             alt="Excited student"
             className=""
+            width={100}
+            height={60}
           />
           <div className="mt-6 text-black font-medium text-[14px]">
             Join 1000+ students from 20+ higher institutions all over the

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -38,24 +39,28 @@ const Footer: React.FC = () => {
             <h3 className="text-[19px] font-semibold mb-4">Quick links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="hover:underline text-[14px]">
-                  Home
-                </a>
+              <Link
+                href="/"
+                className= "hover:underline text-[14px]"
+              >
+                Home
+              </Link>
+                
               </li>
               <li>
-                <a href="/courses" className="hover:underline text-[14px]">
+                <Link href="/courses" className="hover:underline text-[14px]">
                   Courses
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/opportunities" className="hover:underline text-[14px]">
+                <Link href="/opportunities" className="hover:underline text-[14px]">
                   Opportunities
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/digital-skills" className="hover:underline text-[14px]">
+                <Link href="/digitalskills" className="hover:underline text-[14px]">
                   Digital skills
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

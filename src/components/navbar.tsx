@@ -22,7 +22,7 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
     <nav className="bg-[#F1F5FF]">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Navbar Brand */}
-        <p className="text-left text-[28px] sm:text-[24px] font-bold text-[#050C9C]">
+        <p className="text-left text-[20px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#050C9C]">
           StudyBoosta
         </p>
 
@@ -34,7 +34,7 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
             { name: "Chatbot", href: "/Chatbot" },
             { name: "Opportunities", href: "/opportunities" },
             { name: "Security", href: "/security" },
-            { name: "Digital Skills", href: "/digital-skills" },
+            { name: "Digital Skills", href: "/digitalskills" },
             { name: "Marketplace", href: "/marketplace" },
           ].map((item) => (
             <li key={item.name}>
@@ -99,7 +99,7 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
               { name: "Chatbot", href: "/Chatbot" },
               { name: "Opportunities", href: "/opportunities" },
               { name: "Security", href: "/security" },
-              { name: "Digital Skills", href: "/digital-skills" },
+              { name: "Digital Skills", href: "/digitalskills" },
               { name: "Marketplace", href: "/marketplace" },
             ].map((item) => (
               <li key={item.name}>
