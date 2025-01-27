@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { CoursesDispatch, CoursesState } from "./coursesStore";
 import {
@@ -35,7 +35,7 @@ interface MenuProps {
 
 const Menu: React.FC<MenuProps> = ({ searchQuery }) => {
   const dispatch: CoursesDispatch = useDispatch();
-  const { faculty, department, level, selectedContent, loading } = useSelector(
+  const { level, selectedContent, loading } = useSelector(
     (state: CoursesState) => state.menu
   );
 
@@ -54,7 +54,7 @@ const Menu: React.FC<MenuProps> = ({ searchQuery }) => {
       dispatch(setLevel(tempLevel));
       dispatch(setSelectedContent(computerEngineering300[0]));
     }
-  }, []);
+  }, [dispatch, selectedContent, tempDepartment, tempFaculty, tempLevel]);
 
   const handleLoad = () => {
     dispatch(setLoading(true));
@@ -127,14 +127,14 @@ const Menu: React.FC<MenuProps> = ({ searchQuery }) => {
   );
 
   const currentData = dataMap[level] || [];
-  const handleSearch = () => {
+  const handleSearch = useCallback(() => {
     const allData = Object.values(dataMap).flat();
     const matchedContent = allData.find((item) =>
       item.title.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
     if (matchedContent) {
-      const matchedLevel = Object.entries(dataMap).find(([_, items]) =>
+      const matchedLevel = Object.entries(dataMap).find(([, items]) =>
         items.includes(matchedContent)
       )?.[0];
 
@@ -143,13 +143,13 @@ const Menu: React.FC<MenuProps> = ({ searchQuery }) => {
         dispatch(setSelectedContent(matchedContent));
       }
     }
-  };
+  }, [dispatch, searchQuery]); // Memoize handleSearch
 
   useEffect(() => {
     if (searchQuery) {
       handleSearch();
     }
-  }, [searchQuery]);
+  }, [searchQuery, handleSearch]);
 
   return (
     <div className="flex flex-col items-center justify-center">

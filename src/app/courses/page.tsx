@@ -5,7 +5,7 @@ import SearchBar from "@/components/SearchBar";
 import React, { useState } from "react";
 import { Provider } from "react-redux";
 
-const courses = () => {
+const Courses = () => {
   const [searchQuery, setSearchQuery] = useState("");
   return (
     <section className="sm:px-0 px-3">
@@ -20,4 +20,4 @@ const courses = () => {
   );
 };
 
-export default courses;
+export default Courses;
