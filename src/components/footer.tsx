@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="/digital-skills" className="hover:underline text-[14px]">
+                <a href="/digitalskills" className="hover:underline text-[14px]">
                   Digital skills
                 </a>
               </li>
