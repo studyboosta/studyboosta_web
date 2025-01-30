@@ -1,5 +1,5 @@
 "use client";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 // import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -58,7 +58,7 @@ const VideoSection = () => {
             How to navigate the StudyBoosta platform
           </h2>
           <iframe
-            src="https://www.youtube.com/embed/sample-video" // Replace with your actual video link
+            src="https://www.youtube.com/embed/sample-video" 
             title="How to navigate the StudyBoosta platform"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
