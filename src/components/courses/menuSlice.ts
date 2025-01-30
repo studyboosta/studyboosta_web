@@ -1,11 +1,22 @@
 // menuSlice.ts
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
+interface Video {
+  link: string;
+  name: string;
+}
+
+interface Content {
+  title: string;
+  summary: string[];
+  videos: Video[];
+}
+
 interface MenuState {
   faculty: string;
   department: string;
   level: number;
-  selectedContent: any;
+  selectedContent: Content | null;
   loading: boolean;
 }
 
@@ -30,7 +41,7 @@ const menuSlice = createSlice({
     setLevel: (state, action: PayloadAction<number>) => {
       state.level = action.payload;
     },
-    setSelectedContent: (state, action: PayloadAction<any>) => {
+    setSelectedContent: (state, action: PayloadAction<Content | null>) => {
       state.selectedContent = action.payload;
     },
     setLoading: (state, action: PayloadAction<boolean>) => {

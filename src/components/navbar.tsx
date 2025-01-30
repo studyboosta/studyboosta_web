@@ -3,7 +3,11 @@ import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
-const NavBar = () => {
+interface NavbarProps {
+  activeRoute: string;
+}
+
+const NavBar = ({ activeRoute }: NavbarProps) => {
   const pathname = usePathname();
 
   const isActive = (path: string) => pathname === path;
@@ -26,8 +30,8 @@ const NavBar = () => {
         <ul className="hidden sm:flex gap-6">
           {[
             { name: "Home", href: "/" },
-            { name: "Courses", href: "/courses" },
-            { name: "Chatbot", href: "/chatbot" },
+            { name: "Courses", href: "/Courses" },
+            { name: "Chatbot", href: "/Chatbot" },
             { name: "Opportunities", href: "/opportunities" },
             { name: "Security", href: "/security" },
             { name: "Digital Skills", href: "/digitalskills" },
@@ -91,8 +95,8 @@ const NavBar = () => {
           <ul className="flex flex-col gap-4">
             {[
               { name: "Home", href: "/" },
-              { name: "Courses", href: "/courses" },
-              { name: "Chatbot", href: "/chatbot" },
+              { name: "Courses", href: "/Courses" },
+              { name: "Chatbot", href: "/Chatbot" },
               { name: "Opportunities", href: "/opportunities" },
               { name: "Security", href: "/security" },
               { name: "Digital Skills", href: "/digitalskills" },
