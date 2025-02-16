@@ -36,11 +36,11 @@ const WhatWeOffer = () => {
           StudyBoosta offers a variety of services that help improve students all round.
         </p>
       </div>
-      <div className="grid gap-8 lg:grid-cols-4 max-w-6xl mx-auto mb-56 mt-5">
+      <div className="grid gap-8 lg:grid-cols-4 max-w-6xl mx-auto mb-56 mt-5 justify-center">
         {offers.map((offer, index) => (
           <div
           key={index}
-          className="rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 relative"
+          className="rounded-lg shadow-lg overflow-hidden hover:shadow-2xl  transition-shadow duration-300 relative"
           style={{ width: "275px", height: "500px" }}>
             
           {/* Background Image */}

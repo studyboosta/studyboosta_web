@@ -91,7 +91,7 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
 
       {/* Mobile Menu (Visible when isOpen is true) */}
       {isOpen && (
-        <div className="sm:hidden bg-[#F1F5FF] py-2">
+        <div className="sm:hidden bg-[#F1F5FF] p-2">
           <ul className="flex flex-col gap-4">
             {[
               { name: "Home", href: "/" },
