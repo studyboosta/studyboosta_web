@@ -506,3 +506,318 @@ export const computerEngineering500 = [
     ],
   },
 ];
+
+export const engineering200 = [
+  {
+    title: " Applied Electricity I",
+    videos: [
+      {
+        link: "https://www.youtube.com/embed/ZOqMQ0H0-0k?si=VNoDjTiia-w_z-RN",
+        name: "Understanding electric fields and charges",
+      },
+      {
+        link: "https://www.youtube.com/embed/_4VC3IHbuW8?si=kESk5IcUJI1uVWCs",
+        name: "What are electric fields and how do they work?",
+      },
+      {
+        link: "https://www.youtube.com/embed/XoVW7CRR5JY?si=EghkjCh6TDj0qyjM",
+        name: "Magnetic fields and their relationship to electricity",
+      },
+      {
+        link: "https://www.youtube.com/embed/oEEYMhPY5tY?si=TBbfM2IcYhv_grZz",
+        name: "How current produces magnetic fields",
+      },
+      {
+        link: "https://www.youtube.com/embed/qDjIhAsTOyE?si=9rB_LN3q_6d1sMAm",
+        name: "What is the B-H curve and how is it used in electricity?",
+      },
+      {
+        link: "https://www.youtube.com/embed/Q39xQUlTGew?si=gmEUwVgjSEe2Vnkn",
+        name: "Kirchhoff's current law explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/6F_rmZ1nXFQ?si=SJ8OzLmZ1cBs5Bqs",
+        name: "Kirchhoff's voltage law explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/fHAAHzpz5v4?si=sci2XNTH2VkugCOO",
+        name: "Kirchhoff's laws for circuit analysis",
+      },
+      {
+        link: "https://www.youtube.com/embed/ZJ8zD8m-B1Q?si=QhVWkMl_NhhQnxYe",
+        name: "Superposition theorem and its applications",
+      },
+      {
+        link: "https://www.youtube.com/embed/EX52BuZxpQM?si=9Dzw-LTeVMLszDBc",
+        name: "How to apply the superposition theorem in electrical circuits",
+      },
+      {
+        link: "https://www.youtube.com/embed/veAFVTIpKyM?si=OBU48tmyOBBxyeE6",
+        name: "Thevenin’s theorem simplified",
+      },
+      {
+        link: "https://www.youtube.com/embed/zTDgziJC-q8?si=YH40ardrimlqxx3F",
+        name: "How to apply Thevenin's theorem",
+      },
+      {
+        link: "https://www.youtube.com/embed/RkSN_JxBGt0?si=0BwYFCVtp4-ZZrmU",
+        name: "Norton’s theorem tutorial",
+      },
+      {
+        link: "https://www.youtube.com/embed/-kkvqr1wSwA?si=smo8ziNaEN7QghW6",
+        name: "Thevenin vs Norton theorems explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/X79SNOd1Izw?si=zuolGM-uCik3Uk0A",
+        name: "Understanding the reciprocity theorem in circuits",
+      },
+      {
+        link: "https://www.youtube.com/embed/RR0sQeDAxgk?si=AmWWkp-hVAuiWBqq",
+        name: "RL circuit analysis and applications",
+      },
+      {
+        link: "https://www.youtube.com/embed/tcP9c6SnGQs?si=ySq9dd151Eqff95Q",
+        name: "How to calculate impedance in RL circuits",
+      },
+      {
+        link: "https://www.youtube.com/embed/PLQrPqYlPmI?si=N9AQTmT_r_RRnGc8",
+        name: "RC circuits and time constant explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/MZAclBK_GyQ?si=jlxXsaxlqcg9R3JV",
+        name: "RC circuit charging and discharging behavior",
+      },
+      {
+        link: "https://www.youtube.com/embed/YLGrugmDvc0?si=MnDBe0ou457aZ-BG",
+        name: "RLC circuits and resonance",
+      },
+      {
+        link: "https://www.youtube.com/embed/NKZKBG1sU-U?si=jJL0D60g0IaSeAkH",
+        name: "Solving RLC circuit problems",
+      },
+      {
+        link: "https://www.youtube.com/embed/videoseries?si=UEdYAekZJDLS5p5L&amp;list=PL3Soy1ohxlP36AVnRLEHQBIMNJZudZduf",
+        name: "Understanding DC and AC bridges",
+      },
+      {
+        link: "https://www.youtube.com/embed/rkJ_GaPh9_c?si=QEJTUstJeUHV5jol",
+        name: "How to use DC and AC bridges for circuit analysis",
+      },
+      {
+        link: "https://www.youtube.com/embed/BimpNou0orc?si=zDx0luvR2ZswaNnB",
+        name: "Capacitance Basic Introduction",
+      },
+      {
+        link: "https://www.youtube.com/embed/08YugQce9OA?si=TVg0IqQVXk_3lzob",
+        name: "Volatage Basic Introduction",
+      },
+      {
+        link: "https://www.youtube.com/embed/J6nrLoNsuME?si=0D0-9XGOsv3qmDZj",
+        name: "Inductance Basic Introduction",
+      },
+      {
+        link: "https://www.youtube.com/embed/vi9t5gdog7Q?si=srqT8tCry1xaPVv4",
+        name: "Using an LCR meter for measurements",
+      },
+      {
+        link: "https://www.youtube.com/embed/uQBggxtdF84?si=Z65IhrV5yIAq8Mus",
+        name: "What are transducers in electrical engineering?",
+      },
+      {
+        link: "https://www.youtube.com/embed/zxYeJW9v6OU?si=s9lQzHeiG7sO58Qm",
+        name: "Types and applications of transducers",
+      },
+      {
+        link: "https://www.youtube.com/embed/flRocvQxQw4?si=OocXpnL9gTXDWURo",
+        name: "Single-phase AC circuits explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/W0_1xRqT8uU?si=G0gkI8BIH--G1NGg",
+        name: "How single-phase AC circuits work",
+      },
+      {
+        link: "https://www.youtube.com/embed/FCNHN7B9iDM?si=tOqgDNjcLhaAhCOA",
+        name: "Complex j-notation in AC circuit analysis",
+      },
+      {
+        link: "https://www.youtube.com/embed/RzSoyLJrZH4?si=a8hiDfIvv7Ymau81",
+        name: "Using j-notation for solving AC circuits",
+      },
+      {
+        link: "https://www.youtube.com/embed/7euDdRSniyQ?si=5CICFxFF1Cr6btcF",
+        name: "Impedance and admittance in AC circuits explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/9uFltahKPXU?si=aUKOTaCyrCDjq7nC",
+        name: "Impedance matching in AC circuits",
+      },
+      {
+        link: "https://www.youtube.com/embed/ZSDpIpnlTbY?si=uX1q-P_xi75rg9hM",
+        name: "What is acceptance in AC circuit theory?",
+      },
+    ],
+    summary: [
+      "Applied Electricity I is a foundational course that covers key electrical concepts, circuit analysis, and practical applications. Topics include electric and magnetic fields, circuit laws (Kirchhoff’s, Thevenin’s, Norton’s), AC/DC circuits, impedance, and electrical measurements. The course also explores transducers, single-phase circuits, and complex j-notation for AC analysis. Through theoretical learning and practical examples, students gain a solid understanding of electrical principles used in engineering and technology.",
+    ],
+  },
+  {
+    title: "Engineering Materials",
+    videos: [
+      {
+        link: "https://www.youtube.com/embed/OH-aSu-rWgk?si=FfW-BkB1sjFxPmex",
+        name: "Basic atomic structure and bonding explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/wweFTC--GRg?si=ZI71gJzBF7DvXrlg",
+        name: "Understanding crystal structures in materials science",
+      },
+      {
+        link: "https://www.youtube.com/embed/PaGJwOPg2kU?si=bB3TW2HhjXj1V5Eg",
+        name: "What are metals and alloys? Classifications and examples",
+      },
+      {
+        link: "https://www.youtube.com/embed/388TPL5M9us?si=GPcZhEeJs9V8CB3k",
+        name: "Types of alloys and their properties",
+      },
+      {
+        link: "https://www.youtube.com/embed/qR6IxO_GqU0?si=tFkIrhVLXBfYKzKz",
+        name: "Metal extraction: Iron and Steel production",
+      },
+      {
+        link: "https://www.youtube.com/embed/cUhrtiquRNk?si=lSLTWsx06NnQZqfX",
+        name: "Aluminum is extracted and its use",
+      },
+      {
+        link: "https://www.youtube.com/embed/7hmF3WoQkTg?si=qTK14vKri-OadFj5",
+        name: "Understanding phase diagrams and Iron-Carbon phase diagram",
+      },
+      {
+        link: "https://www.youtube.com/embed/8Iv9jR6nUdU?si=ma-iedLEz0Y4bUYb",
+        name: "How structure affects the properties of engineering materials",
+      },
+      {
+        link: "https://www.youtube.com/embed/XbX4xY1sqQo?si=RKmBtS081CNfDWNv",
+        name: "Material structure-property relationship explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/tDCq2Tc1fxY?si=YzQctQsEzO2OWhoU",
+        name: "Phase transformations in materials science",
+      },
+      {
+        link: "https://www.youtube.com/embed/mIXvqzg5bKc?si=IIhhq--aBopKm9Tk",
+        name: "Solid solutions and phase diagrams in metallurgy",
+      },
+      {
+        link: "https://www.youtube.com/embed/8o2M0M6d56E?si=lC5BwcVE4QCX4uK_",
+        name: "What are ceramics? Types and properties",
+      },
+      {
+        link: "https://www.youtube.com/embed/3LSsEtwahzY?si=kEMdhlCqDASOZTDy",
+        name: "Ceramic materials and their industrial applications",
+      },
+      {
+        link: "https://www.youtube.com/embed/vnVPwf2T4Eo?si=l-q-FxI5LFLVHt8X",
+        name: "Understanding the structure of glass and bioactive ceramics",
+      },
+      {
+        link: "https://www.youtube.com/embed/wi-S51ToRF8?si=FjfqacyIUQAV6nMW",
+        name: "Applications of glass and bioactive ceramics in industry Part 1",
+      },
+      {
+        link: "https://www.youtube.com/embed/JB7WVLi8goE?si=HJ4qA9T_IOwhKaX_",
+        name: "Applications of glass and bioactive ceramics in industry Part 2",
+      },
+      {
+        link: "https://www.youtube.com/embed/VJe36sWcxNw?si=sUuHcw2TpVi0G3Ic",
+        name: "How ceramics are toughened and strengthened",
+      },
+      {
+        link: "https://www.youtube.com/embed/jUDyjFXOb8s?si=pbII9X2adtD5TFLM",
+        name: "What are polymers and their properties?",
+      },
+      {
+        link: "https://www.youtube.com/embed/JknzbSVBuYM?si=zp8_J0cIbiFsMHzT",
+        name: "Polymerization reactions: How polymers are made",
+      },
+      {
+        link: "https://www.youtube.com/embed/Hfy9vlWjsIA?si=tSCHxc4bufXoGhX0",
+        name: "Types of polymerization: Addition vs condensation",
+      },
+      {
+        link: "https://www.youtube.com/embed/Wza4LH_qt1M?si=rKyCo43KpMyyyAzS",
+        name: "What are thermoplastics and thermosets?",
+      },
+      {
+        link: "https://www.youtube.com/embed/m7tEtvSJcs0?si=RKy0Gdo3KddzzzFi",
+        name: "Thermoplastic vs thermosetting polymers explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/Z2inwFBdQ9g?si=uJEiYS3bkowfO7R_",
+        name: "Composites: What are they and how are they used?",
+      },
+      {
+        link: "https://www.youtube.com/embed/04K0bLwCDdM?si=RxHTOtsAMH6I7FBP",
+        name: "Classification and properties of composite materials",
+      },
+      {
+        link: "https://www.youtube.com/embed/Eqv2DEGuIWY?si=fYjSxTenmSKkqK4S",
+        name: "Real-world applications of composite materials",
+      },
+      {
+        link: "https://www.youtube.com/embed/xuFJJ1gTfBY?si=_O2nlNVHHWEHEzY9",
+        name: "Composites in aerospace, automotive, and construction",
+      },
+      {
+        link: "https://www.youtube.com/embed/VJnq1nxmxG0?si=W7ZzEIRuCg8RUrBJ",
+        name: "Difference between synthetic and natural fibers",
+      },
+      {
+        link: "https://www.youtube.com/embed/yWMEQ_fzEqs?si=uwVEhkJMMlv_DKjS",
+        name: "Applications of synthetic and natural fibers in composites",
+      },
+      {
+        link: "https://www.youtube.com/embed/qDnzI05vvSc?si=uK_qpeEyQwlhaaPk",
+        name: "Introduction to nanomaterials and their applications",
+      },
+      {
+        link: "https://www.youtube.com/embed/sGmlF7mIc2Y?si=NjtJHo8jSI801Hg9",
+        name: "Types of nanomaterials and their uses in technology",
+      },
+      {
+        link: "https://www.youtube.com/embed/YhuUFLzJSsg?si=FBC2kQy9z2WUCPW-",
+        name: "How nanomaterials are processed: Methods and techniques",
+      },
+      {
+        link: "https://www.youtube.com/embed/QUW0O19NwSk?si=12eZsMZFk9GglG6j",
+        name: "Mechanical grinding, wet chemical synthesis, and more",
+      },
+      {
+        link: "https://www.youtube.com/embed/W2NTYg6fZY0?si=miCVw7RBYv0jAxlf",
+        name: "Factors affecting the performance and service life of materials",
+      },
+      {
+        link: "https://www.youtube.com/embed/OWyKYu690JM?si=7HX3T-EWwm1Ooh_V",
+        name: "Material selection and its impact on performance",
+      },
+      {
+        link: "https://www.youtube.com/embed/WSRqJdT2COE?si=_a-7Fw_Gak0kEdRv",
+        name: "Compressive, tensile, hardness, and impact testing",
+      },
+      {
+        link: "https://www.youtube.com/embed/aVkSeXb6T5M?si=8MotCHzAE4jPs2ZV",
+        name: "Understanding endurance limits and fatigue tests",
+      },
+      {
+        link: "https://www.youtube.com/embed/oriFJByl6Hs?si=DsDGa5Pilc7o88AH",
+        name: "Non-destructive testing methods: Dye penetrant, X-ray, and eddy current",
+      },
+      {
+        link: "https://www.youtube.com/embed/tlE3eK0g6vU?si=9ZEJytOIV1EvmLOv",
+        name: "Why and how non-destructive testing is used in materials science",
+      },
+    ],
+    summary: [
+      "Engineering Materials is a course that explores the properties, classifications, and applications of materials used in engineering. It covers metals, ceramics, polymers, and composites, focusing on their mechanical, electrical, and thermal properties. Topics include material selection, strength, hardness, corrosion, and failure analysis. The course helps students understand how materials behave under different conditions and how to choose the right materials for engineering applications.",
+    ],
+  },
+];

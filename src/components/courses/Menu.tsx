@@ -17,9 +17,11 @@ import {
   facultyOptions,
   departmentOptions,
   levelOptions,
+  engineering200,
 } from "@/app/constants";
 
 const dataMap: Record<number, typeof computerEngineering300> = {
+  200: engineering200,
   300: computerEngineering300,
   500: computerEngineering500,
 };
@@ -70,7 +72,7 @@ const Menu: React.FC<MenuProps> = ({ searchQuery }) => {
         dispatch(setSelectedContent(null));
       }
       dispatch(setLoading(false));
-    }, 1000);
+    }, 500);
   };
 
   // const handleTitleClick = (title: string) => {

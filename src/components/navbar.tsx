@@ -30,8 +30,8 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
         <ul className="hidden sm:flex gap-6">
           {[
             { name: "Home", href: "/" },
-            { name: "Courses", href: "/courses" },
-            { name: "Chatbot", href: "/chatbot" },
+            { name: "Courses", href: "/Courses" },
+            { name: "Chatbot", href: "/Chatbot" },
             { name: "Opportunities", href: "/opportunities" },
             { name: "Security", href: "/security" },
             { name: "Digital Skills", href: "/digitalskills" },
