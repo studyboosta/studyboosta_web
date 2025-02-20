@@ -1,12 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 const HeroSection = () => {
   return (
     <div className="bg-white container  mx-[20px] flex flex-col lg:flex-row items-center mb-9  px-6 lg:space-y-0 lg:space-x-[15px]">
       {/* Left Content */}
       <div className="lg:w-1/2 order-1 lg:order-none py-8 ">
-      
         <p className="text-[28px] sm:text-[28px] md:text-[32px] lg:text-[40px] font-bold mt-[30px] sm:mt-[20px] lg:mt-[50px] text-black mb-[20px] leading-normal">
-        Crush Your Academic, Career & Financial Goals with StudyBoosta
+          Crush Your Academic, Career & Financial Goals with StudyBoosta
         </p>
         <div className="lg:hidden rounded-lg overflow-hidden mb-6">
           {/* Image on smaller screens */}
@@ -18,12 +18,16 @@ const HeroSection = () => {
           />
         </div>
         <p className="text-black text-[16px] mb-6 max-w-[500px]">
-        Get access to Expert video lessons, high income digital skills, mentorship from Best Graduating students, scholarship & internship updates in one platform  <span className="font-bold"> StudyBoosta</span>
-
+          Get access to Expert video lessons, high income digital skills,
+          mentorship from Best Graduating students, scholarship & internship
+          updates in one platform{" "}
+          <span className="font-bold"> StudyBoosta</span>
         </p>
-        <button className="px-6 py-3 bg-[#050C9C] font-bold text-[16px] text-white rounded hover:bg-blue-800 mt-[40px] mb-[50px]">
-          Start Learning
-        </button>
+        <Link href="/signup">
+          <button className="px-6 py-3 bg-[#050C9C] font-bold text-[16px] text-white rounded hover:bg-blue-800 mt-[40px] mb-[50px]">
+            Start Learning
+          </button>
+        </Link>
         <div>
           <Image
             src="/assests/images/Frame 1597880755.png"

@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 // import dynamic from "next/dynamic";
 // import { Pagination } from "swiper/modules";
 import "swiper/css";
@@ -64,6 +65,14 @@ const VideoSection = () => {
             allowFullScreen
             className="w-full max-w-4xl h-[500px] mx-auto rounded-lg shadow-lg"
           ></iframe>
+        </div>
+
+        <div className="flex justify-center items-center">
+          <Link href="/signup">
+            <button className="px-6 py-3 bg-[#050C9C] font-bold text-[16px] text-white rounded hover:bg-blue-800 mt-[40px] mb-[50px]">
+              Create an account for free
+            </button>
+          </Link>
         </div>
 
         {/* Reviews Section */}
