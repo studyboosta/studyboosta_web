@@ -820,4 +820,456 @@ export const engineering200 = [
       "Engineering Materials is a course that explores the properties, classifications, and applications of materials used in engineering. It covers metals, ceramics, polymers, and composites, focusing on their mechanical, electrical, and thermal properties. Topics include material selection, strength, hardness, corrosion, and failure analysis. The course helps students understand how materials behave under different conditions and how to choose the right materials for engineering applications.",
     ],
   },
-];
+  {
+    title: "Engineering Mathematics I",
+    videos: [
+      {
+        link: "https://www.youtube.com/embed/YNstP0ESndU?si=dfiZ5hDQBay0t4tc",
+        name: "Understanding Limits in Mathematics",
+      },
+      {
+        link: "https://www.youtube.com/embed/joewRl1CTL8?si=KiO1dnZzEOhjv3e-",
+        name: "The Concept of Continuity in Calculus",
+      },
+      {
+        link: "https://www.youtube.com/embed/AdLAkD-r9Rs?si=oXuSJd3ygJLGB_NC",
+        name: "How to Differentiate Functions of Two Variables",
+      },
+      {
+        link: "https://www.youtube.com/embed/LGY-DjFsALc?si=45N8dZpabvvZXJiO",
+        name: "How to Differentiate Functions of Two Variables",
+      },
+      {
+        link: "https://www.youtube.com/embed/JAf_aSIJryg?si=0dF1nJoAFA6WrdX8",
+        name: "Partial Derivatives Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/hwrq4uvyeQY?si=VI2sA1l3aWG8y_CO",
+        name: "Optimization: Maximizing and Minimizing Functions of Multiple Variables",
+      },
+      {
+        link: "https://www.youtube.com/embed/pvLj1s7SOtk?si=gc5V98vhb5eFoGcs",
+        name: "How to Find Local Maxima and Minima Using Partial Derivatives",
+      },
+      {
+        link: "https://www.youtube.com/embed/gd1FYn86P0c?si=K6lXkGunIJf-CSbG",
+        name: "Solving First-Order Differential Equations",
+      },
+      {
+        link: "https://www.youtube.com/embed/FrF1QBP8ejo?si=cLmxG64tuj6rAKWm",
+        name: "Basic Concepts of Linear First-Order Differential Equations",
+      },
+      {
+        link: "https://www.youtube.com/embed/yRwQ7A6jVLk?si=uAz2j2xr_Hd5vXcv",
+        name: "Understanding Matrices in Engineering Mathematics",
+      },
+      {
+        link: "https://www.youtube.com/embed/3ROzG6n4yMc?si=1JnjAhgZ4k8FwwVO",
+        name: "How to Solve Problems Using Determinants",
+      },
+      {
+        link: "https://www.youtube.com/embed/cSj82GG6MX4?si=B6akT-XNVH2PY-Jm",
+        name: "Finding the Rank of a Matrix",
+      },
+      {
+        link: "https://www.youtube.com/embed/Sc7OY62lQ9U?si=zD0JKz4Bm67Tihvr",
+        name: "Matrix Rank Explained with Examples",
+      },
+      {
+        link: "https://www.youtube.com/embed/SyojPxuP1FM?si=eNUph6GtCwr8ia8Q",
+        name: "What is Vector Algebra? A Beginner's Guide",
+      },
+      {
+        link: "https://www.youtube.com/embed/DxwT7fn6GtE?si=Nq85DMNQous6dfpV",
+        name: "Basic Operations in Vector Algebra",
+      },
+      {
+        link: "https://www.youtube.com/embed/2_21erD-nBg?si=7Klm6v3UMl9TEP_b",
+        name: "Introduction to Vector Calculus",
+      },
+      {
+        link: "https://www.youtube.com/embed/CnVes9TdnPo?si=wq_i6ih95njBv4Hx",
+        name: "Understanding Directional Derivatives in Vector Calculus",
+      },
+      {
+        link: "https://www.youtube.com/embed/mFj2thTwGwk?si=V6rMjS8NyvK4h40a",
+        name: "Understanding Gauss's Theorem in Vector Calculus",
+      },
+      {
+        link: "https://www.youtube.com/embed/GWBXW1vpZQI?si=uh7s7_7ec-ZLbI7B",
+        name: "Application of Gauss's Theorem in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/ms4JjH0BANU?si=-E8e2pPgSqtaHTEU",
+        name: "What is Stokes' Theorem and How is it Used?",
+      },
+      {
+        link: "https://www.youtube.com/embed/-hqu9sIuAwM?si=oGs7Uu0DrGgOhZx6",
+        name: "Stokes' Theorem with Applications",
+      },
+      {
+        link: "https://www.youtube.com/embed/exSFYFqWHB8?si=obLVgDH8PNgGUwBE",
+        name: "Understanding Green’s Theorem in Vector Calculus",
+      },
+      {
+        link: "https://www.youtube.com/embed/bAdS9EUswfI?si=nN5TLbTur0AYE0SO",
+        name: "Applications of Green's Theorem in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/B5IjsTONKkw?si=1CQ3rOn2PEXWtCjU",
+        name: "What is an Ordinary Differential Equation?",
+      },
+      {
+        link: "https://www.youtube.com/embed/HKvP2ESjJbA?si=GARQjBnFYGFmuDYe",
+        name: "Basic Methods of Solving Ordinary Differential Equations",
+      },
+      {
+        link: "https://www.youtube.com/embed/NBcGLLU90fM?si=5UbU1HWzkBp7SOe9",
+        name: "Applications of Ordinary Differential Equations in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/ccRJtV6XWQE?si=IPwAWpQrt9orDUFu",
+        name: "Engineering Examples Using Ordinary Differential Equations",
+      },
+      {
+        link: "https://www.youtube.com/embed/JAf_aSIJryg?si=HcBFqV_eTHrNH5qp",
+        name: "How to Compute Partial Derivatives",
+      },
+      {
+        link: "https://www.youtube.com/embed/RtVE2Gt-KQ4?si=hmmyf5jbTVlralGF",
+        name: "Applications of Partial Derivatives in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/69CFbPI1RTI?si=jgSNZVvJ7Dczp7kU",
+        name: "Understanding Total Derivatives",
+      },
+      {
+        link: "https://www.youtube.com/embed/vNXjMTv4vHs?si=ponkFqzJ177mMzkU",
+        name: "Chain Rule and Composite Functions Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/UKHBWzoOKsY?si=O1qJjJVhT-FVwp74",
+        name: "What is Fourier Series and How is it Used?",
+      },
+      {
+        link: "https://www.youtube.com/embed/mJU_Q4-Jj3I?si=3Kemsps2lqmJ172v",
+        name: "Solving Problems with Fourier Series",
+      },
+      {
+        link: "https://www.youtube.com/embed/LYsIBqjQTdI?si=KXcmrOcHgElR_s97",
+        name: "Introduction to Partial Differential Equations (PDEs)",
+      },
+      {
+        link: "https://www.youtube.com/embed/EJLympg3XMM?si=XF9x1L-WJP7p7GR1",
+        name: "Solving the Wave Equation in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/C3OIj7iYCF8?si=VVsYDSzAGjSsUGxy",
+        name: "Heat Conduction Equation and Its Applications",
+      },
+    ],
+    summary: [
+      "Engineering Mathematics I covers essential mathematical concepts for engineering, including algebra, calculus, linear algebra, and differential equations. Students learn limits, differentiation, integration, matrices, determinants, and vector calculus. The course builds analytical and problem-solving skills, forming a foundation for advanced engineering studies.",
+    ],
+  },
+  {
+    title: "Engineering Mathematics II",
+    videos: [
+      {
+        link: "https://www.youtube.com/embed/5UqNZZx8e_A?si=MtZVi5MFllxRKseE",
+        name: "Introduction to Ordinary Differential Equations (ODEs)",
+      },
+      {
+        link: "https://www.youtube.com/embed/zm_UqjVLViU?si=-GRcq9hFFhCGnC98",
+        name: "Real-life Applications of Differential Equations in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/ccRJtV6XWQE?si=TcqgzW0vYBjvg9qr",
+        name: "Basic Solution Techniques for ODEs",
+      },
+      {
+        link: "https://www.youtube.com/embed/FrF1QBP8ejo?si=FDIjM7IvHZDUuCRB",
+        name: "First Order and Second Order Differential Equations",
+      },
+      {
+        link: "https://www.youtube.com/embed/uI2xt8nTOlQ?si=ZJJQql6VlqrHV2sF",
+        name: "Solving Second-Order Linear ODEs with Constant Coefficients",
+      },
+      {
+        link: "https://www.youtube.com/embed/n3KTHZsOB9w?si=dgsnV4UhxM_wy8d5",
+        name: "Homogeneous vs Non-Homogeneous Differential Equations",
+      },
+      {
+        link: "https://www.youtube.com/embed/f2wGE_n5xtA?si=K9fDB5uYjjIpwRt0",
+        name: "Mechanical Vibrations and Second-Order ODEs",
+      },
+      {
+        link: "https://www.youtube.com/embed/oWYo9EIO9LI?si=MeEFDrqurGm0zPRO",
+        name: "Electrical Circuits and Second-Order Differential Equations",
+      },
+      {
+        link: "https://www.youtube.com/embed/nTRNrvJmixw?si=04zGsWUV1GLSWL9o",
+        name: "Solving ODEs in MATLAB: A Beginner’s Guide",
+      },
+      {
+        link: "https://www.youtube.com/embed/hx0lrX3WpII?si=mMq2Hw10i0SHOYkF",
+        name: "Numerical Methods for Solving Differential Equations",
+      },
+      {
+        link: "https://www.youtube.com/embed/rZ-pLx5P5C0?si=venUT0YU_ltvqvMo",
+        name: "Python vs MATLAB for Engineering Mathematics",
+      },
+      {
+        link: "https://www.youtube.com/embed/lndvU6O38FU?si=LOCuEi2v50eaxiPL",
+        name: "Euler’s Method and Runge-Kutta Method in MATLAB",
+      },
+      {
+        link: "https://www.youtube.com/embed/3VPqYe7JNKE?si=4f4Z4o5BcZf_MeGF",
+        name: "Understanding Vector-Valued Functions",
+      },
+      {
+        link: "https://www.youtube.com/embed/Vi1YJfqjKGQ?si=LTabxoA99jbkBf82",
+        name: "Velocity and Acceleration in Vector Calculus",
+      },
+      {
+        link: "https://www.youtube.com/embed/VIqA8U9ozIA?si=cntaghLoB8kBK456",
+        name: "Curvature and Torsion Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/si6ka6HeUdY?si=3B4Ec5x9OQMeEoLd",
+        name: "Curvature and Normal Vectors in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/WA5_a3C2iqY?si=Uy4ac6v9HO2VE5xc",
+        name: "What is a Line Integral? Explained with Examples",
+      },
+      {
+        link: "https://www.youtube.com/embed/TYOYID9gJxM?si=Y8yoroI0-JlvENhH",
+        name: "Gradient, Divergence, and Curl in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/kdTxN4E0vbo?si=ASsdD2vkhbPpxPp5",
+        name: "Green’s Theorem and Its Applications",
+      },
+      {
+        link: "https://www.youtube.com/embed/a_zdFvYXX_c?si=lU3WBPQj_mJzXqF6",
+        name: "Green’s Theorem Explained for Engineers",
+      },
+      {
+        link: "https://www.youtube.com/embed/TORt20_HjMY?si=f9176em2u2xIIpOX",
+        name: "Gauss’s Divergence Theorem Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/QS-zUSu-nxA?si=Z6QXKPizhEZq3ugW",
+        name: "Understanding Stokes’ Theorem with Examples",
+      },
+      {
+        link: "https://www.youtube.com/embed/iUhwCfz18os?si=oc9QevKK9rUijrrj",
+        name: "What are Complex Functions?",
+      },
+      {
+        link: "https://www.youtube.com/embed/1Igp4C_Pmjg?si=n8sKOAk6DmiaCtkN",
+        name: "Limit and Continuity of Complex Functions",
+      },
+      {
+        link: "https://www.youtube.com/embed/OfN9QG0zCXg?si=GRh1S_8Z2ph0h-2k",
+        name: "Cauchy-Riemann Equations Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/2imaVRvetWk?si=-axAkYKXCKlGgHhK",
+        name: "Differentiation of Complex Functions",
+      },
+      {
+        link: "https://www.youtube.com/embed/JQSC0lCPG24?si=l8JuCk8Ql9Fy_uZs",
+        name: "What are Harmonic Functions?",
+      },
+      {
+        link: "https://www.youtube.com/embed/0V282K1cmOk?si=3Sj5XmWMv40_aL_Z",
+        name: "Engineering Applications of Harmonic Functions",
+      },
+      {
+        link: "https://www.youtube.com/embed/hyRFvEkXhsM?si=4a63v1oIdBeglkNw",
+        name: "What is Conformal Mapping?",
+      },
+      {
+        link: "https://www.youtube.com/embed/HxUc2oqzb9A?si=e3fy-VjzS0yPEtZH",
+        name: "Applications of Conformal Mapping in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/cVCd9dnttfw?si=XTzzi_4tOGucstgY",
+        name: "Understanding Contour Integrals in Complex Analysis",
+      },
+      {
+        link: "https://www.youtube.com/embed/5enkh_z5mwE?si=MaqNELV7TaEpTJAm",
+        name: "Residue Theorem and Contour Integration",
+      },
+      {
+        link: "https://www.youtube.com/embed/4epESGF3qcU?si=Pi6UxIadpbgNjT1q",
+        name: "Cauchy’s Integral Theorem Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/phbO46YJ1UQ?si=1Tab97E-IrsVwnwq",
+        name: "Cauchy’s Integral Formula and Its Applications",
+      },
+    ],
+    summary: [
+      "Engineering Mathematics II builds on the fundamentals of Engineering Mathematics I, covering advanced topics like multivariable calculus, Laplace and Fourier transforms, complex analysis, and partial differential equations. It also includes numerical methods for solving engineering problems and applications in vector calculus. This course enhances analytical skills and provides essential mathematical tools for higher-level engineering applications.",
+    ],
+  },
+  {
+    title: "Computing and Software Engineering ",
+    videos: [
+      {
+        link: "https://www.youtube.com/embed/u5HskVhv7s0?si=tKT4E5uwZCozd0R6",
+        name: "Introduction to Computing for Engineers",
+      },
+      {
+        link: "https://www.youtube.com/embed/gjVX47dLlN8?si=GvVydhesVE36sj1e",
+        name: "History and Evolution of Computing",
+      },
+      {
+        link: "https://www.youtube.com/embed/alYwqzO6ZEQ?si=mCofCvSL4aI8tGKU",
+        name: "Computer Architecture and Data Processing",
+      },
+      {
+        link: "https://www.youtube.com/embed/PujjqfUhtNo?si=Hl0BliWxWBZC6qlj",
+        name: "Understanding Computer Memory and Registers",
+      },
+      {
+        link: "https://www.youtube.com/embed/NqPhPiSer30?si=jR-QlxeeHVK91Yue",
+        name: "Boolean Algebra for Beginners",
+      },
+      {
+        link: "https://www.youtube.com/embed/JQBRzsPhw2w?si=l5ylhW9JgKzYv5Ji",
+        name: "Logic Gates and Truth Tables Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/yvdtwKF87Ts?si=Qa-ybRX-qCtK3IaJ",
+        name: "Floating-Point Representation and Arithmetic",
+      },
+      {
+        link: "https://www.youtube.com/embed/ZL-LhaaMTTE?si=BQgpsFTnyHCo_TOO",
+        name: "Binary and Hexadecimal Number Systems",
+      },
+      {
+        link: "https://www.youtube.com/embed/cuhLSGGV-1k?si=CVyvBRSp7D7eNiOW",
+        name: "Algorithm Basics for Beginners",
+      },
+      {
+        link: "https://www.youtube.com/embed/xzN6rrZGsFQ?si=iuFhFspj88NExf56",
+        name: "Writing Pseudocode for Problem Solving",
+      },
+      {
+        link: "https://www.youtube.com/embed/hXqh9KoFNTY?si=LJkK-tkhAJdr8f2H",
+        name: "How to Draw Flowcharts for Programming",
+      },
+      {
+        link: "https://www.youtube.com/embed/3-OgK4fnKFc?si=qSyLuVVo15DktUGZ",
+        name: "Computational Thinking for Engineers",
+      },
+      {
+        link: "https://www.youtube.com/embed/xLetJpcjHS0?si=0wF0BBK5X7s3R-qt",
+        name: "Introduction to Data Structures",
+      },
+      {
+        link: "https://www.youtube.com/embed/T9DSBhBR_I4?si=DqrY4qs0X4JDWeYF",
+        name: "Types of Data Models in Computing",
+      },
+      {
+        link: "https://www.youtube.com/embed/GjNp0bBrjmU?si=FKJ8exzyFwYGs3b-",
+        name: "How Operating Systems Work",
+      },
+      {
+        link: "https://www.youtube.com/embed/KN8YgJnShPM?si=p3MekHK-T6r9uLPV",
+        name: "Introduction to File Systems and Memory Management",
+      },
+      {
+        link: "https://www.youtube.com/embed/6kYngPvoGxU?si=yXdGkjCkeAMMe3oY",
+        name: "Understanding Arithmetic and Logical Operators",
+      },
+      {
+        link: "https://www.youtube.com/embed/8H9G621pQq0?si=JQKuxftFLPJqy_OU",
+        name: "Operator Precedence in Programming Languages",
+      },
+      {
+        link: "https://www.youtube.com/embed/aFQ44Bg5aeQ?si=BahGsSSsn1K1TIGv",
+        name: "Python vs Java vs C++: Which is Best for Engineers?",
+      },
+      {
+        link: "https://www.youtube.com/embed/kqtD5dpn9C8?si=Wyu204pYnawweP5F",
+        name: "First Python Program for Beginners",
+      },
+      {
+        link: "https://www.youtube.com/embed/Af3s3KsxStY?si=xVMd_wO0ccT-hsGi",
+        name: "Object-Oriented Programming Basics in Java",
+      },
+      {
+        link: "https://www.youtube.com/embed/IWIdoBqLVeo?si=FQjaYpMaXSmuGU5H",
+        name: "OOP Concepts: Encapsulation, Inheritance, and Polymorphism",
+      },
+      {
+        link: "https://www.youtube.com/embed/Ej_02ICOIgs?si=UKkrXDEnT1BJhJ7x",
+        name: "Object-Oriented Programming in Python",
+      },
+      {
+        link: "https://www.youtube.com/embed/3lu60ZW9Lc4?si=9pkn95cU0U3RKhZF",
+        name: "Structured vs Object-Oriented Programming",
+      },
+      {
+        link: "https://www.youtube.com/embed/nqC5GKr6yDY?si=uFR34dDO93kLyi5J",
+        name: "Introduction to Visual Programming in C++ and Java",
+      },
+      {
+        link: "https://www.youtube.com/embed/1XiIZczRyAQ?si=KqRkOlUhkW1kwGMI",
+        name: "MATLAB Programming for Beginners",
+      },
+      {
+        link: "https://www.youtube.com/embed/qMx1nbi5lUs?si=h4BsrYEjrH4WgPt7",
+        name: "MATLAB for Engineering Simulations",
+      },
+      {
+        link: "https://www.youtube.com/embed/X5fBmNEo46c?si=5JjZay05eJDxgdZl",
+        name: "How to Create Graphs and Simulations in MATLAB",
+      },
+      {
+        link: "https://www.youtube.com/embed/IuEOMyGuuIg?si=IQIwswKO22oUAIem",
+        name: "MATLAB for Numerical Computation and Data Analysis",
+      },
+      {
+        link: "https://www.youtube.com/embed/u56EzXAvKQk?si=44AqwKmKBQu2FUjE",
+        name: "The Role of ICT in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/4yQ7f0c0rOo?si=RdJEidT9t_P4ugOD",
+        name: "Industry 4.0 and Digital Transformation",
+      },
+      {
+        link: "https://www.youtube.com/embed/b-fCl-UDJuo?si=2tRxRZ3imPhRB3DA",
+        name: "What is the Internet of Things (IoT)?",
+      },
+      {
+        link: "https://www.youtube.com/embed/foJ8rh-3T_Y?si=nC4E_JGpOZ4rr_gJ",
+        name: "IoT Applications in Smart Cities and Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/4Cr0OxXU7jY?si=ZoUy_iomFS39VD33",
+        name: "Understanding the Software Development Life Cycle",
+      },
+      {
+        link: "https://www.youtube.com/embed/aKf0Qkp14qQ?si=hFR7tVPnLikn6ohF",
+        name: "Agile vs Waterfall Software Development",
+      },
+      {
+        link: "https://www.youtube.com/embed/Gno10yiYUTA?si=lajWMU_lxy9Ixyl0",
+        name: "Software Testing and Debugging Techniques",
+      },
+      {
+        link: "https://www.youtube.com/embed/LYKaTKOO_9c?si=2vJoNP50xzQwubb5",
+        name: "Best Practices for Writing Bug-Free Code",
+      },
+    ],
+    summary: [
+      "Computing and Software Engineering drive modern technology, covering programming, algorithms, data structures, and system design. Engineers use languages like Python, Java, and C++ to build efficient software, applying OOP and development methodologies like Agile. With advancements in IoT and cloud computing, software engineering remains essential for solving real-world problems",
+    ],
+  },
+]
