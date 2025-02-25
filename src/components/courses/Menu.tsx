@@ -191,24 +191,26 @@ const Menu: React.FC<MenuProps> = ({ searchQuery }) => {
 
       <section className=" max-w-5xl mt-6">
         {currentData.length > 0 ? (
-          <div className="flex sm:flex-row flex-col gap-8 mb-5 p-4  bg-gray-100 border rounded-lg shadow-md">
-            <div className="flex flex-1 flex-col gap-4">
-              <h3 className="font-semibold text-lg text-[#051F9C]">Titles</h3>
-              {currentData.map((item) => (
-                <button
-                  key={item.title}
-                  className={`text-left p-2 rounded-lg ${
-                    selectedContent?.title === item.title
-                      ? "bg-[#051F9C] text-white"
-                      : "hover:bg-gray-200"
-                  }`}
-                  onClick={() => {
-                    dispatch(setSelectedContent(item));
-                  }}
-                >
-                  {item.title}
-                </button>
-              ))}
+          <div className="flex sm:flex-row flex-col gap-8 mb-5 p-4 w-screen sm:w-full bg-gray-100 border rounded-lg shadow-md">
+            <div className="">
+              <h3 className="font-semibold text-lg text-[#051F9C] mb-3">Titles</h3>
+              <div className="flex flex-1 sm:flex-col overflow-x-auto flex-row gap-4">
+                {currentData.map((item) => (
+                  <button
+                    key={item.title}
+                    className={`text-left p-2 w-full rounded-lg whitespace-nowrap ${
+                      selectedContent?.title === item.title
+                        ? "bg-[#051F9C] text-white"
+                        : "hover:bg-gray-200"
+                    }`}
+                    onClick={() => {
+                      dispatch(setSelectedContent(item));
+                    }}
+                  >
+                    {item.title}
+                  </button>
+                ))}
+              </div>
             </div>
 
             {selectedContent && (

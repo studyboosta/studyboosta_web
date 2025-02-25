@@ -820,4 +820,932 @@ export const engineering200 = [
       "Engineering Materials is a course that explores the properties, classifications, and applications of materials used in engineering. It covers metals, ceramics, polymers, and composites, focusing on their mechanical, electrical, and thermal properties. Topics include material selection, strength, hardness, corrosion, and failure analysis. The course helps students understand how materials behave under different conditions and how to choose the right materials for engineering applications.",
     ],
   },
+  {
+    title: "Engineering Mathematics I",
+    videos: [
+      {
+        link: "https://www.youtube.com/embed/YNstP0ESndU?si=dfiZ5hDQBay0t4tc",
+        name: "Understanding Limits in Mathematics",
+      },
+      {
+        link: "https://www.youtube.com/embed/joewRl1CTL8?si=KiO1dnZzEOhjv3e-",
+        name: "The Concept of Continuity in Calculus",
+      },
+      {
+        link: "https://www.youtube.com/embed/AdLAkD-r9Rs?si=oXuSJd3ygJLGB_NC",
+        name: "How to Differentiate Functions of Two Variables",
+      },
+      {
+        link: "https://www.youtube.com/embed/LGY-DjFsALc?si=45N8dZpabvvZXJiO",
+        name: "How to Differentiate Functions of Two Variables",
+      },
+      {
+        link: "https://www.youtube.com/embed/JAf_aSIJryg?si=0dF1nJoAFA6WrdX8",
+        name: "Partial Derivatives Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/hwrq4uvyeQY?si=VI2sA1l3aWG8y_CO",
+        name: "Optimization: Maximizing and Minimizing Functions of Multiple Variables",
+      },
+      {
+        link: "https://www.youtube.com/embed/pvLj1s7SOtk?si=gc5V98vhb5eFoGcs",
+        name: "How to Find Local Maxima and Minima Using Partial Derivatives",
+      },
+      {
+        link: "https://www.youtube.com/embed/gd1FYn86P0c?si=K6lXkGunIJf-CSbG",
+        name: "Solving First-Order Differential Equations",
+      },
+      {
+        link: "https://www.youtube.com/embed/FrF1QBP8ejo?si=cLmxG64tuj6rAKWm",
+        name: "Basic Concepts of Linear First-Order Differential Equations",
+      },
+      {
+        link: "https://www.youtube.com/embed/yRwQ7A6jVLk?si=uAz2j2xr_Hd5vXcv",
+        name: "Understanding Matrices in Engineering Mathematics",
+      },
+      {
+        link: "https://www.youtube.com/embed/3ROzG6n4yMc?si=1JnjAhgZ4k8FwwVO",
+        name: "How to Solve Problems Using Determinants",
+      },
+      {
+        link: "https://www.youtube.com/embed/cSj82GG6MX4?si=B6akT-XNVH2PY-Jm",
+        name: "Finding the Rank of a Matrix",
+      },
+      {
+        link: "https://www.youtube.com/embed/Sc7OY62lQ9U?si=zD0JKz4Bm67Tihvr",
+        name: "Matrix Rank Explained with Examples",
+      },
+      {
+        link: "https://www.youtube.com/embed/SyojPxuP1FM?si=eNUph6GtCwr8ia8Q",
+        name: "What is Vector Algebra? A Beginner's Guide",
+      },
+      {
+        link: "https://www.youtube.com/embed/DxwT7fn6GtE?si=Nq85DMNQous6dfpV",
+        name: "Basic Operations in Vector Algebra",
+      },
+      {
+        link: "https://www.youtube.com/embed/2_21erD-nBg?si=7Klm6v3UMl9TEP_b",
+        name: "Introduction to Vector Calculus",
+      },
+      {
+        link: "https://www.youtube.com/embed/CnVes9TdnPo?si=wq_i6ih95njBv4Hx",
+        name: "Understanding Directional Derivatives in Vector Calculus",
+      },
+      {
+        link: "https://www.youtube.com/embed/mFj2thTwGwk?si=V6rMjS8NyvK4h40a",
+        name: "Understanding Gauss's Theorem in Vector Calculus",
+      },
+      {
+        link: "https://www.youtube.com/embed/GWBXW1vpZQI?si=uh7s7_7ec-ZLbI7B",
+        name: "Application of Gauss's Theorem in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/ms4JjH0BANU?si=-E8e2pPgSqtaHTEU",
+        name: "What is Stokes' Theorem and How is it Used?",
+      },
+      {
+        link: "https://www.youtube.com/embed/-hqu9sIuAwM?si=oGs7Uu0DrGgOhZx6",
+        name: "Stokes' Theorem with Applications",
+      },
+      {
+        link: "https://www.youtube.com/embed/exSFYFqWHB8?si=obLVgDH8PNgGUwBE",
+        name: "Understanding Green’s Theorem in Vector Calculus",
+      },
+      {
+        link: "https://www.youtube.com/embed/bAdS9EUswfI?si=nN5TLbTur0AYE0SO",
+        name: "Applications of Green's Theorem in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/B5IjsTONKkw?si=1CQ3rOn2PEXWtCjU",
+        name: "What is an Ordinary Differential Equation?",
+      },
+      {
+        link: "https://www.youtube.com/embed/HKvP2ESjJbA?si=GARQjBnFYGFmuDYe",
+        name: "Basic Methods of Solving Ordinary Differential Equations",
+      },
+      {
+        link: "https://www.youtube.com/embed/NBcGLLU90fM?si=5UbU1HWzkBp7SOe9",
+        name: "Applications of Ordinary Differential Equations in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/ccRJtV6XWQE?si=IPwAWpQrt9orDUFu",
+        name: "Engineering Examples Using Ordinary Differential Equations",
+      },
+      {
+        link: "https://www.youtube.com/embed/JAf_aSIJryg?si=HcBFqV_eTHrNH5qp",
+        name: "How to Compute Partial Derivatives",
+      },
+      {
+        link: "https://www.youtube.com/embed/RtVE2Gt-KQ4?si=hmmyf5jbTVlralGF",
+        name: "Applications of Partial Derivatives in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/69CFbPI1RTI?si=jgSNZVvJ7Dczp7kU",
+        name: "Understanding Total Derivatives",
+      },
+      {
+        link: "https://www.youtube.com/embed/vNXjMTv4vHs?si=ponkFqzJ177mMzkU",
+        name: "Chain Rule and Composite Functions Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/UKHBWzoOKsY?si=O1qJjJVhT-FVwp74",
+        name: "What is Fourier Series and How is it Used?",
+      },
+      {
+        link: "https://www.youtube.com/embed/mJU_Q4-Jj3I?si=3Kemsps2lqmJ172v",
+        name: "Solving Problems with Fourier Series",
+      },
+      {
+        link: "https://www.youtube.com/embed/LYsIBqjQTdI?si=KXcmrOcHgElR_s97",
+        name: "Introduction to Partial Differential Equations (PDEs)",
+      },
+      {
+        link: "https://www.youtube.com/embed/EJLympg3XMM?si=XF9x1L-WJP7p7GR1",
+        name: "Solving the Wave Equation in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/C3OIj7iYCF8?si=VVsYDSzAGjSsUGxy",
+        name: "Heat Conduction Equation and Its Applications",
+      },
+    ],
+    summary: [
+      "Engineering Mathematics I covers essential mathematical concepts for engineering, including algebra, calculus, linear algebra, and differential equations. Students learn limits, differentiation, integration, matrices, determinants, and vector calculus. The course builds analytical and problem-solving skills, forming a foundation for advanced engineering studies.",
+    ],
+  },
+  {
+    title: "Engineering Mathematics II",
+    videos: [
+      {
+        link: "https://www.youtube.com/embed/5UqNZZx8e_A?si=MtZVi5MFllxRKseE",
+        name: "Introduction to Ordinary Differential Equations (ODEs)",
+      },
+      {
+        link: "https://www.youtube.com/embed/zm_UqjVLViU?si=-GRcq9hFFhCGnC98",
+        name: "Real-life Applications of Differential Equations in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/ccRJtV6XWQE?si=TcqgzW0vYBjvg9qr",
+        name: "Basic Solution Techniques for ODEs",
+      },
+      {
+        link: "https://www.youtube.com/embed/FrF1QBP8ejo?si=FDIjM7IvHZDUuCRB",
+        name: "First Order and Second Order Differential Equations",
+      },
+      {
+        link: "https://www.youtube.com/embed/uI2xt8nTOlQ?si=ZJJQql6VlqrHV2sF",
+        name: "Solving Second-Order Linear ODEs with Constant Coefficients",
+      },
+      {
+        link: "https://www.youtube.com/embed/n3KTHZsOB9w?si=dgsnV4UhxM_wy8d5",
+        name: "Homogeneous vs Non-Homogeneous Differential Equations",
+      },
+      {
+        link: "https://www.youtube.com/embed/f2wGE_n5xtA?si=K9fDB5uYjjIpwRt0",
+        name: "Mechanical Vibrations and Second-Order ODEs",
+      },
+      {
+        link: "https://www.youtube.com/embed/oWYo9EIO9LI?si=MeEFDrqurGm0zPRO",
+        name: "Electrical Circuits and Second-Order Differential Equations",
+      },
+      {
+        link: "https://www.youtube.com/embed/nTRNrvJmixw?si=04zGsWUV1GLSWL9o",
+        name: "Solving ODEs in MATLAB: A Beginner’s Guide",
+      },
+      {
+        link: "https://www.youtube.com/embed/hx0lrX3WpII?si=mMq2Hw10i0SHOYkF",
+        name: "Numerical Methods for Solving Differential Equations",
+      },
+      {
+        link: "https://www.youtube.com/embed/rZ-pLx5P5C0?si=venUT0YU_ltvqvMo",
+        name: "Python vs MATLAB for Engineering Mathematics",
+      },
+      {
+        link: "https://www.youtube.com/embed/lndvU6O38FU?si=LOCuEi2v50eaxiPL",
+        name: "Euler’s Method and Runge-Kutta Method in MATLAB",
+      },
+      {
+        link: "https://www.youtube.com/embed/3VPqYe7JNKE?si=4f4Z4o5BcZf_MeGF",
+        name: "Understanding Vector-Valued Functions",
+      },
+      {
+        link: "https://www.youtube.com/embed/Vi1YJfqjKGQ?si=LTabxoA99jbkBf82",
+        name: "Velocity and Acceleration in Vector Calculus",
+      },
+      {
+        link: "https://www.youtube.com/embed/VIqA8U9ozIA?si=cntaghLoB8kBK456",
+        name: "Curvature and Torsion Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/si6ka6HeUdY?si=3B4Ec5x9OQMeEoLd",
+        name: "Curvature and Normal Vectors in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/WA5_a3C2iqY?si=Uy4ac6v9HO2VE5xc",
+        name: "What is a Line Integral? Explained with Examples",
+      },
+      {
+        link: "https://www.youtube.com/embed/TYOYID9gJxM?si=Y8yoroI0-JlvENhH",
+        name: "Gradient, Divergence, and Curl in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/kdTxN4E0vbo?si=ASsdD2vkhbPpxPp5",
+        name: "Green’s Theorem and Its Applications",
+      },
+      {
+        link: "https://www.youtube.com/embed/a_zdFvYXX_c?si=lU3WBPQj_mJzXqF6",
+        name: "Green’s Theorem Explained for Engineers",
+      },
+      {
+        link: "https://www.youtube.com/embed/TORt20_HjMY?si=f9176em2u2xIIpOX",
+        name: "Gauss’s Divergence Theorem Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/QS-zUSu-nxA?si=Z6QXKPizhEZq3ugW",
+        name: "Understanding Stokes’ Theorem with Examples",
+      },
+      {
+        link: "https://www.youtube.com/embed/iUhwCfz18os?si=oc9QevKK9rUijrrj",
+        name: "What are Complex Functions?",
+      },
+      {
+        link: "https://www.youtube.com/embed/1Igp4C_Pmjg?si=n8sKOAk6DmiaCtkN",
+        name: "Limit and Continuity of Complex Functions",
+      },
+      {
+        link: "https://www.youtube.com/embed/OfN9QG0zCXg?si=GRh1S_8Z2ph0h-2k",
+        name: "Cauchy-Riemann Equations Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/2imaVRvetWk?si=-axAkYKXCKlGgHhK",
+        name: "Differentiation of Complex Functions",
+      },
+      {
+        link: "https://www.youtube.com/embed/JQSC0lCPG24?si=l8JuCk8Ql9Fy_uZs",
+        name: "What are Harmonic Functions?",
+      },
+      {
+        link: "https://www.youtube.com/embed/0V282K1cmOk?si=3Sj5XmWMv40_aL_Z",
+        name: "Engineering Applications of Harmonic Functions",
+      },
+      {
+        link: "https://www.youtube.com/embed/hyRFvEkXhsM?si=4a63v1oIdBeglkNw",
+        name: "What is Conformal Mapping?",
+      },
+      {
+        link: "https://www.youtube.com/embed/HxUc2oqzb9A?si=e3fy-VjzS0yPEtZH",
+        name: "Applications of Conformal Mapping in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/cVCd9dnttfw?si=XTzzi_4tOGucstgY",
+        name: "Understanding Contour Integrals in Complex Analysis",
+      },
+      {
+        link: "https://www.youtube.com/embed/5enkh_z5mwE?si=MaqNELV7TaEpTJAm",
+        name: "Residue Theorem and Contour Integration",
+      },
+      {
+        link: "https://www.youtube.com/embed/4epESGF3qcU?si=Pi6UxIadpbgNjT1q",
+        name: "Cauchy’s Integral Theorem Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/phbO46YJ1UQ?si=1Tab97E-IrsVwnwq",
+        name: "Cauchy’s Integral Formula and Its Applications",
+      },
+    ],
+    summary: [
+      "Engineering Mathematics II builds on the fundamentals of Engineering Mathematics I, covering advanced topics like multivariable calculus, Laplace and Fourier transforms, complex analysis, and partial differential equations. It also includes numerical methods for solving engineering problems and applications in vector calculus. This course enhances analytical skills and provides essential mathematical tools for higher-level engineering applications.",
+    ],
+  },
+  {
+    title: "Computing and Software Engineering ",
+    videos: [
+      {
+        link: "https://www.youtube.com/embed/u5HskVhv7s0?si=tKT4E5uwZCozd0R6",
+        name: "Introduction to Computing for Engineers",
+      },
+      {
+        link: "https://www.youtube.com/embed/gjVX47dLlN8?si=GvVydhesVE36sj1e",
+        name: "History and Evolution of Computing",
+      },
+      {
+        link: "https://www.youtube.com/embed/alYwqzO6ZEQ?si=mCofCvSL4aI8tGKU",
+        name: "Computer Architecture and Data Processing",
+      },
+      {
+        link: "https://www.youtube.com/embed/PujjqfUhtNo?si=Hl0BliWxWBZC6qlj",
+        name: "Understanding Computer Memory and Registers",
+      },
+      {
+        link: "https://www.youtube.com/embed/NqPhPiSer30?si=jR-QlxeeHVK91Yue",
+        name: "Boolean Algebra for Beginners",
+      },
+      {
+        link: "https://www.youtube.com/embed/JQBRzsPhw2w?si=l5ylhW9JgKzYv5Ji",
+        name: "Logic Gates and Truth Tables Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/yvdtwKF87Ts?si=Qa-ybRX-qCtK3IaJ",
+        name: "Floating-Point Representation and Arithmetic",
+      },
+      {
+        link: "https://www.youtube.com/embed/ZL-LhaaMTTE?si=BQgpsFTnyHCo_TOO",
+        name: "Binary and Hexadecimal Number Systems",
+      },
+      {
+        link: "https://www.youtube.com/embed/cuhLSGGV-1k?si=CVyvBRSp7D7eNiOW",
+        name: "Algorithm Basics for Beginners",
+      },
+      {
+        link: "https://www.youtube.com/embed/xzN6rrZGsFQ?si=iuFhFspj88NExf56",
+        name: "Writing Pseudocode for Problem Solving",
+      },
+      {
+        link: "https://www.youtube.com/embed/hXqh9KoFNTY?si=LJkK-tkhAJdr8f2H",
+        name: "How to Draw Flowcharts for Programming",
+      },
+      {
+        link: "https://www.youtube.com/embed/3-OgK4fnKFc?si=qSyLuVVo15DktUGZ",
+        name: "Computational Thinking for Engineers",
+      },
+      {
+        link: "https://www.youtube.com/embed/xLetJpcjHS0?si=0wF0BBK5X7s3R-qt",
+        name: "Introduction to Data Structures",
+      },
+      {
+        link: "https://www.youtube.com/embed/T9DSBhBR_I4?si=DqrY4qs0X4JDWeYF",
+        name: "Types of Data Models in Computing",
+      },
+      {
+        link: "https://www.youtube.com/embed/GjNp0bBrjmU?si=FKJ8exzyFwYGs3b-",
+        name: "How Operating Systems Work",
+      },
+      {
+        link: "https://www.youtube.com/embed/KN8YgJnShPM?si=p3MekHK-T6r9uLPV",
+        name: "Introduction to File Systems and Memory Management",
+      },
+      {
+        link: "https://www.youtube.com/embed/6kYngPvoGxU?si=yXdGkjCkeAMMe3oY",
+        name: "Understanding Arithmetic and Logical Operators",
+      },
+      {
+        link: "https://www.youtube.com/embed/8H9G621pQq0?si=JQKuxftFLPJqy_OU",
+        name: "Operator Precedence in Programming Languages",
+      },
+      {
+        link: "https://www.youtube.com/embed/aFQ44Bg5aeQ?si=BahGsSSsn1K1TIGv",
+        name: "Python vs Java vs C++: Which is Best for Engineers?",
+      },
+      {
+        link: "https://www.youtube.com/embed/kqtD5dpn9C8?si=Wyu204pYnawweP5F",
+        name: "First Python Program for Beginners",
+      },
+      {
+        link: "https://www.youtube.com/embed/Af3s3KsxStY?si=xVMd_wO0ccT-hsGi",
+        name: "Object-Oriented Programming Basics in Java",
+      },
+      {
+        link: "https://www.youtube.com/embed/IWIdoBqLVeo?si=FQjaYpMaXSmuGU5H",
+        name: "OOP Concepts: Encapsulation, Inheritance, and Polymorphism",
+      },
+      {
+        link: "https://www.youtube.com/embed/Ej_02ICOIgs?si=UKkrXDEnT1BJhJ7x",
+        name: "Object-Oriented Programming in Python",
+      },
+      {
+        link: "https://www.youtube.com/embed/3lu60ZW9Lc4?si=9pkn95cU0U3RKhZF",
+        name: "Structured vs Object-Oriented Programming",
+      },
+      {
+        link: "https://www.youtube.com/embed/nqC5GKr6yDY?si=uFR34dDO93kLyi5J",
+        name: "Introduction to Visual Programming in C++ and Java",
+      },
+      {
+        link: "https://www.youtube.com/embed/1XiIZczRyAQ?si=KqRkOlUhkW1kwGMI",
+        name: "MATLAB Programming for Beginners",
+      },
+      {
+        link: "https://www.youtube.com/embed/qMx1nbi5lUs?si=h4BsrYEjrH4WgPt7",
+        name: "MATLAB for Engineering Simulations",
+      },
+      {
+        link: "https://www.youtube.com/embed/X5fBmNEo46c?si=5JjZay05eJDxgdZl",
+        name: "How to Create Graphs and Simulations in MATLAB",
+      },
+      {
+        link: "https://www.youtube.com/embed/IuEOMyGuuIg?si=IQIwswKO22oUAIem",
+        name: "MATLAB for Numerical Computation and Data Analysis",
+      },
+      {
+        link: "https://www.youtube.com/embed/u56EzXAvKQk?si=44AqwKmKBQu2FUjE",
+        name: "The Role of ICT in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/4yQ7f0c0rOo?si=RdJEidT9t_P4ugOD",
+        name: "Industry 4.0 and Digital Transformation",
+      },
+      {
+        link: "https://www.youtube.com/embed/b-fCl-UDJuo?si=2tRxRZ3imPhRB3DA",
+        name: "What is the Internet of Things (IoT)?",
+      },
+      {
+        link: "https://www.youtube.com/embed/foJ8rh-3T_Y?si=nC4E_JGpOZ4rr_gJ",
+        name: "IoT Applications in Smart Cities and Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/4Cr0OxXU7jY?si=ZoUy_iomFS39VD33",
+        name: "Understanding the Software Development Life Cycle",
+      },
+      {
+        link: "https://www.youtube.com/embed/aKf0Qkp14qQ?si=hFR7tVPnLikn6ohF",
+        name: "Agile vs Waterfall Software Development",
+      },
+      {
+        link: "https://www.youtube.com/embed/Gno10yiYUTA?si=lajWMU_lxy9Ixyl0",
+        name: "Software Testing and Debugging Techniques",
+      },
+      {
+        link: "https://www.youtube.com/embed/LYKaTKOO_9c?si=2vJoNP50xzQwubb5",
+        name: "Best Practices for Writing Bug-Free Code",
+      },
+    ],
+    summary: [
+      "Computing and Software Engineering drive modern technology, covering programming, algorithms, data structures, and system design. Engineers use languages like Python, Java, and C++ to build efficient software, applying OOP and development methodologies like Agile. With advancements in IoT and cloud computing, software engineering remains essential for solving real-world problems",
+    ],
+  },
+  {
+    title: "Strength of Materials ",
+    videos: [
+      {
+        link: "https://www.youtube.com/embed/jQDEOwrR4UU?si=y1fzsz2eFwBHIY6M",
+        name: "Equilibrium of Structures: Basics and Examples",
+      },
+      {
+        link: "https://www.youtube.com/embed/Jy2lUzGO4Gg?si=MHZoLaCjvNc1qclW",
+        name: "Types of Structural Supports and Reactions",
+      },
+      {
+        link: "https://www.youtube.com/embed/52R61aSWHg0?si=kbarC7b3r17yPG8N",
+        name: "How to Draw Free Body Diagrams",
+      },
+      {
+        link: "https://www.youtube.com/embed/jQDEOwrR4UU?si=yRFf5ZV7_abINmCO",
+        name: "Equilibrium of Rigid Bodies: 2D and 3D Analysis",
+      },
+      {
+        link: "https://www.youtube.com/embed/c6ndD5kTkP4?si=KtjWSBJ8CWzPExvq",
+        name: "Understanding Stress and Strain in Materials",
+      },
+      {
+        link: "https://www.youtube.com/embed/HALbtyDUjp0?si=dPz_cE-zPTl300_n",
+        name: "Young’s Modulus and Stress-Strain Curve Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/OmMIOZtM1ks?si=UyiZ-aYvdinbqASn",
+        name: "Hooke’s Law and Its Applications in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/WSRqJdT2COE?si=5mLGqQSMXcqX0g4m",
+        name: "Stress-Strain Behavior of Composite Materials",
+      },
+      {
+        link: "https://www.youtube.com/embed/FwOsoeOvZzo?si=7H2mYfVn7ziLoZjl",
+        name: "Thermal Stresses and Strain Calculations",
+      },
+      {
+        link: "https://www.youtube.com/embed/YoNSKfj65VM?si=W9kEwUbS7GB_6GAN",
+        name: "Effects of Temperature Change on Structures",
+      },
+      {
+        link: "https://www.youtube.com/embed/5gq04RHTIdc?si=_6ro9PBlUxFm9L8Y",
+        name: "Thermal Expansion in Bridges and Buildings",
+      },
+      {
+        link: "https://www.youtube.com/embed/cU1NqbznbOU?si=BG9Ml7lxdslJ-Imi",
+        name: "Temperature Effects on Metal and Concrete Structures",
+      },
+      {
+        link: "https://www.youtube.com/embed/C-FEVzI8oe8?si=6-uJulkgz_hCx0s1",
+        name: "Shear Force and Bending Moment Diagrams Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/ji_I2uyZ0e8?si=2P5id4DEUiwNh0DF",
+        name: "How to Solve Beam Problems with Shear and Moment",
+      },
+      {
+        link: "https://www.youtube.com/embed/_cH9UMNmnbg?si=LKMApabTpsQTwvGQ",
+        name: "How Distributed Loads Affect Beam Reactions",
+      },
+      {
+        link: "https://www.youtube.com/embed/PYPcWTCLazU?si=pA02VW86ucZ6hShi",
+        name: "Point Load vs. Uniformly Distributed Load on Beams",
+      },
+      {
+        link: "https://www.youtube.com/embed/f08Y39UiC-o?si=9xRRi_zT9yzrmliZ",
+        name: "Bending Stress Formula and Its Applications",
+      },
+      {
+        link: "https://www.youtube.com/embed/hwpGAxa8UoI?si=ga7K_USaGzdHuvIo",
+        name: "How End Conditions Affect Column Stability",
+      },
+    ],
+    summary: [
+      "Strength of Materials studies how solid objects withstand forces, deformations, and stresses. It covers concepts like stress, strain, elasticity, and failure mechanisms to ensure structures and materials perform safely under loads.",
+    ],
+  },
+  {
+    title: "Apllied Mechanics",
+    videos: [
+      {
+        link: "https://www.youtube.com/embed/22VGQM1jCn8?si=xC9A4ktc8CAnOexn",
+        name: "Introduction to Forces and Moments in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/QNNnPZ68STI?si=SertXyJZXKlGnLP4",
+        name: "Force Systems and Vector Mechanics",
+      },
+      {
+        link: "https://www.youtube.com/embed/Ixv1QYUAMWk?si=Mx0MypUr9m9j0YCg",
+        name: "How to Calculate Resultant Force and Moment",
+      },
+      {
+        link: "https://www.youtube.com/embed/uV4QDXd0ARM?si=WFjrTB0ZgDfcoG2F",
+        name: "Couples and Their Role in Equilibrium",
+      },
+      {
+        link: "https://www.youtube.com/embed/jQDEOwrR4UU?si=snqIxC6PK4OpepuS",
+        name: "Equilibrium of Structures: 2D and 3D Analysis",
+      },
+      {
+        link: "https://www.youtube.com/embed/qGvFAl5CK_c?si=0O8DuxmWlbnXPluq",
+        name: "How to Solve Static Equilibrium Problems",
+      },
+      {
+        link: "https://www.youtube.com/embed/bPbQeptNxEo?si=dxxZE5rwla4n775x",
+        name: "Types of Supports and Reactions in Structures",
+      },
+      {
+        link: "https://www.youtube.com/embed/nbINOF_lA0E?si=alR3P9yTzUkPxiXp",
+        name: "How to Calculate Support Reactions for Beams",
+      },
+      {
+        link: "https://www.youtube.com/embed/eBYbvP8VPdE?si=4JyiaExdGBoMjSxI",
+        name: "Understanding Friction: Static vs. Kinetic",
+      },
+      {
+        link: "https://www.youtube.com/embed/5UKhI1sGIX8?si=vzOIBibCF0wbSC5V",
+        name: "Friction in Engineering: Applications and Examples",
+      },
+      {
+        link: "https://www.youtube.com/embed/qsfxPxLCX8s?si=M7fbAhHHMwvTCRaz",
+        name: "Friction in Mechanical Systems: Wedges and Screws",
+      },
+      {
+        link: "https://www.youtube.com/embed/_Cptj5xc9A4?si=oLLKnPnFOQ7wyyxS",
+        name: "How to Solve Problems on Belt Friction",
+      },
+      {
+        link: "https://www.youtube.com/embed/BOlzWHEUCUI?si=YgzzIhzDvFef4j49",
+        name: "Moment of Inertia and Its Importance in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/KPDTI-0iuhU?si=utZMJxX7r-FBvh36",
+        name: "How to Calculate Centroids and Moments of Area",
+      },
+      {
+        link: "https://www.youtube.com/embed/9ueM9kOmEeU?si=zafotF9AXgMI5t7b",
+        name: "Finding the Centroid of Composite Shapes",
+      },
+      {
+        link: "https://www.youtube.com/embed/Bls5KnQOWkY?si=2SSWxQ3vC2dkgfAM",
+        name: "Moment of Inertia and Beam Deflections",
+      },
+      {
+        link: "https://www.youtube.com/embed/dHjWVlfNraM?si=_ZxgTozMMDC7jQjI",
+        name: "Kinematics of Particles: Velocity and Acceleration",
+      },
+      {
+        link: "https://www.youtube.com/embed/027ns4voOWw?si=S24Ch4VWWHSeF1Nz",
+        name: "How to Solve Kinematics Problems in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/u_LAfG5uIpY?si=ExD5xMPHOEfG5pvj",
+        name: "Rigid Body Motion: Rotation, Translation, and Rolling",
+      },
+      {
+        link: "https://www.youtube.com/embed/1aQ9EZGMdDk?si=jwHM8E9TebMiNnlV",
+        name: "Instantaneous Center of Zero Velocity (ICZV) Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/ztt1mVYH6x4?si=tBHl8P1jRt6SDCkU",
+        name: "Newton’s Laws of Motion: Real-Life Examples",
+      },
+      {
+        link: "https://www.youtube.com/embed/Ee6CHn0MRKE?si=zYz6jx24rW7qPGVc",
+        name: "How to Apply Newton’s Second Law in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/g550H4e5FCY?si=hupa7bI0Z64qHCnH",
+        name: "Applying Newton’s Laws to Engineering Mechanics",
+      },
+      {
+        link: "https://www.youtube.com/embed/SRoAuMnSu3w?si=t3-Q7XqQOqbmT8Xr",
+        name: "D’Alembert’s Principle and Engineering Applications",
+      },
+      {
+        link: "https://www.youtube.com/embed/3gcCKvKzAW0?si=0mB45SGzK79o1WqL",
+        name: "Work and Energy in Physics and Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/MR8jQZLcHKM?si=R4BFwra-7SJ_A38U",
+        name: "Kinetic Energy and Work-Energy Theorem Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/WRkxzh8cAIY?si=RzBlNwsKeU4v0xdr",
+        name: "How to Use the Work-Energy Principle in Mechanics",
+      },
+      {
+        link: "https://www.youtube.com/embed/_DwG8fukuj4?si=eUJmT2uxsvDIy61M",
+        name: "Conservation of Energy in Engineering Applications",
+      },
+      {
+        link: "https://www.youtube.com/embed/FYKoU0sb9ks?si=G6xGipo2dlDgpLcY",
+        name: "Impulse and Momentum: Engineering Applications",
+      },
+      {
+        link: "https://www.youtube.com/embed/4oLx8BaVNvo?si=Spk3YeI-PGg8gAx",
+        name: "How to Solve Momentum and Impulse Problems",
+      },
+      {
+        link: "https://www.youtube.com/embed/WzjIMuf-yuo?si=6ghsRq01ky_Rcm2V",
+        name: "Angular Momentum and Its Engineering Significance",
+      },
+      {
+        link: "https://www.youtube.com/embed/X2eURF6eEFE?si=6jcMIQenrZXCL7_i",
+        name: "Momentum Conservation in Collisions and Systems",
+      },
+    ],
+    summary: [
+      "Applied Mechanics deals with the behavior of physical bodies under forces and motion. It includes statics (bodies at rest) and dynamics (bodies in motion) to analyze structures, machines, and mechanical systems for practical engineering applications.",
+    ],
+  },
+  {
+    title: "Fundamentals of Fluid Mechanics ",
+    videos: [
+      {
+        link: "https://www.youtube.com/embed/A0BuHEqDm88?si=nbuSKG3feHjBFtPk",
+        name: "Understanding Fluid Properties: Density, Viscosity, and Surface Tension",
+      },
+      {
+        link: "https://www.youtube.com/embed/VvDJyhYSJv8?si=bXJcyntLWHKa7IgT",
+        name: "What is Viscosity? Explanation with Real-Life Examples",
+      },
+      {
+        link: "https://www.youtube.com/embed/Yh6h-0Ppwdk?si=oSy9mrmTgpSb9I26",
+        name: "Newtonian vs. Non-Newtonian Fluids Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/_0aaRDAdPTY?si=Plc1B-P1ae3uBVLp",
+        name: "Shear Stress and Shear Rate in Fluid Mechanics",
+      },
+      {
+        link: "https://www.youtube.com/embed/kkq8ruV8_Jw?si=r5H6zPnkeavTtkP6",
+        name: "Understanding Hydrostatic Pressure in Fluids",
+      },
+      {
+        link: "https://www.youtube.com/embed/3jG-hWgUJko?si=Qruqx4wSVervGDjp",
+        name: "How to Solve Hydrostatic Force Problems in Fluid Mechanics",
+      },
+      {
+        link: "https://www.youtube.com/embed/Qgl_l0H7Qgc?si=ew-qacbWcfGZqEgl",
+        name: "Archimedes’ Principle and Buoyancy Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/spivBg4KCiI?si=RE0ENxNEuzdW9DZT",
+        name: "Stability of Floating Bodies: Metacentric Height",
+      },
+      {
+        link: "https://www.youtube.com/embed/8dmRhI6WNQ8?si=vVXntFnf1VBJWopF",
+        name: "Laminar vs. Turbulent Flow: Differences and Applications",
+      },
+      {
+        link: "https://www.youtube.com/embed/PNqwqWH3QP8?si=mtBHHIDuWT7QnUFM",
+        name: "Reynolds Number: Understanding Flow Regimes",
+      },
+      {
+        link: "https://www.youtube.com/embed/8MUPQbazkLQ?si=d_0u8DmgBPy5MUHo",
+        name: "Visualizing Fluid Motion: Streamlines, Pathlines, and Streaklines",
+      },
+      {
+        link: "https://www.youtube.com/embed/doJRUy7TK7Q?si=JvRpqhByKLnZ-X3a",
+        name: "How to Analyze Fluid Flow Using Stream Functions",
+      },
+      {
+        link: "https://www.youtube.com/embed/jtf7-1sYKAw?si=XOGfTafmnNHYkeEX",
+        name: "Finding the Center of Pressure in Fluid Mechanics",
+      },
+      {
+        link: "https://www.youtube.com/embed/d4adokYNy3g?si=QdlQmfgvlPG3q5bj",
+        name: "Applications of Hydrostatic Forces in Engineering",
+      },
+      {
+        link: "https://www.youtube.com/embed/wykn-JTnacE?si=2ys8HMTJMSPF4do5",
+        name: "Continuity Equation in Fluid Mechanics Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/TeCHDrRpYGc?si=l-8tJvwdt0PldCEd",
+        name: "How to Apply the Continuity Equation in Pipe Flow",
+      },
+      {
+        link: "https://www.youtube.com/embed/1tklQ5x7W8k?si=WGkDbmmko4rImmdT",
+        name: "Bernoulli’s Equation: Energy Conservation in Fluids",
+      },
+      {
+        link: "https://www.youtube.com/embed/_fCv98W0L90?si=7OqgIOZdzmHzdHEt",
+        name: "Momentum Equation in Fluid Mechanics: Solving Problems",
+      },
+      {
+        link: "https://www.youtube.com/embed/_bfcdRhY7Rw?si=Ggx3_LxCjy9s8Iea",
+        name: "How a Venturi Meter Works: Flow Measurement Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/iRdJHPFVHwM?si=i8rCz-5zXfiMYj7v",
+        name: "Orifice Meter and Its Application in Fluid Flow",
+      },
+      {
+        link: "https://www.youtube.com/embed/gxJWAUqGX9w?si=tXZ934MO3MwQJsUc",
+        name: "How to Use Weirs for Flow Measurement",
+      },
+      {
+        link: "https://www.youtube.com/embed/t3iEo7zjR60?si=qthT3S0-3ctOOZ6O",
+        name: "Flow Over Weirs: Types and Applications",
+      },
+      {
+        link: "https://www.youtube.com/embed/jbSn_LphoDY?si=shwyf6go0AuN0oXx",
+        name: "Friction Losses in Pipe Flow: Darcy-Weisbach Equation",
+      },
+      {
+        link: "https://www.youtube.com/embed/ZQKpu-obzlU?si=-jOf141d9nh-UZkC",
+        name: "Pipe Fittings and Their Effect on Fluid Flow",
+      },
+      {
+        link: "https://www.youtube.com/embed/3VhIgbIlh6o?si=dMK8Jx87Z79VQDup",
+        name: "Centrifugal vs. Positive Displacement Pumps: Differences Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/O9QHbm4KGNo?si=5qZ9o8DZMrFU11Oi",
+        name: "How to Select the Right Pump for Your System",
+      },
+      {
+        link: "https://www.youtube.com/embed/9M4peF-_Bv8?si=0E29j5fR9G8tuHYj",
+        name: "Hydraulic Turbines: Pelton, Francis, and Kaplan Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/k0BLOKEZ3KU?si=lY6rJ2qzt2Y-MY4v#",
+        name: "How to Choose the Right Turbine for Hydropower Systems",
+      },
+    ],
+    summary: [
+      "Fundamentals of Fluid Mechanics focuses on the behavior of fluids (liquids and gases) at rest and in motion. It covers key principles like fluid properties, pressure, flow types, Bernoulli’s equation, and conservation laws of mass, momentum, and energy, essential for engineering applications.",
+    ],
+  },
+  {
+    title: "Fundamentals of Engineering Thermodynamics ",
+    summary: [
+      "Fundamentals of Engineering Thermodynamics explores energy, heat, and work transfer in systems. It covers key concepts like the laws of thermodynamics, energy conservation, entropy, and thermodynamic cycles, essential for designing engines, power plants, and refrigeration systems.",
+    ],
+    videos: [
+      {
+        link: "https://www.youtube.com/embed/kd_6bwynBj8?si=2iIdxW26v1Q2BlPJ",
+        name: "Introduction to Thermodynamics | Zeroth, First, Second & Third Laws Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/TnDCxw0y6YM?si=L90HKF7ZEzfpp0nj",
+        name: "Laws of thermodynamics (Zeroth, First, Second, and Third Laws)",
+      },
+      {
+        link: "https://www.youtube.com/embed/S0PKROUFR7k?si=MoX1K6JQ4WeiuQ1Q",
+        name: "Thermodynamic Systems and Surroundings | Open, Closed & Isolated Systems",
+      },
+      {
+        link: "https://www.youtube.com/embed/HOE63L_Jyho?si=lJbAuejEqBUq9L_N",
+        name: "Intensive and extensive properties",
+      },
+      {
+        link: "https://www.youtube.com/embed/XCiBaFp8L_M?si=PbJqL6wM8nGPKHIe",
+        name: "Gauge Pressure vs Absolute Pressure | Thermodynamics",
+      },
+      {
+        link: "https://www.youtube.com/embed/eEJqaNaq9v8?si=K8tmvmHvfZ9LiD2G",
+        name: "Temperature scales and absolute temperature",
+      },
+      {
+        link: "https://www.youtube.com/embed/NyOYW07-L5g?si=A8OrVcNK2EhXsMxM",
+        name: "Kinetic, Potential, Enthalpy & Internal Energy | Thermodynamics Basics",
+      },
+      {
+        link: "https://www.youtube.com/embed/TnDCxw0y6YM?si=-Mh2Xptt8LC7XHoN",
+        name: "Energy types and their applications in thermodynamics",
+      },
+      {
+        link: "https://www.youtube.com/embed/iZbnY0QWHe8?si=KzM_0Yy2dKDBc66-",
+        name: "P-V-T Diagram | Phases of Pure Substances in Thermodynamics",
+      },
+      {
+        link: "https://www.youtube.com/embed/cXcF8Z1zD7M?si=HMwRJXTMYvEsv4gs",
+        name: "P-V-T behavior of pure substances and perfect gases",
+      },
+      {
+        link: "https://www.youtube.com/embed/PhoZkiHNppA?si=21Obo_S4s3doXzH1",
+        name: "Saturated Liquid, Superheated Vapor & Compressed Liquid Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/Qp87Z4m8R-w?si=VL_NZyKnOz2-c0qw",
+        name: "State diagrams and phase changes",
+      },
+      {
+        link: "https://www.youtube.com/embed/2mm19PnmTDU?si=ZGQL57_qlyUYOdp-",
+        name: "First Law of Thermodynamics | Conservation of Energy",
+      },
+      {
+        link: "https://www.youtube.com/embed/1qI7Ys1Of6o?si=QWXO8PLl1aoiKuZ-",
+        name: "Heat and work transfer",
+      },
+      {
+        link: "https://www.youtube.com/embed/mEMG5TTLgMk?si=mYSLHoUelQEFe6DO",
+        name: "Types of Work in Thermodynamics | Boundary, Shaft, Electrical Work",
+      },
+      {
+        link: "https://www.youtube.com/embed/wPg95Wj9H8Y?si=ZgJuoj3lRv-pfnQ-",
+        name: "Moving boundary work, spring work, electrical work, and shaft work",
+      },
+      {
+        link: "https://www.youtube.com/embed/bRZwzy0xvhM?si=zPsuR7hv-WzYm3VJ",
+        name: "Conduction, Convection & Radiation | Heat Transfer Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/dxtz2POUTJE?si=wuD1gzrFXQ4Jw51Y",
+        name: "Calculating heat energy transfer",
+      },
+      {
+        link: "https://www.youtube.com/embed/7Siv2NNCFag?si=OODc1t4vCd92Tkcb",
+        name: "First Law of Thermodynamics for Open Systems | Control Volume Analysis",
+      },
+      {
+        link: "https://www.youtube.com/embed/fuwrxaHVSp4?si=qNqFTGFCU6ma8QU",
+        name: "Conservation of mass and energy in open systems",
+      },
+      {
+        link: "https://www.youtube.com/embed/BoI_ej-T0V4?si=rD4EW8E_3c28PNEY",
+        name: "Bernoulli's Equation | Applications in Fluid Flow",
+      },
+      {
+        link: "https://www.youtube.com/embed/iDvD58nHW9Q?si=GMtjW8yY5RGxAI3J",
+        name: "Nozzles, diffusers, turbines, compressors, throttling valves",
+      },
+      {
+        link: "https://www.youtube.com/embed/AHVvKzXYIcY?si=y3WUapMmkAwp-dik",
+        name: "Nozzles, diffusers, turbines, compressors, throttling valves (Part 2)",
+      },
+      {
+        link: "https://www.youtube.com/embed/28xBwF5J-wY?si=zFOJqJV5T7o9cYZj",
+        name: "Unsteady Flow Processes | Mass & Energy Balance in Thermodynamics",
+      },
+      {
+        link: "https://www.youtube.com/embed/LjijcG-IbR4?si=M50L-xtVgS6lxnbt",
+        name: "Applying conservation laws to real-world engineering problems",
+      },
+      {
+        link: "https://www.youtube.com/embed/Iwmb1p25ws4?si=S4YNfd5dAL12j8yC",
+        name: "Second Law of Thermodynamics | Entropy & Energy Degradation",
+      },
+      {
+        link: "https://www.youtube.com/embed/tD_OoZ9wdcE?si=0bJcHADNpxsn9iBC",
+        name: "Understanding entropy and irreversibility in thermodynamic systems",
+      },
+      {
+        link: "https://www.youtube.com/embed/O7TSo_up1Dw?si=osHGpQ0AMesm_5h9",
+        name: "Heat Engine, Refrigerators & Heat Pumps | Efficiency Explained",
+      },
+      {
+        link: "https://www.youtube.com/embed/O7TSo_up1Dw?si=tbld1p9EE4Gip6X1",
+        name: "Calculating thermal efficiency and coefficient of performance",
+      },
+      {
+        link: "https://www.youtube.com/embed/A-QgGXbDyR0?si=18Oy4Tl-hXe6n1DD",
+        name: "Why Perpetual Motion Machines Are Impossible | Thermodynamics",
+      },
+      {
+        link: "https://www.youtube.com/embed/hpur62rjYuw?si=6-icIzF0Yo9tuNHH",
+        name: "Understanding reversible and irreversible processes",
+      },
+      {
+        link: "https://www.youtube.com/embed/Qi3m9sD5w-A?si=WgqxI3hvtUTSko8V",
+        name: "Carnot Cycle & Ideal Gas Cycles | Basics of Thermodynamic Cycles",
+      },
+      {
+        link: "https://www.youtube.com/embed/0wn0R9qWbiQ?si=F5_aDp9Ugwx7ioMr",
+        name: "Carnot cycle, gas turbines, steam cycles, refrigeration cycles",
+      },
+    ],
+  },
 ];
