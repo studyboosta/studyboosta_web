@@ -192,7 +192,7 @@ const Menu: React.FC<MenuProps> = ({ searchQuery }) => {
       <section className=" max-w-5xl mt-6">
         {currentData.length > 0 ? (
           <div className="flex sm:flex-row flex-col gap-8 mb-5 p-4 w-screen sm:w-full bg-gray-100 border rounded-lg shadow-md">
-            <div>
+            <div className="">
               <h3 className="font-semibold text-lg text-[#051F9C] mb-3">Titles</h3>
               <div className="flex flex-1 sm:flex-col overflow-x-auto flex-row gap-4">
                 {currentData.map((item) => (
