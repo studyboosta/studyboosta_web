@@ -18,9 +18,11 @@ import {
   departmentOptions,
   levelOptions,
   engineering200,
+  engineering100,
 } from "@/app/constants";
 
 const dataMap: Record<number, typeof computerEngineering300> = {
+  100: engineering100,
   200: engineering200,
   300: computerEngineering300,
   500: computerEngineering500,
