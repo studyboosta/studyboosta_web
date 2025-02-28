@@ -1749,3 +1749,646 @@ export const engineering200 = [
     ],
   },
 ];
+
+export const engineering100 = [
+  {
+    title: "General Chemistry I ",
+    videos: [
+      {
+        name: "What Are Atoms and Molecules? Basic Definitions and Concepts",
+        link: "https://www.youtube.com/embed/pSJeMJaCkVU?si=UfmGdbt2Pb801Xf_",
+      },
+      {
+        name: "Introduction to Chemical Reactions: How Atoms Combine and React",
+        link: "https://www.youtube.com/embed/cIn4AM1UgXQ?si=XYFxSB0aDS7kIfGE",
+      },
+      {
+        name: "Introduction to Chemical Reactions: How Atoms Combine and React (Part 2)",
+        link: "https://www.youtube.com/embed/S_k0kr2eZSQ?si=exZQJG13y-qM_ZHX",
+      },
+      {
+        name: "Understanding Modern Atomic Theory: A Visual Guide",
+        link: "https://www.youtube.com/embed/9B3DDY27ZtE?si=Uq8P5mOtViWEyu8F",
+      },
+      {
+        name: "Understanding Modern Atomic Theory: A Visual Guide (Part 2)",
+        link: "https://www.youtube.com/embed/OH-aSu-rWgk?si=W92Y0P1G1CcrYply",
+      },
+      {
+        name: "What Are Electron Orbitals? The Building Blocks of Atomic Structure",
+        link: "https://www.youtube.com/embed/NIwcDnFjj98?si=vZHqoEqbEcrNSmyS",
+      },
+      {
+        name: "What Are Electron Orbitals? The Building Blocks of Atomic Structure (Part 2)",
+        link: "https://www.youtube.com/embed/4sLXUr2HWIs?si=aEwEkL4--NaeReAz",
+      },
+      {
+        name: "How to Write Electronic Configurations for Elements",
+        link: "https://www.youtube.com/embed/NIwcDnFjj98?si=vZHqoEqbEcrNSmyS",
+      },
+      {
+        name: "Periodic Table Trends: Atomic Radii, Ionization Energy, and Electronegativity",
+        link: "https://www.youtube.com/embed/Gy9HR65DpYQ?si=FV7NNg0ixdb4EK7Z",
+      },
+      {
+        name: "Balancing Oxidation-Reduction Equations",
+        link: "https://www.youtube.com/embed/YWl4KHsUxuw?si=HMbCHfy0L8PcT-DF",
+      },
+      {
+        name: "How to Solve Redox Titration Problems",
+        link: "https://www.youtube.com/embed/HJvALCcKYAc?si=TFxqzD84yTJjhaWt",
+      },
+      {
+        name: "How to Solve Redox Titration Problems (Part 2)",
+        link: "https://www.youtube.com/embed/EQJf8Gb8pg4?si=Lv-60o_qNp010N6G",
+      },
+      {
+        name: "What is Hybridization? Understanding sp, sp², and sp³ Orbitals",
+        link: "https://www.youtube.com/embed/pdJeQUd2g_4?si=8kHfCG6bJRCCsnuv",
+      },
+      {
+        name: "Drawing Molecular Shapes: VSEPR Theory Made Easy",
+        link: "https://www.youtube.com/embed/DBrq31w8vC4?si=ndaZ7KR4kuKbZdp4",
+      },
+      {
+        name: "Characteristics of Acids, Bases, and Salts",
+        link: "https://www.youtube.com/embed/FM2MpMbV0rw?si=upfG4F3eYLcw9Mha",
+      },
+      {
+        name: "How to Solve Quantitative Problems Involving Acids and Bases",
+        link: "https://www.youtube.com/embed/OEW4-Sfyvik?si=24thfYsf8MkYFWYa",
+      },
+      {
+        name: "Le Chatelier’s Principle: Predicting Changes in Equilibrium",
+        link: "https://www.youtube.com/embed/bNcTt3l3Q8k?si=y18vLB9oq0sPhgJ1",
+      },
+      {
+        name: "The Effect of Concentration, Pressure, and Temperature on Equilibrium Mixtures",
+        link: "https://www.youtube.com/embed/rwn4UwFZ46o?si=cnXAbQljPGijKCdE",
+      },
+      {
+        name: "What Are Enthalpy, Entropy, and Free Energy? Basic Thermodynamics Explained",
+        link: "https://www.youtube.com/embed/NyOYW07-L5g?si=OQJc_qtuXbNwx-by",
+      },
+      {
+        name: "What Are Enthalpy, Entropy, and Free Energy? Basic Thermodynamics Explained (Part 2)",
+        link: "https://www.youtube.com/embed/DWiCaDPM7Hk?si=aMVJKR4OULUnUIhG",
+      },
+      {
+        name: "How to Perform Thermodynamic Calculations Step-by-Step",
+        link: "https://www.youtube.com/embed/xq7Vp0o7LUk?si=0jZHSfTJfQHeIQY9",
+      },
+      {
+        name: "How to Perform Thermodynamic Calculations Step-by-Step (Part 2)",
+        link: "https://www.youtube.com/embed/Q63QPec_1bk?si=te9vIvKtNy0M8iCL",
+      },
+      {
+        name: "How to Perform Thermodynamic Calculations Step-by-Step (Part 3)",
+        link: "https://www.youtube.com/embed/ePm_N6RgLfk?si=dCFP73EsZD1EkAMh",
+      },
+      {
+        name: "How to Determine Reaction Rates: Dependence on Concentration and Time",
+        link: "https://www.youtube.com/embed/JpoOfrPKgmM?si=rHIDKCnEq6v7hGsi",
+      },
+      {
+        name: "How to Determine Reaction Rates: Dependence on Concentration and Time (Part 2)" ,
+        link: "https://www.youtube.com/embed/wYqQCojggyM?si=UeKgQDogWmYHggNN",
+      },
+      {
+        name: "The Effect of Temperature on Reaction Rates: The Arrhenius Equation",
+        link: "https://www.youtube.com/embed/16fFjAcxJSc?si=2qo_5YfmfEV0jL4-",
+      },
+      {
+        name: "Understanding the Properties of Gases: Boyle’s and Charles’s Laws",
+        link: "https://www.youtube.com/embed/W2g2iP83JoI?si=Fqx2QoO2R7tDwb6L",
+      },
+      {
+        name: "Kinetic Theory of Matter: How Particles Move in Solids, Liquids, and Gases",
+        link: "https://www.youtube.com/embed/iAsP-9m2aH0?si=6yGnPApg5US-4Qjq",
+      },
+      {
+        name: "Introduction to Electrochemistry: Basics of Redox Reactions",
+        link: "https://www.youtube.com/embed/ImV8LyujjqY?si=hIrNzOm7YruLMxcp",
+      },
+      {
+        name: "How Electrochemical Cells Work: An Overview",
+        link: "https://www.youtube.com/embed/9blB-uMTIAM?si=ygXUFP_0rJavGtDy",
+      },
+      {
+        name: "What is Radioactivity? Types of Radiation and Their Properties",
+        link: "https://www.youtube.com/embed/cPRFF-eCGT8?si=rICQOYKDcYOUDSE0",
+      },
+      {
+        name: "Applications and Dangers of Radioactivity in Everyday Life",
+        link: "https://www.youtube.com/embed/NAMdYLVb_hQ?si=8wNkTTAY6EOnLWrx",
+      },
+    ],
+    summary: [
+      "General Chemistry I covers the fundamental principles of chemistry, including atomic structure, periodic trends, chemical bonding, stoichiometry, states of matter, thermochemistry, and basic chemical reactions.",
+    ],
+  },
+  {
+    title: "General Chemistry II ",
+    summary: [
+      "General Chemistry II (Organic Chemistry) covers the structure, bonding, and reactivity of organic molecules, including functional groups, reaction mechanisms, stereochemistry, and spectroscopy. It introduces key concepts in synthesis and organic reactions.",
+    ],
+    videos: [
+      {
+        name: "What is Organic Chemistry and Why is it Important?",
+        link: "https://www.youtube.com/embed/O2avA0DuQA4?si=9gcqXZsngMQoNWiX",
+      },
+      {
+        name: "What is Organic Chemistry and Why is it Important? (Part 2)",
+        link: "https://www.youtube.com/embed/Zp7a2xUb4Og?si=Y--0F6Oc4GBoB_v-",
+      },
+      {
+        name: "The Development of Organic Chemistry: A Historical Overview",
+        link: "https://www.youtube.com/embed/AUPbNoy5DXo?si=_E_d4XlgHqwsvVKY",
+      },
+      {
+        name: "What are Fullerenes? The Fourth Allotrope of Carbon",
+        link: "https://www.youtube.com/embed/BNAZO1FplaQ?si=N4kl01QibFup78zV",
+      },
+      {
+        name: "Applications of Fullerenes in Nanotubes, Nanostructures, and Nanochemistry",
+        link: "https://www.youtube.com/embed/_UMmjgxKcOQ?si=hjZ5BFiz_46Vk6jE",
+      },
+      {
+        name: "Applications of Fullerenes in Nanotubes, Nanostructures, and Nanochemistry (Part 2)",
+        link: "https://www.youtube.com/embed/8TUrOpjo8wA?si=vb7bLhXaHmVeLrlN",
+      },
+      {
+        name: "Introduction to Electronic Theory in Organic Chemistry",
+        link: "https://www.youtube.com/embed/tbeH1KfvANs?si=_5_lfVWFgu17k0oE",
+      },
+      {
+        name: "How Electrons Determine Reactivity in Organic Compounds",
+        link: "https://www.youtube.com/embed/9QZj-F-5PV4?si=7Oc3N96VJC6KxtMh",
+      },
+      {
+        name: "Methods for Isolating and Purifying Organic Compounds",
+        link: "https://www.youtube.com/embed/afjEqygdihk?si=Nqtz0y_PhOPT_WxW",
+      },
+      {
+        name: "Methods for Isolating and Purifying Organic Compounds (Part 2)",
+        link: "https://www.youtube.com/embed/KfWnDGDWWVI?si=WM9XRZwiKHnLgbC8",
+      },
+      {
+        name: "Qualitative and Quantitative Analysis in Organic Chemistry",
+        link: "https://www.youtube.com/embed/GfP5dPLg6ZE?si=YzMWqyOr6McousGj",
+      },
+      {
+        name: "Qualitative and Quantitative Analysis in Organic Chemistry (Part 2)",
+        link: "https://www.youtube.com/embed/l1_Qk10jmsU?si=tm9j8cVOL8MMbhOG",
+      },
+      {
+        name: "Qualitative and Quantitative Analysis in Organic Chemistry (Part 3)",
+        link: "https://www.youtube.com/embed/vHYEwuUMcrA?si=ni_imbumv2Flui34",
+      },
+      {
+        name: "Determining the Structures of Organic Compounds: A Beginner's Guide",
+        link: "https://www.youtube.com/embed/B_ketdzJtY8?si=x04LeDW6zIXXz--C",
+      },
+      {
+        name: "Rules for Naming Organic Compounds (Nomenclature)",
+        link: "https://www.youtube.com/embed/TYU_JluleME?si=dSrtyzKzOyUo3Pn0",
+      },
+      {
+        name: "Introduction to Functional Groups in Organic Chemistry",
+        link: "https://www.youtube.com/embed/m9jM8lWxrAE?si=ZwX3JcaOEgHZuqeR",
+      },
+      {
+        name: "Understanding Reaction Mechanisms in Organic Chemistry",
+        link: "https://www.youtube.com/embed/Efh5GkVbhEc?si=Ea9t5Fo3nEcsp2fZ",
+      },
+      {
+        name: "The Basics of Reaction Kinetics: Rate Laws and Predictions",
+        link: "https://www.youtube.com/embed/7I0Xg92_eA4?si=hADLCmfLWQ1ylLV0",
+      },
+      {
+        name: "What is Stereochemistry? A Visual Guide to 3D Molecules",
+        link: "https://www.youtube.com/embed/Bw_cetheReo?si=E0U02bDBn1YJm3s7",
+      },
+      {
+        name: "Introduction to Isomers: Enantiomers, Diastereomers, and More",
+        link: "https://www.youtube.com/embed/XftIUcLWTEE?si=NM2KAbGLENQbKcJE",
+      },
+      {
+        name: "The Chemistry of Alkanes, Alkenes, and Alkynes",
+        link: "https://www.youtube.com/embed/nDV5yWfHKko?si=BSKhN9peIsf7W6eu",
+      },
+      {
+        name: "The Chemistry of Alkanes, Alkenes, and Alkynes (Part 2)",
+        link: "https://www.youtube.com/embed/CEH3O6l1pbw?si=UAWUokJCwWY-FN_t",
+      },
+      {
+        name: "Understanding Alcohols, Ethers, and Amines",
+        link: "https://www.youtube.com/embed/0TmuUQifjDM?si=65WypJKHLB36qFft",
+      },
+      {
+        name: "Understanding Alcohols, Ethers, and Amines (Part 2)",
+        link: "https://www.youtube.com/embed/kggg1dqvxX8?si=ldrEeypzLdeO8o-U",
+      },
+      {
+        name: "Understanding Alcohols, Ethers, and Amines (Part 3)",
+        link: "https://www.youtube.com/embed/MZbgA0w2Ts4?si=qJOV6pwsedqB3dGe",
+      },
+      {
+        name: "Understanding Alcohols, Ethers, and Amines (Part 4)",
+        link: "https://www.youtube.com/embed/Y6AzMr0Fn3Y?si=qeCD-VJHJ9PEqKhZ",
+      },
+      {
+        name: "Chemistry of Alkyl Halides and Nitriles",
+        link: "https://www.youtube.com/embed/595ENX3iqEE?si=GTAnGz_PL6vqXF0Q",
+      },
+      {
+        name: "Chemistry of Alkyl Halides and Nitriles (Part 2)",
+        link: "https://www.youtube.com/embed/2GyyrMyDJkk?si=TZFTidHJ59eIDZ7z",
+      },
+      {
+        name: "Chemistry of Alkyl Halides and Nitriles (Part 3)",
+        link: "https://www.youtube.com/embed/iuwXFlyUABw?si=56SNm3EHD2bk1puE",
+      },
+      {
+        name: "Chemistry of Alkyl Halides and Nitriles (Part 4)",
+        link: "https://www.youtube.com/embed/4Qxbpo8eVOM?si=bKNWCaLSYlYpaIdR",
+      },
+      {
+        name: "The Chemistry of Aldehydes, Ketones, Carboxylic Acids, and Their Derivatives",
+        link: "https://www.youtube.com/embed/BbSxBOVjo28?si=A8_H-Ph9_Y0Edqik",
+      },
+      {
+        name: "The Chemistry of Aldehydes, Ketones, Carboxylic Acids, and Their Derivatives (Part 2)",
+        link: "https://www.youtube.com/embed/-T0_FuZDDaQ?si=-2NrrDLODKM-qD3k",
+      },
+      {
+        name: "The Chemistry of Aldehydes, Ketones, Carboxylic Acids, and Their Derivatives (Part 3)",
+        link: "https://www.youtube.com/embed/2seAPy1sZHE?si=waL3LDsuPGEP7gSn",
+      },
+      {
+        name: "The Chemistry of Group IA (Alkali Metals)",
+        link: "https://www.youtube.com/embed/t55mYdWC5mo?si=gONOd2IICq99ubCu",
+      },
+      {
+        name: "The Chemistry of Group IIA (Alkaline Earth Metals)",
+        link: "https://www.youtube.com/embed/NVuQ1jSf-5Y?si=dAZeLuFUGmXGmq84",
+      },
+      {
+        name: "The Chemistry of Group IVA (Carbon Group Elements)",
+        link: "https://www.youtube.com/embed/63pSwsTJCbs?si=4YpwQ1g2bXzleVrP",
+      },
+      {
+        name: "Introduction to Transition Metal Chemistry",
+        link: "https://www.youtube.com/embed/u2gOKRYZFGw?si=X25K9CleDoTkG_OX",
+      },
+      {
+        name: "Introduction to Transition Metal Chemistry (Part 2)",
+        link: "https://www.youtube.com/embed/r4H5XjJPn58?si=0dn8iBwLIvyKvt1v",
+      },
+      {
+        name: "Basic Properties of Transition Metals",
+        link: "https://www.youtube.com/embed/28CT8HFPtiQ?si=0z9IFdTJdS5SNtfA",
+      },
+    ],
+  },
+  {
+    title: "Elementary Mathematics I ",
+    summary: [
+      "lementary Mathematics I covers fundamental algebra and trigonometry concepts, including equations, inequalities, functions, polynomials, logarithms, trigonometric functions, identities, and applications.",
+    ],
+    videos: [
+      {
+        name: "Introduction to Set Theory: Definitions and Concepts",
+        link: "https://www.youtube.com/embed/3ZG_LUvHJK4?si=OftNVP7JvnOIIbGg",
+      },
+      {
+        name: "Understanding Subsets, Union, Intersection, and Complements",
+        link: "https://www.youtube.com/embed/DswZ8Eh4EaI?si=_Am6z68Rg6iXm6dF",
+      },
+      {
+        name: "How to Use Venn Diagrams to Solve Set Problems",
+        link: "https://www.youtube.com/embed/09c7OxBF0i4?si=hBWlhGLX2DuF4S3O",
+      },
+      {
+        name: "How to Use Venn Diagrams to Solve Set Problems (Part 2)",
+        link: "https://www.youtube.com/embed/32iNIZJ2dI4?si=Z2W3ohqtVffGrZVO",
+      },
+      {
+        name: "What Are Real Numbers, Integers, Rational, and Irrational Numbers?",
+        link: "https://www.youtube.com/embed/QUGmwPwtbpg?si=9OX_de0k4BgBU4VA",
+      },
+      {
+        name: "Classification of Numbers in Mathematics: A Beginner’s Guide",
+        link: "https://www.youtube.com/embed/vbPUS-0Wbv4?si=N8VgREhaRF-Wppf6",
+      },
+      {
+        name: "How to Solve Problems Using Mathematical Induction",
+        link: "https://www.youtube.com/embed/tHNVX3e9zd0?si=7I3u5SkXKpGkSaUN",
+      },
+      {
+        name: "How to Solve Problems Using Mathematical Induction (Part 2)",
+        link: "https://www.youtube.com/embed/uJdyDzUOUME?si=DNyxI4FjHvJBB-Ly",
+      },
+      {
+        name: "Applications of Mathematical Induction in Proofs",
+        link: "https://www.youtube.com/embed/dFWhrpbzqtg?si=ce7rI6HJ7AAhC9vy",
+      },
+      {
+        name: "Understanding Real Sequences and Series",
+        link: "https://www.youtube.com/embed/XZJdyPkCxuE?si=EzUkTZw_5Up6eh3a",
+      },
+      {
+        name: "Solving Quadratic Equations: Methods and Applications",
+        link: "https://www.youtube.com/embed/5lVxcx4ajks?si=_xxBfe3P5m1in8Zm",
+      },
+      {
+        name: "Introduction to the Binomial Theorem: Basics and Applications",
+        link: "https://www.youtube.com/embed/SwaVN0epc0w?si=YZ4GONHIvDu8tjxi",
+      },
+      {
+        name: "How to Solve Problems Using the Binomial Theorem",
+        link: "https://www.youtube.com/embed/s19dWIHficY?si=KEkV8rZOfvDL3Ml8",
+      },
+      {
+        name: "What Are Complex Numbers? Basics and Examples",
+        link: "https://www.youtube.com/embed/sbC93xq--kQ?si=lxXCmRej9okon2NC",
+      },
+      {
+        name: "The Argand Diagram: Visualizing Complex Numbers",
+        link: "https://www.youtube.com/embed/nBuByCp7ot0?si=AKUSAorXJmFYwX-I",
+      },
+      {
+        name: "De Moivre’s Theorem Explained with Examples",
+        link: "https://www.youtube.com/embed/vH3PFH3-dHQ?si=SxV_LAbFKO9W44cW",
+      },
+      {
+        name: "Understanding nth Roots of Unity",
+        link: "https://www.youtube.com/embed/-F-FHNTz4qk?si=2WOWfEihT0WatrK8",
+      },
+      {
+        name: "Trigonometric Functions of Any Angle: A Beginner’s Guide",
+        link: "https://www.youtube.com/embed/PUB0TaZ7bhA?si=90tBG5rjmHEbVzH8",
+      },
+      {
+        name: "Understanding Circular Measure and Radians",
+        link: "https://www.youtube.com/embed/JmLN3QxshlE?si=0dqC87nSZVkI5YN4",
+      },
+      {
+        name: "Addition and Factor Formulae in Trigonometry",
+        link: "https://www.youtube.com/embed/sU2pyMR8GZ4?si=r9mYaQ9V7jyl_LbP",
+      },
+      {
+        name: "Addition and Factor Formulae in Trigonometry (Part 2)",
+        link: "https://www.youtube.com/embed/kc3buNjoEQo?si=VRPfO-7-EJzyHrqp",
+      },
+    ],
+  },
+  {
+    title: "Elementary Mathematics II ",
+    summary: [
+      "Elementary Mathematics II builds on previous concepts, covering advanced algebra, analytic geometry, sequences and series, matrices, determinants, and an introduction to calculus.",
+    ],
+    videos: [
+      {
+        name: "What Are Functions of a Real Variable?",
+        link: "https://www.youtube.com/embed/TyoLVW4qdHo?si=y412jcBOEQGTfjSk",
+      },
+      {
+        name: "How to Plot and Analyze Graphs of Functions",
+        link: "https://www.youtube.com/embed/opPr0_7X2vA?si=SzMu4-Qg0HWmNaYH",
+      },
+      {
+        name: "How to Plot and Analyze Graphs of Functions (Part 2)",
+        link: "https://www.youtube.com/embed/pFHE5B4y5jk?si=VaPAGuqaRAQbYSKz",
+      },
+      {
+        name: "Introduction to Limits: Finding the Limit of a Function",
+        link: "https://www.youtube.com/embed/YNstP0ESndU?si=_rD-p-eYnzRcvsbi",
+      },
+      {
+        name: "What Is Continuity? The Idea of Continuous Functions",
+        link: "https://www.youtube.com/embed/joewRl1CTL8?si=vmSuQRgXPGl2HVhk",
+      },
+      {
+        name: "What Is Continuity? The Idea of Continuous Functions (Part 2)",
+        link: "https://www.youtube.com/embed/lowavG2SXsQ?si=E_V-bGOlxI2KddFU",
+      },
+      {
+        name: "Understanding Derivatives as the Rate of Change",
+        link: "https://www.youtube.com/embed/lowavG2SXsQ?si=E_V-bGOlxI2KddFU",
+      },
+      {
+        name: "Understanding Derivatives as the Rate of Change (Part 2)",
+        link: "https://www.youtube.com/embed/xLE4C7y5Pn4?si=3apbiTJdntbFBwPW",
+      },
+      {
+        name: "Rules of Differentiation: Product Rule, Quotient Rule, Chain Rule",
+        link: "https://www.youtube.com/embed/esxNDR1epeo?si=e4AD-ibuSxIb4L6I",
+      },
+      {
+        name: "Techniques of Differentiation: Worked Examples",
+        link: "https://www.youtube.com/embed/LGY-DjFsALc?si=uvBCaDhkNe_8ETuK",
+      },
+      {
+        name: "Techniques of Differentiation: Worked Examples",
+        link: "https://www.youtube.com/embed/I6pNRVOAbmY?si=fGS3zXbTqd2ttKpZ",
+      },
+      {
+        name: "Applications of Derivatives: Finding Maxima and Minima",
+        link: "https://www.youtube.com/embed/V239IIoGVT8?si=CaxH2EnP3uQw2SQi",
+      },
+      {
+        name: "How to Perform Extreme Curve Sketching",
+        link: "https://www.youtube.com/embed/WqRPFvZWF0k?si=BS8_kfqUpw9MH1g0",
+      },
+      {
+        name: "What Is Integration? Understanding It as the Inverse of Differentiation",
+        link: "https://www.youtube.com/embed/QlwHYGBkick?si=melxBm5MBZiwJHll",
+      },
+      {
+        name: "What Is Integration? Understanding It as the Inverse of Differentiation (Part 2)",
+        link: "https://www.youtube.com/embed/B_sj1gWR2oE?si=Koty2oQl34re7_cv",
+      },
+      {
+        name: "What Is Integration? Understanding It as the Inverse of Differentiation (Part 3)",
+        link: "https://www.youtube.com/embed/77hdWWsxPRA?si=wtSIT_Ol5iPT8JT4",
+      },
+      {
+        name: "Methods of Integration: Substitution, By Parts, and Partial Fractions",
+        link: "https://www.youtube.com/embed/sdYdnpYn-1o?si=EE9_uH0WHFEhHVDx",
+      },
+      {
+        name: "Methods of Integration: Substitution, By Parts, and Partial Fractions (Part 2)",
+        link: "https://www.youtube.com/embed/sWSLLO3DS1I?si=l11utLmeP4pOJD3H",
+      },
+      {
+        name: "Methods of Integration: Substitution, By Parts, and Partial Fractions (Part 3)",
+        link: "https://www.youtube.com/embed/6rXByMcuAyI?si=VOCTARdME-XFH3FJ",
+      },
+      {
+        name: "How to Solve Definite Integrals Step-by-Step",
+        link: "https://www.youtube.com/embed/rCWOdfQ3cwQ?si=PUYVa6E8KNBnqQNn",
+      },
+      {
+        name: "Using Integration to Calculate Areas Under Curves",
+        link: "https://www.youtube.com/embed/UjTTx2eYrx8?si=qfIrmN2_DDmZFd7X",
+      },
+      {
+        name: "How to Use Definite Integrals to Find Volumes of Solids",
+        link: "https://www.youtube.com/embed/QLHJl2_aM5Q?si=68e0Z449srEi9u_W",
+      },
+      {
+        name: "How to Use Definite Integrals to Find Volumes of Solids (Part 2)",
+        link: "https://www.youtube.com/embed/SAHSVg7Jw_A?si=Btsr6_gxEPDF8ooS",
+      },
+      {
+        name: "How to Use Definite Integrals to Find Volumes of Solids (Part 3)",
+        link: "https://www.youtube.com/embed/D5sT1br9soI?si=gRJkOQMpPsMiEzmn",
+      },
+      {
+        name: "Approximate Integration: Trapezium and Simpson’s Rule Explained",
+        link: "https://www.youtube.com/embed/aY6Y66cc4rE?si=8rOSWtQGJy_CdVJd",
+      },
+      {
+        name: "Reduction Formulae in Integration: What They Are and How to Use Them",
+        link: "https://www.youtube.com/embed/LBZcfl97LwY?si=8gC0VwwkTkv-XVBA",
+      },
+      {
+        name: "Reduction Formulae in Integration: What They Are and How to Use Them (Part 2)",
+        link: "https://www.youtube.com/embed/an8vp2QhONE?si=uQNOazTcwjzySWgC",
+      },
+    ],
+  },
+  {
+    title: "General Physics III ",
+    summary: [
+      "General Physics III (Behavior of Matter) explores the properties and interactions of matter, covering topics such as fluid mechanics, thermodynamics, kinetic theory, phase transitions, and material properties.",
+    ],
+    videos: [
+      {
+        name: "What Are Heat and Temperature? Understanding the Basics",
+        link: "https://www.youtube.com/embed/LL54E5CzQ-A?si=3sGd4cWZ28qweQlg",
+      },
+      {
+        name: "Temperature Scales Explained: Celsius, Kelvin, and Fahrenheit",
+        link: "https://www.youtube.com/embed/6qiYcyhI158?si=di_6QaZUeC-hbRjw",
+      },
+      {
+        name: "Introduction to Gas Laws: Boyle’s, Charles’s, and Avogadro’s Laws",
+        link: "https://www.youtube.com/embed/ciLQ06jaaEE?si=4lLEs_vVhLU6RVpV",
+      },
+      {
+        name: "The General Gas Equation: PV = nRT Explained",
+        link: "https://www.youtube.com/embed/qObcdZj8YTM?si=sxKZ8GCkr4SZKe1S",
+      },
+      {
+        name: "The General Gas Equation: PV = nRT Explained (Part 2)",
+        link: "https://www.youtube.com/embed/W2g2iP83JoI?si=9pnmPKwOmQ_fIW0Q",
+      },
+      {
+        name: "What Is Thermal Conductivity? How Heat Transfers in Materials",
+        link: "https://www.youtube.com/embed/LR5bYxC4syI?si=4k-0Ze9dsOLvPRen",
+      },
+      {
+        name: "The First Law of Thermodynamics: Heat, Work, and Internal Energy",
+        link: "https://www.youtube.com/embed/NyOYW07-L5g?si=zROf2EzaTxujY7BJ",
+      },
+      {
+        name: "Reversible and Irreversible Processes in Thermodynamics",
+        link: "https://www.youtube.com/embed/bLBp5dG7mzM?si=62qY5lWoUaoE_OpH",
+      },
+      {
+        name: "Thermodynamic Processes: Adiabatic, Isothermal, and Isobaric Processes Explained",
+        link: "https://www.youtube.com/embed/AzmXVvxXN70?si=n2uY20ITFw_bvf3p",
+      },
+      {
+        name: "Thermodynamic Processes: Adiabatic, Isothermal, and Isobaric Processes Explained (Part 2)",
+        link: "https://www.youtube.com/embed/TnDCxw0y6YM?si=oIBuyzrL7gXNyOiD",
+      },
+      {
+        name: "The Second Law of Thermodynamics: Heat Engines and Entropy",
+        link: "https://www.youtube.com/embed/DWiCaDPM7Hk?si=WdSvmcClhZOQqUQ3",
+      },
+      {
+        name: "The Second Law of Thermodynamics: Heat Engines and Entropy (Part 2)",
+        link: "https://www.youtube.com/embed/MrwW4w2nAMc?si=x04Vu8lIrGCp0uQr",
+      },
+      {
+        name: "The Second Law of Thermodynamics: Heat Engines and Entropy (Part 3)",
+        link: "https://www.youtube.com/embed/QBd2zraOe2k?si=fWWwcFOGY7s6y1Oo",
+      },
+      {
+        name: "What Is Entropy? Understanding Disorder in Systems",
+        link: "https://www.youtube.com/embed/mg0hueOyoAw?si=gq8IfQVVm_OTFesO",
+      },
+      {
+        name: "Zeroth Law of Thermodynamics: Basics and Applications",
+        link: "https://www.youtube.com/embed/S2hsaTO0bO8?si=sb-eA_U0Y4xDsx43",
+      },
+      {
+        name: "Introduction to Kinetic Theory of Gases: Assumptions and Implications",
+        link: "https://www.youtube.com/embed/o3f_VJ87Df0?si=PvlbmuJGKPpAzJVp",
+      },
+      {
+        name: "What Are Molecular Collisions and Mean Free Path?",
+        link: "https://www.youtube.com/embed/ZdAxDfXgACo?si=DUNmTMwjLSTWnp6p",
+      },
+      {
+        name: "What Are Molecular Collisions and Mean Free Path? (Part 2)",
+        link: "https://www.youtube.com/embed/ypK7h3NKe1?si=ARB-Z6G9mwIWG95w",
+      },
+      {
+        name: "What Are Molecular Collisions and Mean Free Path? (Part 3)",
+        link: "https://www.youtube.com/embed/_vUtO3BS-zM?si=W32NWQM_YeI1iCq2",
+      },
+      {
+        name: "Macroscopic Behaviour of Gases Explained Using Kinetic Theory",
+        link: "https://www.youtube.com/embed/Qsa4aAdpHfY?si=hPF5sI8gfjGiMNbF",
+      },
+      {
+        name: "What Is Elasticity? Hooke’s Law and Its Applications",
+        link: "https://www.youtube.com/embed/HALbtyDUjp0?si=zgDH_rO0ZRqNsLqi",
+      },
+      {
+        name: "Young's, Shear, and Bulk Moduli: Measuring Deformation",
+        link: "https://www.youtube.com/embed/qQZRTBRJbl4?si=JuOZk2N5JeYOgjai",
+      },
+      {
+        name: "Young's, Shear, and Bulk Moduli: Measuring Deformation (Part 2)",
+        link: "https://www.youtube.com/embed/FF-VDjYCogQ?si=XgSGsKQ6JNWWjLv9",
+      },
+      {
+        name: "Understanding Hydrostatics: Pressure and Buoyancy",
+        link: "https://www.youtube.com/embed/kkq8ruV8_Jw?si=e9S33PxG90zI4pIl",
+      },
+      {
+        name: "Understanding Hydrostatics: Pressure and Buoyancy (Part 2)",
+        link: "https://www.youtube.com/embed/Qgl_l0H7Qgc?si=9idKVrmpFJQY_WUY",
+      },
+      {
+        name: "Archimedes’ Principle Explained with Real-Life Examples",
+        link: "https://www.youtube.com/embed/_p-hwElkrlk?si=zo2SVZGMK2_d4xyV",
+      },
+      {
+        name: "Bernoulli’s Equation: Basics of Incompressible Fluid Flow",
+        link: "https://www.youtube.com/embed/DW4rItB20h4?si=Gud9W9qFCwvKTp-M",
+      },
+      {
+        name: "Bernoulli’s Equation: Basics of Incompressible Fluid Flow (Part 2)",
+        link: "https://www.youtube.com/embed/nUKUzpRgdbY?si=a41a4tJjHMLlCeyE",
+      },
+      {
+        name: "What Is Surface Tension? Adhesion, Cohesion, and Capillarity Explained",
+        link: "https://www.youtube.com/embed/WBk7mGb7TKw?si=6Z7zQHWdixR7OpwL",
+      },
+      {
+        name: "What Is Surface Tension? Adhesion, Cohesion, and Capillarity Explained (Part 2)",
+        link: "https://www.youtube.com/embed/P_jQ1B9UwpU?si=0F-vjYK4ZqOlIDmM",
+      },
+      {
+        name: "Understanding Drops, Bubbles, and Viscosity in Fluids",
+        link: "https://www.youtube.com/embed/f8areXBvSsA?si=uvVINxx4pZXPHzRM",
+      },
+    ],
+  },
+];
