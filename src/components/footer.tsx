@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
       {/* Bottom Section */}
       <div className="border-t border-opacity-80 rounded-s-sm border-white mt-10 pt-4 flex flex-col md:flex-row items-center justify-between px-4">
         <p className="text-sm mt-4 text-center md:text-left">
-          © 2024. All rights reserved.
+          © 2025. All rights reserved.
         </p>
         <div className="flex space-x-4 mt-4 md:mt-0">
           <a href="#" className=" bg-[050C96] text-white hover:text-gray-300" aria-label="Facebook">
