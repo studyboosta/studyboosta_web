@@ -82,20 +82,20 @@ const Login = () => {
           </button>
 
           {/* Separator */}
-          <div className="flex items-center my-10">
+          {/* <div className="flex items-center my-10">
             <hr className="flex-grow border-[#000000B3]" />
             <span className="px-2 text-black text-sm">Or continue with</span>
             <hr className="flex-grow border-[#000000B3]" />
-          </div>
+          </div> */}
 
           {/* Google Sign In Button */}
-          <button
+          {/* <button
             type="button" // Prevents form submission
             className="w-full flex items-center font-bold text-[16px] justify-center border py-3 rounded-lg bg-[#F1F5FF] hover:bg-[#F1F9F5] transition"
           >
             <FaGoogle className="mr-2" />
             Sign in with Google
-          </button>
+          </button> */}
 
           {/* Signup Link */}
           <p className="text-center text-sm font-light text-black mt-[120px]">

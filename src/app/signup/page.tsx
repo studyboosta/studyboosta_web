@@ -7,9 +7,11 @@ import { FaGoogle } from "react-icons/fa";
 
 const Signup = () => {
   // State variables with TypeScript types
-  const [name, setName] = useState<string>("");
+  const [firstname, setFirstName] = useState<string>("");
+  const [lastname, setLastName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
+  const [confirmPassword, setConfirmPassword] = useState<string>("");
   const [university, setUniversity] = useState<string>("");
   const [course, setCourse] = useState<string>("");
   const [level, setLevel] = useState<string>("");
@@ -21,17 +23,23 @@ const Signup = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent default form submission
   
-    if (!name || !email || !password || !university || !course || !level) {
+    if (!firstname || !lastname || !email || !password || !confirmPassword|| !university || !course || !level) {
       setError("All fields are required");
+      return;
+    }
+    if (password !== confirmPassword) {
+      setError("Passwords do not match");
       return;
     }
   
     setError(""); 
   
     const data = {
-      full_name: name,
+      firstname,
+      lastname,
       email,
       password,
+      confirmPassword,
       university,
       course_of_study: course,
       level,
@@ -80,11 +88,20 @@ const Signup = () => {
           <div className="mt-6">
             <input
               type="text"
-              id="name"
-              placeholder="Enter your full name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              id="firstname"
+              placeholder="Enter your first name"
+              value={firstname}
+              onChange={(e) => setFirstName(e.target.value)}
               className="w-full p-3 border rounded-2xl bg-[#F1F5FF] mt-5 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
+            <input
+              type="text"
+              id="lastname"
+              placeholder="Enter your Last name"
+              value={lastname}
+              onChange={(e) => setLastName(e.target.value)}
+              className="w-full p-3 border rounded-2xl bg-[#F1F5FF] mt-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
 
@@ -133,6 +150,15 @@ const Signup = () => {
               className="w-full mt-3 p-3 border rounded-2xl bg-[#F1F5FF] focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="Enter your password again"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              className="w-full mt-3 p-3 border rounded-2xl bg-[#F1F5FF] focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
           </div>
 
           {/* Sign Up Button */}
@@ -144,17 +170,17 @@ const Signup = () => {
           </button>
 
           {/* Separator */}
-          <div className="flex items-center my-10">
+          {/* <div className="flex items-center my-10">
             <hr className="flex-grow border-[#000000B3]" />
             <span className="px-2 text-black text-sm">Or continue with</span>
             <hr className="flex-grow border-[#000000B3]" />
-          </div>
+          </div> */}
 
           {/* Google Sign In Button */}
-          <button className="w-full flex items-center font-bold text-[16px] justify-center border py-3 rounded-lg bg-[#F1F5FF] hover:bg-[#F1F9F5] transition">
+          {/* <button className="w-full flex items-center font-bold text-[16px] justify-center border py-3 rounded-lg bg-[#F1F5FF] hover:bg-[#F1F9F5] transition">
             <FaGoogle className="mr-2" />
             Sign in with Google
-          </button>
+          </button> */}
 
           {/* Signup Link */}
           <p className="text-center text-sm font-light text-black mt-[120px]">

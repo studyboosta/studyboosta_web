@@ -69,8 +69,8 @@ const Footer: React.FC = () => {
           <div className="md:ml-5">
             <h3 className="text-[19px] font-semibold mb-4">Contact us</h3>
             <p className="mb-2 text-[14px]">📍 University of Benin, Edo state.</p>
-            <p className="mb-2 text-[14px]">📞 +2347049387380</p>
-            <p className="text-[14px]">📧 study.boosta@gmail.com</p>
+            <p className="mb-2 text-[14px]">📞 +2347049831780</p>
+            <p className="text-[14px]">📧 studyboosta@gmail.com</p>
           </div>
         </div>
       </div>

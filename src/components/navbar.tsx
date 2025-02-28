@@ -31,7 +31,7 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
           {[
             { name: "Home", href: "/" },
             { name: "Courses", href: "/courses" },
-            { name: "Chatbot", href: "/chatbot" },
+            { name: "Studybot", href: "/comingSoon" },
             { name: "Opportunities", href: "/opportunities" },
             { name: "Security", href: "/security" },
             { name: "Digital Skills", href: "/digitalskills" },
@@ -96,7 +96,7 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
             {[
               { name: "Home", href: "/" },
               { name: "Courses", href: "/courses" },
-              { name: "Chatbot", href: "/chatbot" },
+              { name: "Studybot", href: "/chatbot" },
               { name: "Opportunities", href: "/opportunities" },
               { name: "Security", href: "/security" },
               { name: "Digital Skills", href: "/digitalskills" },
