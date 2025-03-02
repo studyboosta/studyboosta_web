@@ -35,7 +35,7 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
             { name: "Opportunities", href: "/opportunities" },
             { name: "Security", href: "/security" },
             { name: "Digital Skills", href: "/digitalskills" },
-            { name: "Marketplace", href: "/marketplace" },
+            { name: "Mentorship", href: "/marketplace" },
           ].map((item) => (
             <li key={item.name}>
               <Link
@@ -96,11 +96,11 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
             {[
               { name: "Home", href: "/" },
               { name: "Courses", href: "/courses" },
-              { name: "Studybot", href: "/chatbot" },
+              { name: "Studybot", href: "/comingSoon" },
               { name: "Opportunities", href: "/opportunities" },
               { name: "Security", href: "/security" },
               { name: "Digital Skills", href: "/digitalskills" },
-              { name: "Marketplace", href: "/marketplace" },
+              { name: "Mentorship", href: "/marketplace" },
             ].map((item) => (
               <li key={item.name}>
                 <Link

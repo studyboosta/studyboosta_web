@@ -11,15 +11,13 @@ const ComingSoon = () => {
 
       {/* Subtitle */}
       <p className="text-gray-600 text-lg sm:text-xl mt-4 max-w-2xl">
-        We&apos;re crafting something amazing in a very short while, we are
-        bringing together expert video lessons, high-income digital skills,
-        mentorship, scholarships, and internship updates all in one place.
+        We&apos;re crafting something amazing and mind-blowing in a very short while. <br/> Join our community for free to stay updated.
       </p>
 
       {/* Button */}
-      <a href="https://chat.whatsapp.com/I2FEWTyTANI5F3sVWRQJD8">
+      <a href="https://bit.ly/joinstudyboosta">
         <button className="mt-6 flex items-center gap-2 bg-[#050C9C] text-white px-6 py-3 rounded-lg text-lg font-bold hover:bg-blue-800 transition">
-          <FaBolt /> Stay Notified
+          <FaBolt /> Launching Soon
         </button>
       </a>
 
