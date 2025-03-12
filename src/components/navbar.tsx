@@ -12,7 +12,7 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
   const pathname = usePathname();
 
   const isActive = (path: string) => pathname === path;
-  const { user, logout } = useAuth();
+  const { token, logout } = useAuth();
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -80,7 +80,7 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
 
         {/* Desktop Login & Signup */}
         <div className="space-x-4 hidden sm:flex items-center">
-          {user ? (
+          {token ? (
             <>
               <button
                 onClick={handleLogout}
@@ -136,7 +136,7 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
             ))}
           </ul>
           <div className="space-x-14 py-4">
-            {user ? (
+            {token ? (
               <button
                 onClick={handleLogout}
                 className="text-[14px] font-bold text-[#D9534F] hover:underline"
