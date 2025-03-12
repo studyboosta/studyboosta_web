@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
 
 interface NavbarProps {
@@ -12,7 +12,6 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
   const pathname = usePathname();
 
   const isActive = (path: string) => pathname === path;
-  const router = useRouter();
   const { user, logout } = useAuth();
 
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +22,6 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
 
   const handleLogout = () => {
     logout();
-    router.push("/");
   };
 
   return (
@@ -83,12 +81,14 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
         {/* Desktop Login & Signup */}
         <div className="space-x-4 hidden sm:flex items-center">
           {user ? (
-            <button
-              onClick={handleLogout}
-              className="text-[14px] font-bold text-[#D9534F] hover:underline"
-            >
-              Logout
-            </button>
+            <>
+              <button
+                onClick={handleLogout}
+                className="text-[14px] font-bold text-[#D9534F] hover:underline"
+              >
+                Logout
+              </button>
+            </>
           ) : (
             <>
               <Link

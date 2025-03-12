@@ -39,7 +39,7 @@ const Login = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data), // Send JSON instead of URLSearchParams
+        body: JSON.stringify(data), 
       });
 
       if (response.ok) {
@@ -49,13 +49,13 @@ const Login = () => {
           throw new Error("Token not received from server");
         }
 
-        const user = {
-          email: result.email,
-        };
-
-        login(token, user); // Store token and user details in Auth Context
+        // const user = {
+        //   email: result.email,
+        // };
+        localStorage.setItem("token", token);
+        login(token); // Store token and user details in Auth Context
         toast.success("Login successful! 🎉", { autoClose: 2000 });
-        router.replace("/");
+        router.push("/");
       } else {
         const errorData = await response.json();
         const errorMessage = Array.isArray(errorData.detail)

@@ -20,7 +20,7 @@ const Signup = () => {
   const [loading, setLoading] = useState(false);
 
   const router = useRouter();
-  const { login } = useAuth();
+  const { signIn } = useAuth();
 
   // Function to handle form submission
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -76,7 +76,7 @@ const Signup = () => {
       first_name: firstname, // Change to "first_name"
       university,
       course_of_study: course,
-      level: parseInt(level), // Convert level to number
+      level: level.toString(), // Convert level to number
       password,
     };
 
@@ -98,7 +98,7 @@ const Signup = () => {
           level,
         };
 
-        login(token, user); // Store user session
+        signIn(token, user); // Store user session
         toast.success("Account successfully created! 🎉");
         router.push("/"); // Redirect to a protected page
       }

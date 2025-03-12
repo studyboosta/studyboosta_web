@@ -1,21 +1,23 @@
 "use client";
 import { createContext, useContext, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
 
 interface User {
   email: string;
-  first_name?: string;
-  surname?: string;
-  university?: string;
-  course_of_study?: string;
-  level?: string;
+  first_name: string;
+  surname: string;
+  university: string;
+  course_of_study: string;
+  level: string;
 }
 
 interface AuthContextType {
   user: User | null;
   token: string | null;
-  login: (token: string, user: User) => void;
+  login: (token: string) => void;
   logout: () => void;
+  signIn: (token : string, user : User) => void;
 }
 
 const AuthContext = createContext<AuthContextType | null>(null);
@@ -36,24 +38,31 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     }
   }, []);
 
-  const login = (token: string, user: User) => {
+  const login = (token: string) => {
+    localStorage.setItem("token", token);
+    // localStorage.setItem("user", JSON.stringify(user));
+    setToken(token);
+    // setUser(user);
+  };
+
+  const signIn = (token: string, user: User) => {
     localStorage.setItem("token", token);
     localStorage.setItem("user", JSON.stringify(user));
     setToken(token);
     setUser(user);
-    router.push("/dashboard"); // Redirect after login
-  };
+    router.push("/"); 
+  }
 
   const logout = () => {
-    localStorage.removeItem("token");
-    localStorage.removeItem("user");
-    setToken(null);
-    setUser(null);
-    router.push("/login"); // Redirect to login
+    localStorage.removeItem("token"); 
+    setUser(null); 
+    setToken(null); 
+    toast.info("Logged out successfully.");
+    router.push("/"); 
   };
 
   return (
-    <AuthContext.Provider value={{ user, token, login, logout }}>
+    <AuthContext.Provider value={{ user, token, login, logout,signIn }}>
       {children}
     </AuthContext.Provider>
   );
