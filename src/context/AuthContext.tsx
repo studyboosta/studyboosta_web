@@ -40,9 +40,10 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
   const login = (token: string) => {
     localStorage.setItem("token", token);
-    // localStorage.setItem("user", JSON.stringify(user));
+    localStorage.setItem("user", JSON.stringify(user));
     setToken(token);
     // setUser(user);
+    router.push("/"); 
   };
 
   const signIn = (token: string, user: User) => {
