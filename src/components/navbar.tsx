@@ -1,7 +1,8 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { useAuth } from "@/context/AuthContext";
 
 interface NavbarProps {
   activeRoute: string;
@@ -11,11 +12,18 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
   const pathname = usePathname();
 
   const isActive = (path: string) => pathname === path;
+  const router = useRouter();
+  const { user, logout } = useAuth();
 
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleLogout = () => {
+    logout();
+    router.push("/");
   };
 
   return (
@@ -74,18 +82,29 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
 
         {/* Desktop Login & Signup */}
         <div className="space-x-4 hidden sm:flex items-center">
-          <Link
-            href="/login"
-            className="text-[14px] font-bold text-[#050C9C] hover:underline"
-          >
-            Login
-          </Link>
-          <Link
-            href="/signup"
-            className="px-4 py-2 font-semibold bg-[#050C9C] text-white rounded-xl hover:bg-blue-800"
-          >
-            Sign Up
-          </Link>
+          {user ? (
+            <button
+              onClick={handleLogout}
+              className="text-[14px] font-bold text-[#D9534F] hover:underline"
+            >
+              Logout
+            </button>
+          ) : (
+            <>
+              <Link
+                href="/login"
+                className="text-[14px] font-bold text-[#050C9C] hover:underline"
+              >
+                Login
+              </Link>
+              <Link
+                href="/signup"
+                className="px-4 py-2 font-semibold bg-[#050C9C] text-white rounded-xl hover:bg-blue-800"
+              >
+                Sign Up
+              </Link>
+            </>
+          )}
         </div>
       </div>
 
@@ -117,18 +136,29 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
             ))}
           </ul>
           <div className="space-x-14 py-4">
-            <Link
-              href="/login"
-              className=" text-[14px] font-bold text-[#050C9C] hover:underline"
-            >
-              Login
-            </Link>
-            <Link
-              href="/signup"
-              className="px-4 py-2 font-semibold bg-[#050C9C] text-white rounded-xl hover:bg-blue-800"
-            >
-              Sign Up
-            </Link>
+            {user ? (
+              <button
+                onClick={handleLogout}
+                className="text-[14px] font-bold text-[#D9534F] hover:underline"
+              >
+                Logout
+              </button>
+            ) : (
+              <>
+                <Link
+                  href="/login"
+                  className="text-[14px] font-bold text-[#050C9C] hover:underline"
+                >
+                  Login
+                </Link>
+                <Link
+                  href="/signup"
+                  className="px-4 py-2 font-semibold bg-[#050C9C] text-white rounded-xl hover:bg-blue-800"
+                >
+                  Sign Up
+                </Link>
+              </>
+            )}
           </div>
         </div>
       )}

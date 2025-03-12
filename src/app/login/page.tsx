@@ -1,38 +1,72 @@
 "use client";
-import { FaGoogle } from "react-icons/fa";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { useAuth } from "@/context/AuthContext"; // Use Auth Context
 import Link from "next/link";
-import axios from "axios";
+import { toast, ToastContainer } from "react-toastify";
 
 const Login = () => {
-  // Define state variables with types
+  const { login } = useAuth(); // Get login function from context
+  const router = useRouter();
+
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [error, setError] = useState<string>("");
+  const [loading, setLoading] = useState(false);
 
-  const router = useRouter(); // Next.js navigation
-
-  // Define function type for event handling
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // Prevent default form submission
-
+  const validateForm = () => {
     if (!email || !password) {
-      setError("All fields are required");
-      return;
+      toast.error("All fields are required");
+      return false;
     }
+    setError("");
+    return true;
+  };
 
-    setError(""); // Clear existing error messages
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (!validateForm()) return;
+    setLoading(true);
+
+    const data = {
+      email,
+      password,
+    };
 
     try {
-      const response = await axios.post("https://studyboosta.onrender.com/users", { email, password });
+      const response = await fetch("https://studyboosta.onrender.com/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data), // Send JSON instead of URLSearchParams
+      });
 
-      if (response.status === 200) {
-        alert("Login Successful");
-        router.push("/Home");
+      if (response.ok) {
+        const result = await response.json();
+        const token = result.access_token;
+        if (!token) {
+          throw new Error("Token not received from server");
+        }
+
+        const user = {
+          email: result.email,
+        };
+
+        login(token, user); // Store token and user details in Auth Context
+        toast.success("Login successful! 🎉", { autoClose: 2000 });
+        router.replace("/");
+      } else {
+        const errorData = await response.json();
+        const errorMessage = Array.isArray(errorData.detail)
+          ? errorData.detail.map((err: any) => err.msg).join(", ")
+          : errorData.detail || "Authentication failed";
+        toast.error(errorMessage);
       }
-    } catch (error: any) {
-      setError(error.response?.data?.message || "Incorrect details. Please try again.");
+    } catch (error) {
+      toast.error("An error occurred. Please try again later.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -46,9 +80,11 @@ const Login = () => {
         <p className="text-center text-[12px] font-semibold mt-1 mb-10 text-[#050C9C]">
           LOGIN TO YOUR ACCOUNT
         </p>
-        
+
         {/* Display error message */}
-        {error && <p className="text-center text-red-500 text-sm mt-2">{error}</p>}
+        {error && (
+          <p className="text-center text-red-500 text-sm mt-2">{error}</p>
+        )}
 
         <form onSubmit={handleSubmit}>
           {/* Input Fields */}
@@ -57,6 +93,7 @@ const Login = () => {
               type="email"
               id="email"
               placeholder="Enter your email"
+              name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -65,6 +102,7 @@ const Login = () => {
             <input
               id="password"
               placeholder="Enter your password"
+              name="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
@@ -77,8 +115,12 @@ const Login = () => {
           </div>
 
           {/* Sign In Button */}
-          <button type="submit" className="w-full bg-[#050C9C] text-white py-3 rounded-2xl mt-4 font-bold text-[20px] hover:bg-blue-800 transition">
-            Sign in
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full bg-[#050C9C] text-white py-3 rounded-2xl mt-4 font-bold text-[20px] hover:bg-blue-800 transition"
+          >
+            {loading ? "Logging in..." : "Login"}
           </button>
 
           {/* Separator */}
@@ -100,12 +142,21 @@ const Login = () => {
           {/* Signup Link */}
           <p className="text-center text-sm font-light text-black mt-[120px]">
             Don’t have an account?
-            <Link href="/signup" className="text-black font-bold cursor-pointer">
-              {" "} Sign up now
+            <Link
+              href="/signup"
+              className="text-black font-bold cursor-pointer"
+            >
+              {" "}
+              Sign up now
             </Link>
           </p>
         </form>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+      />
     </div>
   );
 };

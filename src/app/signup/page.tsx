@@ -1,9 +1,10 @@
 "use client";
 import { useState } from "react";
-import { useRouter } from "next/navigation"; 
+import { useRouter } from "next/navigation";
 import Link from "next/link";
-import axios, { AxiosError } from "axios";
-import { FaGoogle } from "react-icons/fa";
+import axios from "axios";
+import { useAuth } from "@/context/AuthContext";
+import { toast, ToastContainer } from "react-toastify";
 
 const Signup = () => {
   // State variables with TypeScript types
@@ -16,57 +17,97 @@ const Signup = () => {
   const [course, setCourse] = useState<string>("");
   const [level, setLevel] = useState<string>("");
   const [error, setError] = useState<string>("");
+  const [loading, setLoading] = useState(false);
 
-  const router = useRouter(); 
+  const router = useRouter();
+  const { login } = useAuth();
 
   // Function to handle form submission
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent default form submission
-  
-    if (!firstname || !lastname || !email || !password || !confirmPassword|| !university || !course || !level) {
-      setError("All fields are required");
+    setError("");
+    setLoading(true);
+
+    // Field validation
+    if (!firstname) {
+      toast.error("First name is required");
+      setLoading(false);
+      return;
+    }
+    if (!lastname) {
+      toast.error("Last name is required");
+      setLoading(false);
+      return;
+    }
+    if (!email) {
+      toast.error("Email is required");
+      setLoading(false);
+      return;
+    }
+    if (!university) {
+      toast.error("University is required");
+      setLoading(false);
+      return;
+    }
+    if (!course) {
+      toast.error("Course of Study is required");
+      setLoading(false);
+      return;
+    }
+    if (!level) {
+      toast.error("Level is required");
+      setLoading(false);
+      return;
+    }
+    if (!password) {
+      toast.error("Password is required");
+      setLoading(false);
       return;
     }
     if (password !== confirmPassword) {
-      setError("Passwords do not match");
+      toast.error("Passwords do not match");
+      setLoading(false);
       return;
     }
-  
-    setError(""); 
-  
+
     const data = {
-      firstname,
-      lastname,
       email,
-      password,
-      confirmPassword,
+      surname: lastname, // Change to "surname"
+      first_name: firstname, // Change to "first_name"
       university,
       course_of_study: course,
-      level,
+      level: parseInt(level), // Convert level to number
+      password,
     };
-  
+
     try {
       const response = await axios.post(
         "https://studyboosta.onrender.com/register/",
-        data
+        data,
+        { headers: { "Content-Type": "application/json" } }
       );
-  
+
       if (response.status === 200) {
-        alert("Account successfully created");
-        router.push("/");
+        const token = response.data.access_token; // Get token from response
+        const user = {
+          email,
+          first_name: firstname,
+          surname: lastname,
+          university,
+          course_of_study: course,
+          level,
+        };
+
+        login(token, user); // Store user session
+        toast.success("Account successfully created! 🎉");
+        router.push("/"); // Redirect to a protected page
       }
     } catch (error) {
-      if (axios.isAxiosError(error) && error.response) {
-        setError(
-          (error.response.data as { message?: string })?.message ||
-            "Failed to create account. Please try again."
-        );
-      } else {
-        setError("Failed to create account. Please try again.");
-      }
+      toast.error("Failed to create account. Please try again.");
+    } finally {
+      setLoading(false);
     }
   };
-  
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-white ">
@@ -88,7 +129,7 @@ const Signup = () => {
           <div className="mt-6">
             <input
               type="text"
-              id="firstname"
+              id="full_name"
               placeholder="Enter your first name"
               value={firstname}
               onChange={(e) => setFirstName(e.target.value)}
@@ -164,9 +205,10 @@ const Signup = () => {
           {/* Sign Up Button */}
           <button
             type="submit"
+            disabled={loading}
             className="w-full bg-[#050C9C] text-white py-3 rounded-2xl mt-5 font-bold text-[20px] hover:bg-blue-800 transition"
           >
-            Sign up
+            {loading ? "Creating account..." : "Sign up"}
           </button>
 
           {/* Separator */}
@@ -192,6 +234,11 @@ const Signup = () => {
           </p>
         </form>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+      />
     </div>
   );
 };
