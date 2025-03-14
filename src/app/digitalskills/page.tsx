@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import ProtectedRoute from "@/components/ProtectedRoutes";
 
 interface Course {
   id: number;
@@ -70,7 +69,6 @@ const CoursesSection: React.FC = () => {
   ];
 
   return (
-    <ProtectedRoute>
       <div className="bg-white">
         {/* Hero Section */}
         <div
@@ -448,7 +446,6 @@ const CoursesSection: React.FC = () => {
           </button>
         </div>
       </div>
-    </ProtectedRoute>
   );
 };
 
