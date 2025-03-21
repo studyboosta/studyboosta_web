@@ -1,6 +1,7 @@
 'use client';
 import React, {useState} from 'react';
 
+
  const TopCourses: React.FC = () => {
    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 

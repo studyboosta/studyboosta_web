@@ -1,6 +1,10 @@
+'use client';
 import Image from "next/image";
 import Link from "next/link";
+import { useAuth } from "@/context/AuthContext";
+
 const HeroSection = () => {
+  const { token } = useAuth();
   return (
     <div className="bg-white container  mx-[20px] flex flex-col lg:flex-row items-center mb-9  px-6 lg:space-y-0 lg:space-x-[15px]">
       {/* Left Content */}
@@ -23,11 +27,11 @@ const HeroSection = () => {
           updates in one platform{" "}
           <span className="font-bold"> StudyBoosta</span>
         </p>
-        <Link href="/signup">
-          <button className="px-6 py-3 bg-[#050C9C] font-bold text-[16px] text-white rounded hover:bg-blue-800 mt-[40px] mb-[50px]">
-            Start Learning
-          </button>
-        </Link>
+        <Link href={token ? "/courses" : "/signup"}>
+      <button className="px-6 py-3 bg-[#050C9C] font-bold text-[16px] text-white rounded hover:bg-blue-800 mt-[40px] mb-[50px]">
+        {token ? "Go to Courses" : "Start Learning"}
+      </button>
+    </Link>
         <div>
           <Image
             src="/assests/images/Frame 1597880755.png"

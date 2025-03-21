@@ -4,17 +4,10 @@ import Link from "next/link";
 // import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-// const Swiper = dynamic(() => import("swiper/react").then((mod) => mod.Swiper), {
-//   ssr: false,
-// });
-// const SwiperSlide = dynamic(
-//   () => import("swiper/react").then((mod) => mod.SwiperSlide),
-//   { ssr: false }
-// );
-
-
+import { useAuth } from "@/context/AuthContext";
 
 const VideoSection = () => {
+  const { token } = useAuth();
   const reviews = [
     {
       name: "John Tobechukwu",
@@ -59,7 +52,7 @@ const VideoSection = () => {
             How to navigate the StudyBoosta platform
           </h2>
           <iframe
-            src="https://www.youtube.com/embed/sample-video" 
+            src="https://www.youtube.com/embed/sample-video"
             title="How to navigate the StudyBoosta platform"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -68,9 +61,10 @@ const VideoSection = () => {
         </div>
 
         <div className="flex justify-center items-center">
-          <Link href="/signup">
+          
+          <Link href={token ? "/courses" : "/signup"}>
             <button className="px-6 py-3 bg-[#050C9C] font-bold text-[16px] text-white rounded hover:bg-blue-800 mt-[40px] mb-[50px]">
-              Create an account for free
+              {token ? "Go to Courses" : "Create an account for free"}
             </button>
           </Link>
         </div>

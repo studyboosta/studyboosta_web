@@ -1,6 +1,9 @@
+'use client';
 import React from "react";
 import Link from "next/link";
+import { useAuth } from "@/context/AuthContext";
 const WhatWeOffer = () => {
+  const { token } = useAuth();
   const offers = [
     {
       title: "Smarter Learning, Better Results",
@@ -61,11 +64,12 @@ const WhatWeOffer = () => {
 </div>
 
       <div className="flex justify-center items-center">
-          <Link href="/signup">
-            <button className="px-6 py-3 bg-[#050C9C] font-bold text-[16px] text-white rounded hover:bg-blue-800  mb-[50px]">
-              Create an account for free
+      <Link href={token ? "/marketplace" : "/signup"}>
+            <button className="px-6 py-3 bg-[#050C9C] font-bold text-[16px] text-white rounded hover:bg-blue-800 mt-[40px] mb-[50px]">
+              {token ? "Explore Our mentorship Program" : "Create an account for free"}
             </button>
           </Link>
+          
         </div>
     </div>
   );
