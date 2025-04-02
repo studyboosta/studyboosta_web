@@ -59,7 +59,9 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     setUser(null); 
     setToken(null); 
     toast.info("Logged out successfully.");
-    router.push("/"); 
+    setTimeout(() => {
+      router.push("/");
+    }, 1000);
   };
 
   return (

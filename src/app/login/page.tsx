@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext"; // Use Auth Context
 import Link from "next/link";
 import { toast, ToastContainer } from "react-toastify";
+import { FiEye, FiEyeOff } from "react-icons/fi";
 
 const Login = () => {
   const { login } = useAuth(); // Get login function from context
@@ -13,6 +14,7 @@ const Login = () => {
   const [password, setPassword] = useState<string>("");
   const [error, setError] = useState<string>("");
   const [loading, setLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const validateForm = () => {
     if (!email || !password) {
@@ -39,7 +41,7 @@ const Login = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data), 
+        body: JSON.stringify(data),
       });
 
       if (response.ok) {
@@ -99,16 +101,24 @@ const Login = () => {
               required
               className="w-full p-3 border rounded-2xl bg-[#F1F5FF] mt-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
-            <input
-              id="password"
-              placeholder="Enter your password"
-              name="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-              type="password"
-              className="w-full mt-3 p-3 border rounded-2xl bg-[#F1F5FF] focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
+            <div className="relative w-full">
+              <input
+                type={showPassword ? "text" : "password"}
+                id="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="w-full mt-3 p-3 pr-10 border rounded-2xl bg-[#F1F5FF] focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+              <button
+                type="button"
+                className="absolute top-1/2 right-4 transform -translate-y-1/2 text-gray-500"
+                onClick={() => setShowPassword(!showPassword)}
+              >
+                {showPassword ? <FiEyeOff size={20} /> : <FiEye size={20} />}
+              </button>
+            </div>
             <div className="text-right text-sm text-[#000000B3] mt-2 cursor-pointer m-5">
               Forgot Password?
             </div>
