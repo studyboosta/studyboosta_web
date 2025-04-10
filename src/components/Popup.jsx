@@ -29,11 +29,11 @@ const Popup = ({ setShowPopup }) => {
               Join the Global StudyBoosta Community on WhatsApp!
             </h2>
             <p className="text-sm md:text-base text-gray-600 leading-relaxed sm:mb-10 mb-6">
-              Over 1,000 students from 20+ universities are already part of the
-              StudyBoosta community — and they’re gaining an edge! By joining,
-              you'll get access to free live mentorship webinars, exclusive
+            Over 1,000 students from 20+ universities are already part of the
+              StudyBoosta community &mdash; and they&rsquo;re gaining an edge! By joining,
+              you&apos;ll get access to free live mentorship webinars, exclusive
               scholarship alerts, internship and job opportunities, and
-              career-building resources that aren’t shared anywhere else.
+              career-building resources that aren&rsquo;t shared anywhere else.
             </p>
             <button className="bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded-md self-start transition">
               Click here to join now!
