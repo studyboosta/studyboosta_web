@@ -29,15 +29,22 @@ const Popup = ({ setShowPopup }) => {
               Join the Global StudyBoosta Community on WhatsApp!
             </h2>
             <p className="text-sm md:text-base text-gray-600 leading-relaxed sm:mb-10 mb-6">
-            Over 1,000 students from 20+ universities are already part of the
-              StudyBoosta community &mdash; and they&rsquo;re gaining an edge! By joining,
-              you&apos;ll get access to free live mentorship webinars, exclusive
-              scholarship alerts, internship and job opportunities, and
-              career-building resources that aren&rsquo;t shared anywhere else.
+              Over 1,000 students from 20+ universities are already part of the
+              StudyBoosta community &mdash; and they&rsquo;re gaining an edge!
+              By joining, you&apos;ll get access to free live mentorship
+              webinars, exclusive scholarship alerts, internship and job
+              opportunities, and career-building resources that aren&rsquo;t
+              shared anywhere else.
             </p>
-            <button className="bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded-md self-start transition">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeuEcZMJ21CmW9lzY2UpSH8f4RnuX86Ft2M36n_9T9A_xkK3w/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setShowPopup(false)}
+              className="bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded-md self-start transition cursor-pointer"
+            >
               Click here to join now!
-            </button>
+            </a>
           </div>
         </div>
       </div>
