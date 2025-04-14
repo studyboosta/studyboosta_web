@@ -7,11 +7,15 @@ const ClientPopupWrapper = () => {
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
-    const hasSeenPopup = localStorage.getItem("hasSeenPopup");
+    const hasSeenPopup = sessionStorage.getItem("hasSeenPopup");
 
     if (!hasSeenPopup) {
-      setShowPopup(true);
-      localStorage.setItem("hasSeenPopup", "true");
+      const timer = setTimeout(() => {
+        setShowPopup(true);
+        sessionStorage.setItem("hasSeenPopup", "true");
+      }, 60000);
+
+      return () => clearTimeout(timer);
     }
   }, []);
 
