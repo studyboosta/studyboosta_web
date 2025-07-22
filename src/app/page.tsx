@@ -15,7 +15,6 @@ const Home = () => {
     <ClientPopupWrapper />
       <HeroSection />
       <WhatWeOffer />
-
       <TopCourses />
       <VideoSection />
     </>

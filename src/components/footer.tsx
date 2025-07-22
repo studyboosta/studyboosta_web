@@ -9,7 +9,7 @@ import {
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#000B76] text-white px-6 md:px-24 py-8">
+    <footer className="bg-[#000B76] w-full text-white px-6 md:px-24 py-8">
       <div className="container mx-auto pt-3 px-4 grid grid-cols-1 md:flex md:justify-between md:items-start gap-8">
         {/* Stay Up to Date Section */}
         <div className="md:flex-1">
