@@ -6,7 +6,7 @@ import { useAuth } from "@/context/AuthContext";
 const HeroSection = () => {
   const { token } = useAuth();
   return (
-    <div className="bg-white container w-full flex flex-row items-center mb-9 justify-center px-6 lg:space-y-0 lg:space-x-[15px]">
+    <div className="bg-white container mx-auto w-full flex flex-row items-center mb-9 justify-center px-6 lg:space-y-0 lg:space-x-[15px]">
       {/* Left Content */}
       <div className="lg:w-1/2 md:items-center flex flex-col w-full lg:items-start items-start lg:text-start text-start md:text-center py-8 ">
         <p className="text-[28px] sm:text-[28px] md:text-[32px] lg:text-[40px] font-bold mt-[30px] sm:mt-[20px] lg:mt-[50px] text-black mb-[20px] leading-normal">
