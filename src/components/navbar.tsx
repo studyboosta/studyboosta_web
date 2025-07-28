@@ -26,7 +26,7 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
 
   return (
     <nav className="bg-[#F1F5FF] ">
-      <div className="container px-6 flex items-center justify-between py-4 ">
+      <div className="container mx-auto px-6 flex items-center justify-between py-4 ">
         {/* Navbar Brand */}
         <p className="text-left text-[20px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#050C9C]">
           StudyBoosta
