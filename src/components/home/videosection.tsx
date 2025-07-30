@@ -44,7 +44,7 @@ const VideoSection = () => {
   ];
 
   return (
-    <section className="bg-white py-16 px-4">
+    <section className="bg-white w-full py-16 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Video Section */}
         <div className="text-center mb-12">

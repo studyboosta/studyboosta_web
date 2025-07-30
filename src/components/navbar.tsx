@@ -26,15 +26,15 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
   };
 
   return (
-    <nav className="bg-[#F1F5FF]">
-      <div className="container mx-auto flex items-center justify-between py-4 px-6">
+    <nav className="bg-[#F1F5FF] ">
+      <div className="container mx-auto px-6 flex items-center justify-between py-4 ">
         {/* Navbar Brand */}
         <p className="text-left text-[20px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#050C9C]">
           StudyBoosta
         </p>
 
         {/* Desktop Menu */}
-        <ul className="hidden sm:flex gap-6">
+        <ul className="md:hidden hidden lg:flex gap-6">
           {[
             { name: "Home", href: "/" },
             { name: "Courses", href: "/courses" },
@@ -60,7 +60,7 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
         </ul>
 
         {/* Mobile Hamburger Icon */}
-        <div className="sm:hidden flex items-center">
+        <div className="block md:block lg:hidden flex items-center">
           <button onClick={toggleMenu} className="text-[#050C9C]">
             <svg
               className="w-6 h-6"
@@ -80,7 +80,7 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
         </div>
 
         {/* Desktop Login & Signup */}
-        <div className="space-x-4 hidden sm:flex items-center">
+        <div className="space-x-4 md:hidden hidden lg:flex items-center">
           {token ? (
             <>
               <button
@@ -111,8 +111,8 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
 
       {/* Mobile Menu (Visible when isOpen is true) */}
       {isOpen && (
-        <div className="sm:hidden bg-[#F1F5FF] p-2">
-          <ul className="flex flex-col gap-4">
+        <div className="block md:block px-6 w-full lg:hidden bg-[#F1F5FF] ">
+          <ul className="flex  flex-col gap-4">
             {[
               { name: "Home", href: "/" },
               { name: "Courses", href: "/courses" },

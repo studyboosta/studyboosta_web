@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import Link from "next/link";
 import { useAuth } from "@/context/AuthContext";
@@ -32,7 +32,7 @@ const WhatWeOffer = () => {
   ];
 
   return (
-    <div className="bg-white py-16 px-4">
+    <div className="bg-white w-full py-16 lg:px-4 px-4 md:px-0">
       <div className="text-center mb-12">
         <h2 className="text-black text-[28px] font-semibold">What we offer</h2>
         <p className="text-black text-[16px] mt-2">
@@ -40,37 +40,38 @@ const WhatWeOffer = () => {
           all round.
         </p>
       </div>
-      <div className="grid gap-8 lg:grid-cols-4 max-w-6xl mx-auto mb-32 mt-5 justify-center">
-  {offers.map((offer, index) => (
-    <div
-      key={index}
-      className="rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 relative w-[90%] sm:w-[300px] md:w-[275px] h-[500px] mx-auto"
-    >
-      {/* Background Image */}
-      <div
-        className="w-full h-full bg-cover bg-center flex flex-col justify-end"
-        style={{ backgroundImage: `url(${offer.image})` }}
-      >
-        {/* Content */}
-        <div className="p-6 ">
-          <h3 className="text-lg font-semibold text-white mb-2">
-            {offer.title}
-          </h3>
-          <p className="text-white text-sm">{offer.description}</p>
-        </div>
+     <div className="grid gap-y-8 gap-x-4 lg:grid-cols-4 md:grid-cols-2 md:px-10 lg:px-0 px-0 max-w-6xl mx-auto mb-32 mt-5 justify-center">
+        {offers.map((offer, index) => (
+          <div
+            key={index}
+             className="rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 relative h-[500px] "
+          >
+            {/* Background Image */}
+            <div
+              className="w-full h-full bg-cover bg-center flex flex-col justify-end"
+              style={{ backgroundImage: `url(${offer.image})` }}
+            >
+              {/* Content */}
+              <div className="p-6 ">
+                <h3 className="text-lg font-semibold text-white mb-2">
+                  {offer.title}
+                </h3>
+                <p className="text-white text-sm">{offer.description}</p>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
-    </div>
-  ))}
-</div>
 
       <div className="flex justify-center items-center">
-      <Link href={token ? "/marketplace" : "/signup"}>
-            <button className="px-6 py-3 bg-[#050C9C] font-bold text-[16px] text-white rounded hover:bg-blue-800 mt-[40px] mb-[50px]">
-              {token ? "Explore Our mentorship Program" : "Create an account for free"}
-            </button>
-          </Link>
-          
-        </div>
+        <Link href={token ? "/marketplace" : "/signup"}>
+          <button className="px-6 py-3 bg-[#050C9C] font-bold text-[16px] text-white rounded hover:bg-blue-800 mt-[40px] mb-[50px]">
+            {token
+              ? "Explore Our mentorship Program"
+              : "Create an account for free"}
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };

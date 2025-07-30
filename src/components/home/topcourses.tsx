@@ -17,17 +17,17 @@ import React, {useState} from 'react';
     
       const courses = [
         {
-          videoUrl: "https://www.youtube.com/embed/sample-video-1",
+          videoUrl: "https://www.youtube.com/embed/DKPqNQ3CZ9I?si=g2OUorL3HYXXa6Ud",
         },
         {
           videoUrl: "https://www.youtube.com/embed/pdbQvIbGd_4?si=oxxWUGhv9DQtpwlF",
         },
         {
-          videoUrl: "https://www.youtube.com/embed/sample-video-3",
+          videoUrl: "https://www.youtube.com/embed/FFDMzbrEXaE?si=dK-zvOM0jga0gK3f",
         },
       ];
   return (
-    <section className="bg-[#F1F5FF]  py-16 px-4">
+    <section className="bg-[#F1F5FF] w-full py-16 px-4">
         <div className="max-w-6xl mx-auto">
           {/* Heading */}
           <div className="text-center mb-8">
