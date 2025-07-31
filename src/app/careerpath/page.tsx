@@ -15,7 +15,7 @@ const CareerPath = () => {
       <p className="sm:text-lg text-sm text-center max-w-2xl mb-8 text-[#050C9C]">
         Discover your ideal career path with our comprehensive guide using AI.
       </p>
-      <div className="bg-gray-50 p-6 rounded-lg shadow-md w-full max-w-2xl">
+      <div className="bg-gra p-6 rounded-lg shadow-lg w-full max-w-2xl">
         <form action="">
           <div className="mb-4">
             <label className="text-[#5392b5] text-sm " htmlFor="">
