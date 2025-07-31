@@ -6,11 +6,11 @@ import { VscChip } from "react-icons/vsc";
 const CareerPath = () => {
   return (
     <div className="flex flex-col items-center min-h-screen px-3 pt-10">
-      <div className="flex gap-2 items-center mb-6">
+      <div className="flex gap-2 sm:flex-row flex-col text-center items-center mb-6">
         <h1 className="sm:text-4xl text-lg font-bold bg-text-gradient bg-clip-text text-transparent bg-[0_0] bg-triple animate-text-gradient-move">
           StudyBoosta Tech Career Pathfinder
         </h1>
-        <VscChip className="sm:text-4xl text-lg text-blue-700" />
+        <VscChip className="sm:text-4xl text-lg text-[#050C9C]" />
       </div>
       <p className="sm:text-lg text-sm text-center max-w-2xl mb-8 text-[#050C9C]">
         Discover your ideal career path with our comprehensive guide using AI.
@@ -18,7 +18,7 @@ const CareerPath = () => {
       <div className="bg-gra p-6 rounded-lg shadow-lg w-full max-w-2xl">
         <form action="">
           <div className="mb-4">
-            <label className="text-[#5392b5] text-sm " htmlFor="">
+            <label className="text-[#050C9C] text-sm " htmlFor="">
               Skills (e.g., Node.js, Python, Photoshop)
             </label>
             <div className="flex gap-2 items-center ">
@@ -41,7 +41,7 @@ const CareerPath = () => {
             </div>
           </div>
           <div className="flex flex-col gap-2 mb-6">
-            <label className="text-[#5392b5] text-sm" htmlFor="">
+            <label className="text-[#050C9C] text-sm" htmlFor="">
               Interests (e.g., AI, web development, data science, gaming)
             </label>
             <textarea
@@ -52,7 +52,7 @@ const CareerPath = () => {
             ></textarea>
           </div>
           <div className="flex flex-col gap-2 mb-6">
-            <label className="text-[#5392b5] text-sm" htmlFor="">
+            <label className="text-[#050C9C] text-sm" htmlFor="">
               Current Experience Level
             </label>
             <select
