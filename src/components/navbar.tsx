@@ -8,7 +8,6 @@ interface NavbarProps {
   activeRoute: string;
 }
 
-
 const NavBar = ({ activeRoute }: NavbarProps) => {
   const pathname = usePathname();
 
@@ -40,7 +39,7 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
             { name: "Courses", href: "/courses" },
             { name: "Studybot", href: "/comingSoon" },
             { name: "Opportunities", href: "/opportunities" },
-            { name: "Security", href: "/security" },
+            { name: "Career Path", href: "/careerpath" },
             { name: "Digital Skills", href: "/digitalskills" },
             { name: "Mentorship", href: "/marketplace" },
           ].map((item) => (
@@ -118,7 +117,7 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
               { name: "Courses", href: "/courses" },
               { name: "Studybot", href: "/comingSoon" },
               { name: "Opportunities", href: "/opportunities" },
-              { name: "Security", href: "/security" },
+              { name: "Career Path", href: "/careerpath" },
               { name: "Digital Skills", href: "/digitalskills" },
               { name: "Mentorship", href: "/marketplace" },
             ].map((item) => (
