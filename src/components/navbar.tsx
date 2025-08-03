@@ -8,7 +8,6 @@ interface NavbarProps {
   activeRoute: string;
 }
 
-
 const NavBar = ({ activeRoute }: NavbarProps) => {
   const pathname = usePathname();
 
