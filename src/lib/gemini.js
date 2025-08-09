@@ -3,8 +3,6 @@ import {
   GoogleGenerativeAI,
   HarmCategory,
   HarmBlockThreshold,
-  GenerativeModel,
-  GenerateContentResult,
 } from "@google/generative-ai";
 
 if (!API_KEY) {
@@ -14,7 +12,7 @@ if (!API_KEY) {
 const genAI = new GoogleGenerativeAI(API_KEY);
 // Initialize model without default generationConfig/safetySettings here,
 // as we'll pass them per request for clarity.
-const model: GenerativeModel = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" });
+const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" });
 
 // These will be passed directly in the generateContent call
 const generationConfigForRequest = {
@@ -44,72 +42,59 @@ const safetySettingsForRequest = [
   },
 ];
 
-// Types for pathway and AI response
-export interface Resource {
-  name: string;
-  url: string;
-}
-
-export interface Pathway {
-  title: string;
-  description: string;
-  compatibility: string;
-  skillsToLearn: string[];
-  salaryRange: string;
-  resources: Resource[];
-}
-
-
-export interface CareerSuggestionsResponse {
-  pathways: Pathway[];
-}
-
 // Updated helper function to clean the AI response
-function cleanJsonString(str: unknown): string {
+function cleanJsonString(str) {
   if (typeof str !== "string") {
     console.warn("cleanJsonString received non-string input:", str);
-    return "";
+    return ""; // Or throw an error, or return str if it might be valid non-string
   }
+  // console.log("cleanJsonString input (raw):", str);
+  // console.log("cleanJsonString input (JSON.stringify to see hidden chars):", JSON.stringify(str));
+
   let cleaned = str.trim();
 
   // Most common case: ```json ... ```
   if (cleaned.startsWith("```json") && cleaned.endsWith("```")) {
+    // console.log("Attempting to strip ```json prefix and ``` suffix");
     cleaned = cleaned.substring(
       "```json".length,
       cleaned.length - "```".length
     );
-    cleaned = cleaned.trim();
+    cleaned = cleaned.trim(); // Trim again after stripping
+    // console.log("Cleaned (after ```json strip):", cleaned);
     return cleaned;
   }
 
   // Case: ``` ... ``` (generic markdown code block)
   if (cleaned.startsWith("```") && cleaned.endsWith("```")) {
+    // console.log("Attempting to strip generic ``` prefix and ``` suffix");
     cleaned = cleaned.substring("```".length, cleaned.length - "```".length);
-    cleaned = cleaned.trim();
+    cleaned = cleaned.trim(); // Trim again
+    // console.log("Cleaned (after generic ``` strip):", cleaned);
     return cleaned;
   }
 
   // Regex attempts as fallback if direct string ops didn't catch it
+  // (e.g. slight variations in whitespace or content)
   const markdownJsonPattern = /```json\s*([\s\S]*?)\s*```/;
   let match = cleaned.match(markdownJsonPattern);
   if (match && match[1]) {
+    // console.log("Cleaned using regex ```json pattern");
     return match[1].trim();
   }
 
   const markdownGenericPattern = /```\s*([\s\S]*?)\s*```/;
   match = cleaned.match(markdownGenericPattern);
   if (match && match[1]) {
+    // console.log("Cleaned using regex generic ``` pattern");
     return match[1].trim();
   }
 
-  return cleaned;
+  // console.log("No markdown fences fully matched, returning trimmed original:", cleaned);
+  return cleaned; // Return the (potentially still problematic) string if no patterns matched
 }
 
-export async function getCareerSuggestions(
-  skills: string[] = ["general software development"],
-  interests: string = "technology and problem solving",
-  experienceLevel: string = "entry-level"
-): Promise<CareerSuggestionsResponse> {
+export async function getCareerSuggestions(skills, interests, experienceLevel) {
   if (!skills || skills.length === 0) {
     skills = ["general software development"];
   }
@@ -153,10 +138,11 @@ export async function getCareerSuggestions(
     }
   `;
 
-  let rawText = "";
+  let rawText = ""; // To store raw text for debugging in case of error
 
   try {
-    const result: GenerateContentResult = await model.generateContent({
+    // IMPORTANT: Pass generationConfig and safetySettings directly to the generateContent call
+    const result = await model.generateContent({
       contents: [{ role: "user", parts: [{ text: prompt }] }],
       generationConfig: generationConfigForRequest,
       safetySettings: safetySettingsForRequest,
@@ -196,11 +182,13 @@ export async function getCareerSuggestions(
       );
     }
 
-    // @ts-expect-error: .text() may not be typed on all SDK versions
-    rawText = response.text();
+    rawText = response.text(); // Get text from the first candidate's parts
+    // console.log("Raw Gemini Response Text:", rawText);
 
     const cleanedText = cleanJsonString(rawText);
+    // console.log("Cleaned Text for JSON parsing:", cleanedText);
 
+    // Add more detailed logging right before parsing
     if (
       cleanedText.length < 2 ||
       (!cleanedText.startsWith("{") && !cleanedText.startsWith("["))
@@ -211,19 +199,20 @@ export async function getCareerSuggestions(
       );
     }
 
-    let parsedResponse: CareerSuggestionsResponse;
+    let parsedResponse;
     try {
       parsedResponse = JSON.parse(cleanedText);
-    } catch (parseError: any) {
+    } catch (parseError) {
       console.error(
         "Failed to parse cleaned JSON response. Parse error:",
         parseError.message
       );
-      console.error("Raw text from AI was:", JSON.stringify(rawText));
+      console.error("Raw text from AI was:", JSON.stringify(rawText)); // Log raw text
       console.error(
         "Cleaned text that failed parsing was:",
         JSON.stringify(cleanedText)
-      );
+      ); // Log cleaned text
+      // Log first N characters with their char codes for debugging weird characters
       let charCodeDebug = "";
       for (let i = 0; i < Math.min(cleanedText.length, 30); i++) {
         charCodeDebug += `${cleanedText[i]}(${cleanedText.charCodeAt(i)}) `;
@@ -286,17 +275,19 @@ export async function getCareerSuggestions(
     });
 
     return parsedResponse;
-  } catch (error: any) {
+  } catch (error) {
     console.error("Error in getCareerSuggestions:", error.message);
+    // Log additional details if available from the error object
     if (error.response && error.response.promptFeedback) {
       console.error("Prompt Feedback:", error.response.promptFeedback);
     }
+    // Avoid re-throwing generic SyntaxError if we've already thrown our custom detailed error
     if (
       error.message.includes("AI returned invalid JSON") ||
       error.message.includes("AI generation blocked") ||
       error.message.includes("AI response format error")
     ) {
-      throw error;
+      throw error; // Re-throw our custom, more informative error
     }
     throw new Error(
       "Failed to get suggestions from AI. Original error: " + error.message

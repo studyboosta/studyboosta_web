@@ -14,7 +14,7 @@ export const loadSearches = () => {
  * saveSearch - Save a new search to localStorage
  * @param {Object} searchData - The search data to save
  */
-export const saveSearch = (searchData: any) => {
+export const saveSearch = (searchData) => {
   if (typeof window === "undefined") return;
   let searches = loadSearches();
   // Add new search to the beginning
