@@ -90,15 +90,15 @@ const ScholarshipsPage = () => {
             Most recent <IoMdArrowDropdown className="ml-2" />
           </button>
           {filterOpen && (
-            <div className="absolute mt-2 bg-white border border-gray-200 rounded-md shadow-lg">
+            <div className="absolute mt-2 bg-white border z-10 border-gray-200 rounded-md shadow-lg">
               <ul>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                <li className="px-4 py-2 hover:bg-blue-700 hover:text-white cursor-pointer">
                   Most recent
                 </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                <li className="px-4 py-2 hover:bg-blue-700 hover:text-white cursor-pointer">
                   Oldest
                 </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                <li className="px-4 py-2 hover:bg-blue-700 hover:text-white cursor-pointer">
                   Popular
                 </li>
               </ul>

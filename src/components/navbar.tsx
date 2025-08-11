@@ -33,7 +33,7 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
         </p>
 
         {/* Desktop Menu */}
-        <ul className="md:hidden hidden lg:flex gap-6">
+        <ul className="md:hidden hidden  lg:flex gap-6">
           {[
             { name: "Home", href: "/" },
             { name: "Courses", href: "/courses" },
@@ -43,13 +43,13 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
             { name: "Digital Skills", href: "/digitalskills" },
             { name: "Mentorship", href: "/marketplace" },
           ].map((item) => (
-            <li key={item.name}>
+            <li  key={item.name}>
               <Link
                 href={item.href}
                 className={`${
                   isActive(item.href)
                     ? "border-b-4 rounded border-[#050C9C] mt-2 font-semibold"
-                    : "text-black"
+                    : "text-black hover:border-b-4 hover:border-[#050C9C] mt-2"
                 }`}
               >
                 {item.name}
@@ -93,13 +93,13 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
             <>
               <Link
                 href="/login"
-                className="text-[14px] font-bold text-[#050C9C] hover:underline"
+                className="text-[14px] font-bold text-[#050C9C] hover:text-blue-700"
               >
                 Login
               </Link>
               <Link
                 href="/signup"
-                className="px-4 py-2 font-semibold bg-[#050C9C] text-white rounded-xl hover:bg-blue-800"
+                className="px-4 py-2 font-semibold bg-[#050C9C] text-white rounded-xl hover:bg-blue-700"
               >
                 Sign Up
               </Link>

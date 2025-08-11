@@ -28,7 +28,7 @@ const HeroSection = () => {
           <span className="font-bold"> StudyBoosta</span>
         </p>
         <Link href={token ? "/courses" : "/signup"}>
-          <button className="px-6 py-3 bg-[#050C9C] font-bold text-[16px] text-white rounded hover:bg-blue-800 mt-[40px] mb-[50px]">
+          <button className="px-6 py-3 bg-[#050C9C] font-bold text-[16px] text-white rounded hover:bg-blue-700 mt-[40px] mb-[50px]">
             {token ? "Go to Courses" : "Start Learning"}
           </button>
         </Link>

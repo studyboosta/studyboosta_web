@@ -183,7 +183,7 @@ const Menu: React.FC<MenuProps> = ({ searchQuery }) => {
           setTempLevel
         )}
         <button
-          className="h-9 px-6 bg-[#051F9C] text-white rounded-lg"
+          className="h-9 px-6 bg-[#051F9C] hover:bg-blue-700 text-white rounded-lg"
           onClick={handleLoad}
           disabled={loading}
         >
@@ -203,7 +203,7 @@ const Menu: React.FC<MenuProps> = ({ searchQuery }) => {
                     className={`text-left p-2 w-full rounded-lg whitespace-nowrap ${
                       selectedContent?.title === item.title
                         ? "bg-[#051F9C] text-white"
-                        : "hover:bg-gray-200"
+                        : "hover:bg-blue-700 hover:text-white text-black"
                     }`}
                     onClick={() => {
                       dispatch(setSelectedContent(item));
