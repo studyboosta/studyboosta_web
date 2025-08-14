@@ -112,7 +112,7 @@ const CareerPath = () => {
     <div className="flex flex-col items-center min-h-screen px-4 py-16 bg-slate-50">
       <div className="text-center mb-12">
         <div className="flex items-center justify-center gap-4 mb-4">
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-blue-900 tracking-tight">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-[#050C9C] tracking-tight">
             Tech Career Pathfinder
           </h1>
           <VscChip className="text-4xl sm:text-5xl text-blue-600 animate-pulse" />
@@ -131,7 +131,7 @@ const CareerPath = () => {
               htmlFor="skills-input"
               className="block text-lg font-semibold text-blue-900 mb-2 flex items-center gap-2"
             >
-              <MdCode className="text-blue-500" />
+              <MdCode className="text-[#050C9C]" />
               Skills
               <span className="text-sm font-normal text-gray-500 ml-2">
                 (e.g., React, Python, UI/UX Design)
@@ -152,7 +152,7 @@ const CareerPath = () => {
               <button
                 type="button"
                 onClick={handleAddSkill}
-                className="px-5 py-3 font-semibold text-white rounded-lg bg-blue-600 hover:bg-blue-700 transition-colors duration-200 flex items-center gap-2"
+                className="px-5 py-3 font-semibold text-white rounded-lg bg-[#050C9C] hover:bg-blue-700 transition-colors duration-200 flex items-center gap-2"
               >
                 <IoIosAddCircle className="text-xl" />
                 Add
@@ -176,9 +176,9 @@ const CareerPath = () => {
           <div className="mb-8">
             <label
               htmlFor="interests-textarea"
-              className="block text-lg font-semibold text-blue-900 mb-2 flex items-center gap-2"
+              className="block text-lg font-semibold text-[#050C9C] mb-2 flex items-center gap-2"
             >
-              <MdScience className="text-blue-500" />
+              <MdScience className="text-[#050C9C]" />
               Interests
             </label>
             <textarea
@@ -195,9 +195,9 @@ const CareerPath = () => {
           <div className="mb-10">
             <label
               htmlFor="experience-select"
-              className="block text-lg font-semibold text-blue-900 mb-2 flex items-center gap-2"
+              className="block text-lg font-semibold text-[#050C9C] mb-2 flex items-center gap-2"
             >
-              <MdOutlineWorkOutline className="text-blue-500" />
+              <MdOutlineWorkOutline className="text-[#050C9C]" />
               Current Experience Level
             </label>
             <select
@@ -216,7 +216,7 @@ const CareerPath = () => {
 
           <button
             disabled={loading}
-            className="w-full px-6 py-4 flex items-center justify-center gap-3 font-bold text-lg text-white rounded-lg bg-blue-600 hover:bg-blue-700 transition-colors duration-200 disabled:bg-blue-400 disabled:cursor-not-allowed"
+            className="w-full px-6 py-4 flex items-center justify-center gap-3 font-bold text-lg text-white rounded-lg bg-[#050C9C] hover:bg-blue-700 transition-colors duration-200 disabled:bg-blue-400 disabled:cursor-not-allowed"
           >
             {loading ? (
               <>
@@ -239,8 +239,8 @@ const CareerPath = () => {
 
       {loading && (
         <div className="mt-6 flex gap-2 items-center justify-center">
-          <FaSpinner className="w-8 h-8 text-blue-500 animate-spin" />
-          <p className="text-lg text-blue-900">Generating Career Paths...</p>
+          <FaSpinner className="w-8 h-8 text-[#050C9C] animate-spin" />
+          <p className="text-lg text-[#050C9C]">Generating Career Paths...</p>
         </div>
       )}
 
@@ -248,7 +248,7 @@ const CareerPath = () => {
       {!loading && suggestions.length > 0 && (
         <div className="mx-auto mt-10 px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-blue-900 leading-tight tracking-wide">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#050C9C] leading-tight tracking-wide">
               Your Personalized Career Paths 🚀
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
@@ -342,10 +342,10 @@ const CareerPath = () => {
       {previousSearches.length > 0 && (
         <div className="mt-10 mx-auto max-w-4xl w-full">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-2xl font-bold text-blue-900">
+            <h2 className="text-2xl font-bold text-[#050C9C]">
               Your Search History
             </h2>
-            <MdOutlineAccessTime className="text-2xl text-blue-600" />
+            <MdOutlineAccessTime className="text-2xl text-[#050C9C]" />
           </div>
 
           <div className="space-y-4">
@@ -356,9 +356,9 @@ const CareerPath = () => {
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4 text-gray-700">
                   <div className="flex items-start gap-3">
-                    <MdBuild className="text-blue-500 text-2xl mt-1 flex-shrink-0" />
+                    <MdBuild className="text-[#050C9C] text-2xl mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-semibold text-blue-800">Skills:</p>
+                      <p className="font-semibold text-[#050C9C]">Skills:</p>
                       <p className="text-sm mt-1">
                         {search.inputs.skills.join(", ")}
                       </p>
@@ -366,17 +366,17 @@ const CareerPath = () => {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <MdLightbulbOutline className="text-blue-500 text-2xl mt-1 flex-shrink-0" />
+                    <MdLightbulbOutline className="text-[#050C9C] text-2xl mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-semibold text-blue-800">Interests:</p>
+                      <p className="font-semibold text-[#050C9C]">Interests:</p>
                       <p className="text-sm mt-1">{search.inputs.interests}</p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <MdOutlineWorkOutline className="text-blue-500 text-2xl mt-1 flex-shrink-0" />
+                    <MdOutlineWorkOutline className="text-[#050C9C] text-2xl mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-semibold text-blue-800">Experience:</p>
+                      <p className="font-semibold text-[#050C9C]">Experience:</p>
                       <p className="text-sm mt-1">
                         {search.inputs.experienceLevel}
                       </p>
@@ -397,7 +397,7 @@ const CareerPath = () => {
             <div className="mt-6 text-center">
               <button
                 onClick={() => setShowAllSearches(!showAllSearches)}
-                className="inline-flex items-center gap-2 px-6 py-3 font-semibold text-sm text-blue-700 bg-blue-50 rounded-full hover:bg-blue-100 transition-colors duration-200"
+                className="inline-flex items-center gap-2 px-6 py-3 font-semibold text-sm text-[#050C9C] bg-blue-50 rounded-full hover:bg-blue-100 transition-colors duration-200"
               >
                 {showAllSearches ? (
                   <>
