@@ -8,21 +8,29 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "text-gradient":
-          "linear-gradient(90deg, #3b82f6, #e8bb6a, #f6339a, #e8bb6a, #3b82f6, #e8bb6a, #f6339a)",
-      },
-      backgroundSize: {
-        triple: "300% 300%",
+      keyframes: {
+        "in-left": {
+          "0%": { transform: "translateX(-100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        "in-right": {
+          "0%": { transform: "translateX(100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        "out-left": {
+          "0%": { transform: "translateX(0)", opacity: "1" },
+          "100%": { transform: "translateX(-100%)", opacity: "0" },
+        },
+        "out-right": {
+          "0%": { transform: "translateX(0)", opacity: "1" },
+          "100%": { transform: "translateX(100%)", opacity: "0" },
+        },
       },
       animation: {
-        "text-gradient-move": "gradientShift 5s ease infinite",
-      },
-      keyframes: {
-        gradientShift: {
-          "0%": { backgroundPosition: "0% 0%" },
-          "100%": { backgroundPosition: "100% 0%" },
-        },
+        "in-from-left": "in-left 0.7s ease-out forwards",
+        "in-from-right": "in-right 0.7s ease-out forwards",
+        "out-to-left": "out-left 0.7s ease-in forwards",
+        "out-to-right": "out-right 0.7s ease-in forwards",
       },
     },
   },

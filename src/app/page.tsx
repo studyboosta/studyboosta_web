@@ -7,16 +7,23 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 import React from "react";
 import ClientPopupWrapper from "@/components/ClientPopupWrapper";
+import Testimonial from "@/components/home/testimonial";
+import CareerStats from "@/components/home/careerstats";
+import StudyFeatures from "@/components/home/studyfeatures";
+import FAQSection from "@/components/home/faqsection";
 
 const Home = () => {
-  
   return (
     <>
-    <ClientPopupWrapper />
+      <ClientPopupWrapper />
       <HeroSection />
+      <Testimonial />
+      <CareerStats />
       <WhatWeOffer />
-      <TopCourses />
+      <StudyFeatures />
+      {/* <TopCourses /> */}
       <VideoSection />
+       <FAQSection /> 
     </>
   );
 };

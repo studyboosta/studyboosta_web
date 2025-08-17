@@ -93,13 +93,13 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
             <>
               <Link
                 href="/login"
-                className="text-[14px] font-bold text-[#050C9C] hover:text-blue-700"
+                className="text-[14px] font-bold text-[#050C9C] hover:text-[#081566]"
               >
                 Login
               </Link>
               <Link
                 href="/signup"
-                className="px-4 py-2 font-semibold bg-[#050C9C] text-white rounded-xl hover:bg-blue-700"
+                className="px-4 py-2 font-semibold bg-[#050C9C] text-white rounded-xl hover:bg-[#081566]"
               >
                 Sign Up
               </Link>
@@ -126,7 +126,7 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
                   href={item.href}
                   className={`${
                     isActive(item.href)
-                      ? "font-semibold text-blue-700"
+                      ? "font-semibold text-[#081566]"
                       : "text-black"
                   }`}
                 >
@@ -153,7 +153,7 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
                 </Link>
                 <Link
                   href="/signup"
-                  className="px-4 py-2 font-semibold bg-[#050C9C] text-white rounded-xl hover:bg-blue-800"
+                  className="px-4 py-2 font-semibold bg-[#050C9C] text-white rounded-xl hover:bg-[#081566]"
                 >
                   Sign Up
                 </Link>

@@ -152,7 +152,7 @@ const CareerPath = () => {
               <button
                 type="button"
                 onClick={handleAddSkill}
-                className="px-5 py-3 font-semibold text-white rounded-lg bg-[#050C9C] hover:bg-blue-700 transition-colors duration-200 flex items-center gap-2"
+                className="px-5 py-3 font-semibold text-white rounded-lg bg-[#050C9C] hover:bg-[#081566] transition-colors duration-200 flex items-center gap-2"
               >
                 <IoIosAddCircle className="text-xl" />
                 Add
@@ -216,7 +216,7 @@ const CareerPath = () => {
 
           <button
             disabled={loading}
-            className="w-full px-6 py-4 flex items-center justify-center gap-3 font-bold text-lg text-white rounded-lg bg-[#050C9C] hover:bg-blue-700 transition-colors duration-200 disabled:bg-blue-400 disabled:cursor-not-allowed"
+            className="w-full px-6 py-4 flex items-center justify-center gap-3 font-bold text-lg text-white rounded-lg bg-[#050C9C] hover:bg-[#081566] transition-colors duration-200 disabled:bg-blue-400 disabled:cursor-not-allowed"
           >
             {loading ? (
               <>
@@ -310,7 +310,7 @@ const CareerPath = () => {
 
                   {career.resources?.length > 0 && (
                     <div className="mt-6 pt-6 border-t border-gray-100">
-                      <p className="font-semibold text-blue-700 mb-2 flex items-center">
+                      <p className="font-semibold text-[#081566] mb-2 flex items-center">
                         <FiExternalLink className="mr-2" />
                         Resources
                       </p>

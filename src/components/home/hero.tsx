@@ -2,61 +2,75 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useAuth } from "@/context/AuthContext";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "motion/react";
 
 const HeroSection = () => {
   const { token } = useAuth();
+  const [showLife, setShowLife] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowLife((prev) => !prev);
+    }, 4000); // swap every 4s
+    return () => clearInterval(interval);
+  }, []);
   return (
-    <div className="bg-white container mx-auto w-full flex flex-row items-center mb-9 justify-center px-6 lg:space-y-0 lg:space-x-[15px]">
-      {/* Left Content */}
-      <div className="lg:w-1/2 md:items-center flex flex-col w-full lg:items-start items-start lg:text-start text-start md:text-center py-8 ">
-        <p className="text-[28px] sm:text-[28px] md:text-[32px] lg:text-[40px] font-bold mt-[30px] sm:mt-[20px] lg:mt-[50px] text-black mb-[20px] leading-normal">
-          Crush Your Academic, Career & Financial Goals with StudyBoosta
+    <div className="bg-[#F8F8F8] w-full flex justify-center text-center py-12 px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col items-center max-w-4xl w-full">
+        {/* Heading with animated word beside Career */}
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#1A1A1A] leading-tight mt-12 mb-6 tracking-tight">
+          Stop Guessing. Start Building the{" "}
+          <span className="text-[#050C9C] inline-flex items-baseline">
+            Career{" "}
+            <AnimatePresence mode="wait">
+              {showLife ? (
+                <motion.span
+                  key="life"
+                  initial={{ opacity: 0, x: 60 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -60 }}
+                  transition={{ duration: 1.5, ease: "easeInOut" }}
+                  className="text-[#050C9C] ml-2 inline-block"
+                >
+                  Life
+                </motion.span>
+              ) : (
+                <motion.span
+                  key="dream"
+                  initial={{ opacity: 0, x: -60 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: 60 }}
+                  transition={{ duration: 1.5, ease: "easeInOut" }}
+                  className="text-[#050C9C] ml-2 inline-block"
+                >
+                  Dream
+                </motion.span>
+              )}
+            </AnimatePresence>
+          </span>
+          you actually want.
+        </h1>
+
+        {/* Subtext */}
+        <p className="text-lg sm:text-xl text-[#5C5C5C] max-w-2xl mb-8 leading-relaxed">
+          StudyBoosta gives you a simple & clear career roadmap, Interview/Exam
+          practice, real opportunities & practical digital/AI skills to earn
+          globally.
         </p>
-        <div className="lg:hidden rounded-lg items-center mb-6">
-          {/* Image on smaller screens */}
-          <Image
-            src="/assests/images/heroSmall.png"
-            alt="Excited student"
-            width={360}
-            height={360}
-          />
-        </div>
-        <p className="text-black text-[16px] md:text-center text-start mb-6 max-w-[500px]">
-          Get access to Expert video lessons, high income digital skills,
-          mentorship from Best Graduating students, scholarship & internship
-          updates in one platform{" "}
-          <span className="font-bold"> StudyBoosta</span>
-        </p>
+
+        {/* Button */}
         <Link href={token ? "/courses" : "/signup"}>
-          <button className="px-6 py-3 bg-[#050C9C] font-bold text-[16px] text-white rounded hover:bg-blue-700 mt-[40px] mb-[50px]">
-            {token ? "Go to Courses" : "Start Learning"}
+          <button className="px-8 py-4 bg-[#050C9C] font-bold text-lg text-white rounded-xl shadow-lg hover:bg-[#081566] transition-all duration-300 ease-in-out transform hover:-translate-y-1 mt-6 mb-8">
+            {token ? "Go to Courses" : "Start Learning Today"}
           </button>
         </Link>
-        <div className="md:text-center text-start lg:text-start md:items-center lg:items-start items-start flex flex-col">
-          <Image
-            src="/assests/images/Frame 1597880755.png"
-            alt="Excited student"
-            className=""
-            width={100}
-            height={60}
-          />
-          <div className="mt-6 text-black font-medium text-[14px]">
-            Join 1000+ students from 20+ higher institutions all over the
-            country.
-          </div>
-        </div>
-      </div>
 
-      {/* Right Image */}
-      <div className="lg:w-1/2 order-2 lg:order-none hidden lg:block">
-        <div className="rounded-lg overflow-hidden">
-          <Image
-            src="/assests/images/heroImage.png"
-            alt="Excited student"
-            width={570}
-            height={500}
-          />
-        </div>
+        {/* Footer note */}
+        <p className="text-sm text-[#888888] font-medium tracking-wide">
+          Join 1,000+ members • Built by founders who’ve trained over 2,000+
+          learners
+        </p>
       </div>
     </div>
   );

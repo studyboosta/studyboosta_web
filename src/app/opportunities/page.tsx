@@ -85,20 +85,20 @@ const ScholarshipsPage = () => {
         <div className="relative mb-6">
           <button
             onClick={toggleFilter}
-            className="flex items-center px-4 py-2 bg-[#000B76] text-[14px] text-white rounded-md shadow hover:bg-blue-700"
+            className="flex items-center px-4 py-2 bg-[#000B76] text-[14px] text-white rounded-md shadow hover:bg-[#081566]"
           >
             Most recent <IoMdArrowDropdown className="ml-2" />
           </button>
           {filterOpen && (
             <div className="absolute mt-2 bg-white border z-10 border-gray-200 rounded-md shadow-lg">
               <ul>
-                <li className="px-4 py-2 hover:bg-blue-700 hover:text-white cursor-pointer">
+                <li className="px-4 py-2 hover:bg-[#081566] hover:text-white cursor-pointer">
                   Most recent
                 </li>
-                <li className="px-4 py-2 hover:bg-blue-700 hover:text-white cursor-pointer">
+                <li className="px-4 py-2 hover:bg-[#081566] hover:text-white cursor-pointer">
                   Oldest
                 </li>
-                <li className="px-4 py-2 hover:bg-blue-700 hover:text-white cursor-pointer">
+                <li className="px-4 py-2 hover:bg-[#081566] hover:text-white cursor-pointer">
                   Popular
                 </li>
               </ul>

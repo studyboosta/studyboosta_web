@@ -16,7 +16,7 @@ const ComingSoon = () => {
 
       {/* Button */}
       <a href="https://bit.ly/joinstudyboosta">
-        <button className="mt-6 flex items-center gap-2 bg-[#050C9C] text-white px-6 py-3 rounded-lg text-lg font-bold hover:bg-blue-700 transition">
+        <button className="mt-6 flex items-center gap-2 bg-[#050C9C] text-white px-6 py-3 rounded-lg text-lg font-bold hover:bg-[#081566] transition">
           <FaBolt /> Launching Soon
         </button>
       </a>

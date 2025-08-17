@@ -48,7 +48,7 @@ import React, {useState} from 'react';
             {categories.map((category) => (
               <button
                 key={category}
-                className="px-2 py-2 bg-[#F1F5FF] text-[14px] font-medium text-black text-opacity-77 rounded-full hover:hover:bg-blue-700 hover:text-white transition-colors duration-300"
+                className="px-2 py-2 bg-[#F1F5FF] text-[14px] font-medium text-black text-opacity-77 rounded-full hover:hover:bg-[#081566] hover:text-white transition-colors duration-300"
               >
                 {category}
               </button>
