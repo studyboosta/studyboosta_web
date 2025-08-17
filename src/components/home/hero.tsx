@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import { useAuth } from "@/context/AuthContext";
 import { useEffect, useState } from "react";
@@ -7,46 +6,34 @@ import { motion, AnimatePresence } from "motion/react";
 
 const HeroSection = () => {
   const { token } = useAuth();
-  const [showLife, setShowLife] = useState(true);
+  const words = ["Career", "Dream", "Life"]; // words to animate
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setShowLife((prev) => !prev);
+      setIndex((prev) => (prev + 1) % words.length);
     }, 4000); // swap every 4s
     return () => clearInterval(interval);
   }, []);
+
   return (
     <div className="bg-[#F8F8F8] w-full flex justify-center text-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col items-center max-w-4xl w-full">
-        {/* Heading with animated word beside Career */}
+        {/* Heading with animated words */}
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#1A1A1A] leading-tight mt-12 mb-6 tracking-tight">
           Stop Guessing. Start Building the{" "}
           <span className="text-[#050C9C] inline-flex items-baseline">
-            Career{" "}
             <AnimatePresence mode="wait">
-              {showLife ? (
-                <motion.span
-                  key="life"
-                  initial={{ opacity: 0, x: 60 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -60 }}
-                  transition={{ duration: 1.5, ease: "easeInOut" }}
-                  className="text-[#050C9C] ml-2 inline-block"
-                >
-                  Life
-                </motion.span>
-              ) : (
-                <motion.span
-                  key="dream"
-                  initial={{ opacity: 0, x: -60 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: 60 }}
-                  transition={{ duration: 1.5, ease: "easeInOut" }}
-                  className="text-[#050C9C] ml-2 inline-block"
-                >
-                  Dream
-                </motion.span>
-              )}
+              <motion.span
+                key={words[index]}
+                initial={{ opacity: 0, x: 60 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -60 }}
+                transition={{ duration: 1.5, ease: "easeInOut" }}
+                className="text-[#050C9C] ml-2 inline-block"
+              >
+                {words[index]}
+              </motion.span>
             </AnimatePresence>
           </span>
           you actually want.
