@@ -3,37 +3,53 @@ import React from "react";
 
 const Popup = ({ setShowPopup }) => {
   return (
-    <div className="z-50 fixed inset-0 bg-black/50 flex justify-center items-center">
-      <div className="flex flex-col md:flex-row w-[80%] h-[550px] bg-white rounded-lg shadow-xl overflow-hidden">
-        {/* Image section */}
-        <div className="w-full md:w-1/2 h-64 md:h-auto hidden sm:block relative">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60">
+      <div className="relative flex flex-col w-full max-w-4xl overflow-hidden bg-white rounded-xl shadow-2xl md:flex-row">
+        {/* Image section with a subtle overlay for better text readability */}
+        <div className="relative hidden w-full md:w-1/2 md:flex">
           <Image
             src="/assests/images/pop.jpg"
-            alt="popup"
+            alt="Study community"
             fill
-            className="object-fit"
+            className="object-cover"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60"></div>
+          <div className="absolute bottom-6 left-6 text-white p-4">
+          </div>
         </div>
 
-        {/* Text section */}
-        <div className="w-full md:w-1/2 p-10  flex flex-col relative">
-          {/* Close button */}
+        {/* Content section */}
+        <div className="relative flex w-full flex-col justify-center p-8 md:w-1/2 sm:p-12">
+          {/* Close button - modern and discreet */}
           <button
-            className="absolute top-4 right-4 text-2xl text-gray-500 hover:text-gray-700"
+            className="absolute p-2 transition-transform duration-300 rounded-full top-4 right-4 text-gray-500 hover:text-gray-700 hover:scale-110"
             onClick={() => setShowPopup(false)}
+            aria-label="Close popup"
           >
-            ×
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
           </button>
-          <div className="pt-0 sm:pt-10 m flex flex-col justify-center h-full">
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-800 sm:mb-6 mb-4">
-              Join the Global StudyBoosta Community on WhatsApp!
+          <div className="flex flex-col">
+            <h2 className="text-2xl font-bold text-gray-800 md:text-3xl">
+              Join the Global <span className="text-green-600">StudyBoosta</span> Community!
             </h2>
-            <p className="text-sm md:text-base text-gray-600 leading-relaxed sm:mb-10 mb-6">
+            <p className="mt-4 text-sm text-gray-600 md:text-base leading-relaxed">
               Over 1,000 students from 20+ universities are already part of the
-              StudyBoosta community &mdash; and they&rsquo;re gaining an edge!
-              By joining, you&apos;ll get access to free live mentorship
+              StudyBoosta community—and they’re gaining an edge! By joining, you&apos;ll get access to free live mentorship
               webinars, exclusive scholarship alerts, internship and job
-              opportunities, and career-building resources that aren&rsquo;t
+              opportunities, and career-building resources that aren&apos;t
               shared anywhere else.
             </p>
             <a
@@ -41,7 +57,7 @@ const Popup = ({ setShowPopup }) => {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setShowPopup(false)}
-              className="bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded-md self-start transition cursor-pointer"
+              className="self-start px-6 py-3 mt-8 font-semibold text-white transition-all duration-300 bg-green-600 rounded-lg hover:bg-green-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
             >
               Click here to join now!
             </a>
