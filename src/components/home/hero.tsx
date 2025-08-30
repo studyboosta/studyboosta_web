@@ -17,7 +17,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="bg-[#F8F8F8] w-full flex justify-center text-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className=" w-full flex justify-center text-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col items-center max-w-4xl w-full">
         {/* Heading with animated words */}
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#1A1A1A] leading-tight mt-12 mb-6 tracking-tight">

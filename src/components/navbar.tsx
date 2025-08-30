@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
+import Image from "next/image";
 
 interface NavbarProps {
   activeRoute: string;
@@ -25,25 +26,32 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
   };
 
   return (
-    <nav className="bg-[#F1F5FF] ">
+    <nav className="bg-[#F1F5FF] fixed top-0 left-0 w-full z-50 shadow-md">
       <div className="container mx-auto px-6 flex items-center justify-between py-4 ">
         {/* Navbar Brand */}
-        <p className="text-left text-[20px] sm:text-[24px] md:text-[26px] lg:text-[28px] font-bold text-[#050C9C]">
-          StudyBoosta
-        </p>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/assests/images/logo-lg.png"
+            alt="Logo"
+            width={180} // adjust width to fit your design
+            height={60} // height scales automatically with w-auto
+            className="h-12  w-auto object-contain"
+            priority
+          />
+        </Link>
 
         {/* Desktop Menu */}
         <ul className="md:hidden hidden  lg:flex gap-6">
           {[
             { name: "Home", href: "/" },
-            { name: "Courses", href: "/courses" },
-            { name: "Studybot", href: "/comingSoon" },
-            { name: "Opportunities", href: "/opportunities" },
-            { name: "Career Path", href: "/careerpath" },
+            { name: "CareerPath AI", href: "/careerpath" },
             { name: "Digital Skills", href: "/digitalskills" },
-            { name: "Mentorship", href: "/marketplace" },
+            { name: "Coaching", href: "/marketplace" },
+            { name: "Opportunities", href: "/opportunities" },
+            { name: "Interview/Exam AI", href: "/comingSoon" },
+            { name: "Academic Courses", href: "/courses" },
           ].map((item) => (
-            <li  key={item.name}>
+            <li key={item.name}>
               <Link
                 href={item.href}
                 className={`${
@@ -109,58 +117,85 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
       </div>
 
       {/* Mobile Menu (Visible when isOpen is true) */}
-      {isOpen && (
-        <div className="block md:block px-6 w-full lg:hidden bg-[#F1F5FF] ">
-          <ul className="flex  flex-col gap-4">
-            {[
-              { name: "Home", href: "/" },
-              { name: "Courses", href: "/courses" },
-              { name: "Studybot", href: "/comingSoon" },
-              { name: "Opportunities", href: "/opportunities" },
-              { name: "Career Path", href: "/careerpath" },
-              { name: "Digital Skills", href: "/digitalskills" },
-              { name: "Mentorship", href: "/marketplace" },
-            ].map((item) => (
-              <li key={item.name}>
-                <Link
-                  href={item.href}
-                  className={`${
-                    isActive(item.href)
-                      ? "font-semibold text-[#081566]"
-                      : "text-black"
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <div className="space-x-14 py-4">
-            {token ? (
-              <button
-                onClick={handleLogout}
-                className="text-[14px] font-bold text-[#D9534F] hover:underline"
-              >
-                Logout
-              </button>
-            ) : (
-              <>
-                <Link
-                  href="/login"
-                  className="text-[14px] font-bold text-[#050C9C] hover:underline"
-                >
-                  Login
-                </Link>
-                <Link
-                  href="/signup"
-                  className="px-4 py-2 font-semibold bg-[#050C9C] text-white rounded-xl hover:bg-[#081566]"
-                >
-                  Sign Up
-                </Link>
-              </>
-            )}
-          </div>
+      {/* Mobile Sidebar */}
+      <div
+        className={`fixed top-0 left-0 h-full w-64 bg-[#F1F5FF] z-50 transform transition-transform duration-300 ease-in-out
+    ${isOpen ? "translate-x-0" : "-translate-x-full"}
+  `}
+      >
+        {/* Close Button */}
+        <div className="flex justify-end p-4">
+          <button
+            onClick={toggleMenu}
+            className="text-[#050C9C] text-2xl font-bold"
+          >
+            &times;
+          </button>
         </div>
+
+        {/* Menu Links */}
+        <ul className="flex flex-col gap-6 px-6 mt-6">
+          {[
+            { name: "Home", href: "/" },
+            { name: "CareerPath AI", href: "/careerpath" },
+            { name: "Digital Skills", href: "/digitalskills" },
+            { name: "Coaching", href: "/marketplace" },
+            { name: "Opportunities", href: "/opportunities" },
+            { name: "Interview/Exam AI", href: "/comingSoon" },
+            { name: "Academic Courses", href: "/courses" },
+          ].map((item) => (
+            <li key={item.name}>
+              <Link
+                href={item.href}
+                className={`${
+                  isActive(item.href)
+                    ? "font-semibold text-[#081566]"
+                    : "text-black hover:text-[#050C9C]"
+                }`}
+                onClick={() => setIsOpen(false)} // close sidebar on click
+              >
+                {item.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        {/* Login / Signup */}
+        <div className="mt-6 px-6 space-y-4">
+          {token ? (
+            <button
+              onClick={handleLogout}
+              className="w-full text-left text-[#D9534F] font-bold hover:underline"
+            >
+              Logout
+            </button>
+          ) : (
+            <>
+              <Link
+                href="/login"
+                className="w-full block font-bold text-[#050C9C] hover:text-[#081566]"
+                onClick={() => setIsOpen(false)}
+              >
+                Login
+              </Link>
+              <Link
+                href="/signup"
+                className="w-full block px-4 py-2 font-semibold bg-[#050C9C] text-white rounded-xl hover:bg-[#081566] text-center"
+                onClick={() => setIsOpen(false)}
+              >
+                Sign Up
+              </Link>
+            </>
+          )}
+        </div>
+      </div>
+
+      {/* Overlay */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-30 z-40"
+          onClick={toggleMenu}
+        ></div>
       )}
     </nav>
   );

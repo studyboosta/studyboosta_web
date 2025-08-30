@@ -109,7 +109,7 @@ const CareerPath = () => {
     : previousSearches.slice(0, 5);
 
   return (
-    <div className="flex flex-col items-center min-h-screen px-4 py-16 bg-slate-50">
+    <div className="flex flex-col items-center min-h-screen px-4 py-16 ">
       <div className="text-center mb-12">
         <div className="flex items-center justify-center gap-4 mb-4">
           <h1 className="text-4xl sm:text-5xl font-extrabold text-[#050C9C] tracking-tight">

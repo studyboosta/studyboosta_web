@@ -6,6 +6,7 @@ import {
   faWhatsapp,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import Image from "next/image";
 
 const Footer: React.FC = () => {
   return (
@@ -14,7 +15,17 @@ const Footer: React.FC = () => {
         {/* Stay Up to Date Section */}
         <div className="md:flex-1">
           <h3 className="text-[16px]">Stay up to date with</h3>
-          <h3 className="text-[28px] font-bold mb-6">StudyBoosta</h3>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/assests/images/logo-lg.png"
+              alt="Logo"
+              width={180} // adjust width to fit your design
+              height={60} // height scales automatically with w-auto
+              className="h-12 w-auto mb-5 object-contain"
+              priority
+            />
+          </Link>
+
           <div>
             <form className="border-[1px] border-white rounded flex items-center">
               <input
@@ -39,13 +50,9 @@ const Footer: React.FC = () => {
             <h3 className="text-[19px] font-semibold mb-4">Quick links</h3>
             <ul className="space-y-2">
               <li>
-              <Link
-                href="/"
-                className= "hover:underline text-[14px]"
-              >
-                Home
-              </Link>
-                
+                <Link href="/" className="hover:underline text-[14px]">
+                  Home
+                </Link>
               </li>
               <li>
                 <Link href="/courses" className="hover:underline text-[14px]">
@@ -53,12 +60,18 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/opportunities" className="hover:underline text-[14px]">
+                <Link
+                  href="/opportunities"
+                  className="hover:underline text-[14px]"
+                >
                   Opportunities
                 </Link>
               </li>
               <li>
-                <Link href="/digitalskills" className="hover:underline text-[14px]">
+                <Link
+                  href="/digitalskills"
+                  className="hover:underline text-[14px]"
+                >
                   Digital skills
                 </Link>
               </li>
@@ -68,7 +81,9 @@ const Footer: React.FC = () => {
           {/* Contact Us Section */}
           <div className="md:ml-5">
             <h3 className="text-[19px] font-semibold mb-4">Contact us</h3>
-            <p className="mb-2 text-[14px]">📍 University of Benin, Edo state.</p>
+            <p className="mb-2 text-[14px]">
+              📍 University of Benin, Edo state.
+            </p>
             <p className="mb-2 text-[14px]">📞 +2347049831780</p>
             <p className="text-[14px]">📧 studyboosta@gmail.com</p>
           </div>
@@ -81,10 +96,18 @@ const Footer: React.FC = () => {
           © 2025. All rights reserved.
         </p>
         <div className="flex space-x-4 mt-4 md:mt-0">
-          <a href="#" className=" bg-[050C96] text-white hover:text-gray-300" aria-label="Facebook">
+          <a
+            href="#"
+            className=" bg-[050C96] text-white hover:text-gray-300"
+            aria-label="Facebook"
+          >
             <FontAwesomeIcon icon={faFacebook} />
           </a>
-          <a href="#" className="bg-[050C96] text-white hover:text-gray-300" aria-label="WhatsApp">
+          <a
+            href="#"
+            className="bg-[050C96] text-white hover:text-gray-300"
+            aria-label="WhatsApp"
+          >
             <FontAwesomeIcon icon={faWhatsapp} />
           </a>
           <a href="#" className="hover:text-gray-300" aria-label="Messenger">

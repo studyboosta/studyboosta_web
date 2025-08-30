@@ -21,7 +21,7 @@ export default function RootLayout({
         <ToastContainer position="top-right" autoClose={3000} />
         <AuthProvider>
           <Navbar activeRoute="/" />
-          <main className="min-h-screen">{children}</main>
+          <main className="pt-20 sm:pt-24 md:pt-28 lg:pt-32">{children}</main>
           <Footer />
         </AuthProvider>
       </body>
