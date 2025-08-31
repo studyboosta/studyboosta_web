@@ -56,23 +56,23 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link href="/courses" className="hover:underline text-[14px]">
-                  Courses
+                 Academic Courses
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/opportunities"
+                  href="/careerpath"
                   className="hover:underline text-[14px]"
                 >
-                  Opportunities
+                  CareerPath AI
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/digitalskills"
+                  href="/marketplace"
                   className="hover:underline text-[14px]"
                 >
-                  Digital skills
+                 Coaching
                 </Link>
               </li>
             </ul>
