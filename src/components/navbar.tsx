@@ -31,7 +31,7 @@ const NavBar = ({ activeRoute }: NavbarProps) => {
         {/* Navbar Brand */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/assests/images/logo-lg.png"
+            src="/assests/images/logo-lg-blue.png"
             alt="Logo"
             width={180} // adjust width to fit your design
             height={60} // height scales automatically with w-auto
