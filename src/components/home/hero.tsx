@@ -49,7 +49,7 @@ const HeroSection = () => {
         {/* Button */}
         <Link href={token ? "/courses" : "/signup"}>
           <button className="px-8 py-4 bg-[#050C9C] font-bold text-lg text-white rounded-xl shadow-lg hover:bg-[#081566] transition-all duration-300 ease-in-out transform hover:-translate-y-1 mt-6 mb-8">
-            {token ? "Go to Courses" : "Start Learning Today"}
+            {token ? "Go to Courses" : "Get Started for Free"}
           </button>
         </Link>
 

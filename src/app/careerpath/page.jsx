@@ -308,7 +308,7 @@ const CareerPath = () => {
                     </div>
                   </div>
 
-                  {career.resources?.length > 0 && (
+                  {/* {career.resources?.length > 0 && (
                     <div className="mt-6 pt-6 border-t border-gray-100">
                       <p className="font-semibold text-[#081566] mb-2 flex items-center">
                         <FiExternalLink className="mr-2" />
@@ -330,7 +330,7 @@ const CareerPath = () => {
                         ))}
                       </ul>
                     </div>
-                  )}
+                  )} */}
                 </div>
               </div>
             ))}

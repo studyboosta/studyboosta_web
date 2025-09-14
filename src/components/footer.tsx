@@ -13,9 +13,9 @@ const Footer: React.FC = () => {
     <footer className="bg-[#000B76] w-full text-white px-6 md:px-24 py-8">
       <div className="container mx-auto pt-3 px-4 grid grid-cols-1 md:flex md:justify-between md:items-start gap-8">
         {/* Stay Up to Date Section */}
-        <div className="md:flex-1">
+        <div className="md:flex-1 items-start">
           <h3 className="text-[16px]">Stay up to date with</h3>
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex ">
             <Image
               src="/assests/images/logo-lg.png"
               alt="Logo"
