@@ -18,9 +18,9 @@ const CareerStats = () => {
         "89% of African graduates lack formal digital training. (World Bank & IFC)",
     },
     {
-      title: "625-650M",
+      title: "230 Million Jobs ",
       description:
-        "By 2030, ~625–650 million African workers will need digital skills to meet demand. (World Bank, Mastercard Fdn)",
+        "Study finds that over 230 million jobs in SubSaharan Africa will require digital skills by 2030 (International Finance Corporation, World Bank Group)",
     },
     {
       title: "Schools Are Lagging",
