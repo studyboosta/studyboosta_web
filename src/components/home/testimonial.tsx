@@ -35,12 +35,14 @@ const Testimonial = () => {
         "Very helpful and practical. The hands-on exercises keep me engaged, and I can see real improvement in my coding skills. Would recommend to both students and professionals.",
     },
   ];
+
   return (
     <div className="bg-white py-10">
       <h2 className="text-center text-3xl sm:text-4xl font-extrabold text-[#1A1A1A] tracking-tight mb-6">
         Our Users reviews
       </h2>
-      <div className="overflow-x-auto scrollbar-hide">
+
+      <div className="flex justify-center overflow-x-auto scrollbar-hide">
         <div className="flex gap-6 md:gap-8 lg:gap-8">
           {reviews.map((review, index) => (
             <div
